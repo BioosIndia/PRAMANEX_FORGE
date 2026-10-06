@@ -1,0 +1,7 @@
+# FORGE reference recreation pass 3
+
+Continues deployed commit e88157cafd985110b3dab449eb62f1cf89d6cac0. Replaces the visually mismatched generic landing, navy dashboard and column graph with the supplied Bio Lab / Selectra / QGen / dashboard allocations. Own regulatory/CMC content replaces the medical/crypto examples. The backend, source registry, PDF meanings, labels and rulebook remain intact.
+
+The landing uses a dark teal canvas, wide geometric white type, service composition, organic visual capsules, refined close/confirmation interactions and a strong closing entry section. The hero is an actual translucent SDF model with coral/cyan crossed threads and a sphere-to-separated-volumes motion cycle. Dashboard cards and a branching evidence miniature summarize saved records; the radial graph adds a teal volume, category counts, actual dependencies, camera focus, right details, back/overview, paging and full record tables. Semantic grouping spokes are identified separately from actual dependency edges.
+
+Verification: TypeScript, the final Sites production build and 10/10 saved-data UI projection engineering checks pass. Existing 329-case backend evidence remains separate. Supported browser QA is unavailable; rendered fidelity, GPU execution and hosted journeys are not claimed verified. The full enterprise production/qualification program is not complete; exact source-item status, technical limits and actionable pending gates are in DELIVERY_CHECKLIST.md.

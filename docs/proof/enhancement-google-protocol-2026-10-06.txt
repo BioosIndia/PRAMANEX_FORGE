@@ -1,0 +1,13 @@
+PASS configured OAuth is honestly exposed as available
+PASS Google auth-code PKCE flow validates RSA signature, issuer, audience, nonce and verified email
+PASS OAuth state replay is rejected after single-use consumption
+PASS OAuth state mismatch is rejected before contacting token provider
+PASS Signed Google token rejects wrong nonce
+PASS Signed Google token rejects wrong audience
+PASS Signed Google token rejects unverified email
+PASS Signed Google token rejects string false verification
+PASS Signed Google token rejects non-string subject
+PASS Signed Google token rejects invalid email
+PASS Signed Google token rejects expired token
+PASS invalid Google token signature is rejected
+12 compiled local OAuth protocol checks passed; real Google client provisioning is still required.

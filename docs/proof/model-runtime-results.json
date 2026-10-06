@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-05T21:06:02.008Z",
+  "passed": 7,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Distinct configuration is visible without exposing a key",
+      "status": "PASS"
+    },
+    {
+      "name": "Provider consent is enforced before any model call",
+      "status": "PASS"
+    },
+    {
+      "name": "Compiled authoring routes planner, parallel authors and distinct reviewer into saved state",
+      "status": "PASS"
+    },
+    {
+      "name": "Persisted readback contains exact role receipts and evidence fingerprint",
+      "status": "PASS"
+    },
+    {
+      "name": "Idempotent replay makes no additional provider calls",
+      "status": "PASS"
+    },
+    {
+      "name": "Independent rejection saves failure traces and creates no additional draft",
+      "status": "PASS"
+    },
+    {
+      "name": "Foreign workspace access is rejected before provider transmission",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Compiled local Worker, D1/R2 and synthetic model responses; not live provider or scientific validation."
+}

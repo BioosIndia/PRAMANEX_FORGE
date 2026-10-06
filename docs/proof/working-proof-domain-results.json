@@ -1,0 +1,35 @@
+{
+  "passed": 7,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Existing workflow produces source-linked facts, decisions and a draft",
+      "status": "PASS"
+    },
+    {
+      "name": "All original evidence hashes and exact spans remain bound",
+      "status": "PASS"
+    },
+    {
+      "name": "One conflicting assay remains unresolved; no accepted SYN-A assay",
+      "status": "PASS"
+    },
+    {
+      "name": "Critical dissolution is missing and QC blocks accepted output",
+      "status": "PASS"
+    },
+    {
+      "name": "Final example decision is a recorded request for evidence, not draft approval",
+      "status": "PASS"
+    },
+    {
+      "name": "Synthetic evidence cannot pass the controlled export gate",
+      "status": "PASS"
+    },
+    {
+      "name": "Every assessment citation resolves to the saved fact/source version",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Synthetic saved-case domain controls; not professional validation."
+}

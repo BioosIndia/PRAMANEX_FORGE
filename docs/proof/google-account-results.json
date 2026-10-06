@@ -1,0 +1,6 @@
+{
+  "passed": 12,
+  "total": 12,
+  "source": "tests/google-accounts.mjs",
+  "scope": "Locally signed synthetic RSA identity tokens; no real Google account"
+}

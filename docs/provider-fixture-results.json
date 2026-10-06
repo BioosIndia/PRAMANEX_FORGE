@@ -1,0 +1,71 @@
+{
+  "at": "2026-10-05T20:04:54.859Z",
+  "label": "SYNTHETIC_ENGINEERING_ONLY",
+  "passed": 12,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Groq key selects Groq and distinct supported model IDs",
+      "status": "PASS",
+      "elapsedMs": 0.08
+    },
+    {
+      "name": "Groq planner, two authors and independent reviewer preserve source numbers and units",
+      "status": "PASS",
+      "elapsedMs": 11.99
+    },
+    {
+      "name": "Different response model rejects candidate",
+      "status": "PASS",
+      "elapsedMs": 1.1
+    },
+    {
+      "name": "Truncated Groq output is rejected",
+      "status": "PASS",
+      "elapsedMs": 0.29
+    },
+    {
+      "name": "Independent rejection returns no accepted team candidate",
+      "status": "PASS",
+      "elapsedMs": 2.21
+    },
+    {
+      "name": "Groq PDF attachment holds before external transmission",
+      "status": "PASS",
+      "elapsedMs": 0.45
+    },
+    {
+      "name": "429 classified for bounded retry and eventual dead-letter handling",
+      "status": "PASS",
+      "elapsedMs": 0.33
+    },
+    {
+      "name": "Firecrawl uses one fixed public URL and marks derived discovery",
+      "status": "PASS",
+      "elapsedMs": 5.92
+    },
+    {
+      "name": "Unapproved destination blocked before provider call",
+      "status": "PASS",
+      "elapsedMs": 0.08
+    },
+    {
+      "name": "Provider redirect to unapproved source is rejected",
+      "status": "PASS",
+      "elapsedMs": 0.33
+    },
+    {
+      "name": "Missing provider secret remains a visible failure",
+      "status": "PASS",
+      "elapsedMs": 0.06
+    },
+    {
+      "name": "Firecrawl authentication failure cannot become no-change success",
+      "status": "PASS",
+      "elapsedMs": 0.15
+    }
+  ],
+  "liveProviderExecuted": false,
+  "qualifiedProfessionalValidation": false,
+  "manualTimeSavingsPercent": null
+}

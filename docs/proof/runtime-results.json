@@ -1,0 +1,92 @@
+{
+  "at": "2026-10-05T21:05:38.953Z",
+  "passed": 21,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Planner creates a bounded typed DAG and prevents free-form action authority",
+      "status": "PASS"
+    },
+    {
+      "name": "Durable enqueue is idempotent and preserves exact workspace hash",
+      "status": "PASS"
+    },
+    {
+      "name": "D1 tasks execute extraction and reach HUMAN_WAIT without approving facts",
+      "status": "PASS"
+    },
+    {
+      "name": "Named human decisions and explicit resume unlock candidate authoring; draft approval remains another wait",
+      "status": "PASS"
+    },
+    {
+      "name": "Provider outage protocol mock retries three times with backoff then DLQ, no fake draft",
+      "status": "PASS"
+    },
+    {
+      "name": "Unavailable model configuration persists HOLD and explicit manual fallback continues",
+      "status": "PASS"
+    },
+    {
+      "name": "Lease expiry reclaims interrupted task using CAS and a new lease token",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent workers commit one task result and one exact revision",
+      "status": "PASS"
+    },
+    {
+      "name": "External workspace edit blocks stale runtime before tools or authoring",
+      "status": "PASS"
+    },
+    {
+      "name": "Pause and cancel are persisted and prevent subsequent task execution",
+      "status": "PASS"
+    },
+    {
+      "name": "Replan creates new DAG generation and keeps prior task records",
+      "status": "PASS"
+    },
+    {
+      "name": "Revoked creator membership blocks autonomous execution",
+      "status": "PASS"
+    },
+    {
+      "name": "Runtime API rejects anonymous, wrong-origin, and invalid worker credentials",
+      "status": "PASS"
+    },
+    {
+      "name": "Claim domain binds exact original source hashes and blocks stale input",
+      "status": "PASS"
+    },
+    {
+      "name": "Approved exact draft advances to unsigned controlled package with release false",
+      "status": "PASS"
+    },
+    {
+      "name": "Cancel during asynchronous provider work prevents artifact commit",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed binary original hash is held before deterministic document parsing",
+      "status": "PASS"
+    },
+    {
+      "name": "Revoked or downgraded creator cannot replay an idempotent enqueue result",
+      "status": "PASS"
+    },
+    {
+      "name": "Authenticated viewer cannot tick an empty workspace",
+      "status": "PASS"
+    },
+    {
+      "name": "Workspace mutation between control preparation and CAS blocks all control writes",
+      "status": "PASS"
+    },
+    {
+      "name": "Response human gate requires independent current revision and never records an authority outcome",
+      "status": "PASS"
+    }
+  ],
+  "boundary": "Actual local Miniflare D1/R2 and authenticated API-handler tests. Provider failure/retry inputs are explicit protocol mocks; hosted scheduling and live model quality not tested."
+}

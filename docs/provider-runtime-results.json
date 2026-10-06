@@ -1,0 +1,36 @@
+{
+  "at": "2026-10-05T21:06:40.311Z",
+  "scope": "Local compiled Worker, local D1 and synthetic provider responses",
+  "passed": 7,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Anonymous provider inspection rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Cross-origin write rejected before provider calls",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing consent blocked before any transmission",
+      "status": "PASS"
+    },
+    {
+      "name": "Synthetic provider checks save complete receipts without release",
+      "status": "PASS"
+    },
+    {
+      "name": "Fresh GET returns exact saved receipt",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated check rate-limited without duplicate calls",
+      "status": "PASS"
+    },
+    {
+      "name": "Foreign workspace cannot inspect saved receipt",
+      "status": "PASS"
+    }
+  ]
+}

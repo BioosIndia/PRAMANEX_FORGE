@@ -1,0 +1,69 @@
+$ node scripts/run-framework.mjs build
+/usr/bin/timeout
+Running bounded vinext build...
+
+  vinext build  (Vite 8.0.13)
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mProxy environment variables detected. We'll use your proxy for fetch requests.[0m
+
+
+[1/5] analyze client references...
+[2Ktransforming...✓ 454 modules transformed.
+rendering chunks...
+✓ built in 1.74s
+[2/5] analyze server references...
+[2Ktransforming...✓ 210 modules transformed.
+rendering chunks...
+✓ built in 466ms
+[3/5] build rsc environment...
+[2Ktransforming...✓ 467 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 1.17s
+[4/5] build client environment...
+[2Ktransforming...✓ 1949 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 1.53s
+[5/5] build ssr environment...
+[2Ktransforming...✓ 212 modules transformed.
+rendering chunks...
+computing gzip size...
+✓ built in 638ms
+[0m
+  Route (app)
+  ┌ ? /                        
+  ├ λ /api/auth/google/callback
+  ├ λ /api/auth/google/start   
+  ├ λ /api/auth/link-legacy    
+  ├ λ /api/auth/login          
+  ├ λ /api/auth/logout         
+  ├ λ /api/auth/session        
+  ├ λ /api/auth/signup         
+  ├ λ /api/export              
+  ├ λ /api/files/:id           
+  ├ λ /api/forge               
+  ├ λ /api/provider-proof      
+  ├ λ /api/readiness           
+  ├ λ /api/runtime             
+  ├ λ /api/sharing             
+  ├ λ /api/upload              
+  ├ λ /api/working-proof       
+  ├ ƒ /app                     
+  ├ ƒ /collaboration           
+  ├ ? /demo                    
+  ├ ƒ /login                   
+  ├ ? /logout                  
+  ├ ? /mvp-checklist           
+  ├ ? /product                 
+  ├ ? /recruiter               
+  └ ? /working-proof           
+
+  λ API  ƒ Dynamic  ? Unknown
+
+  ? Some routes could not be classified. vinext currently uses static analysis
+    and cannot detect dynamic API usage (headers(), cookies(), etc.) at build time.
+    Automatic classification will be improved in a future release.
+
+  Build complete. Run `vinext start` to start the production server.
+

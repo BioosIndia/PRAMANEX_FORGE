@@ -1,0 +1,31 @@
+PASS anonymous session is explicit and Google remains unconfigured
+PASS anonymous saved workspace access rejected
+PASS signup rejects cross-origin requests
+PASS signup enforces minimum password length
+PASS signup enforces UTF-8 byte ceiling
+PASS account payload is bounded
+PASS manual signup saves a private unverified identity and secure opaque session
+PASS duplicate email does not create another account
+PASS own account creates and reads a persistent workspace
+PASS FORGE login panel renders password and account controls
+PASS own account enters the server-rendered workspace without a platform user header
+PASS different account cannot read another workspace
+PASS unverified manual identity cannot receive shared membership
+PASS SQL shared membership boundary also blocks bypass
+PASS wrong password returns generic rejection
+PASS unknown account returns the same rejection
+PASS login rotates session and invalidates the previous token
+PASS expired session is rejected
+PASS logout requires same origin
+PASS logout revokes session and suppresses implicit platform fallback
+PASS missing Google configuration is a visible failure
+PASS existing trusted platform workspace remains accessible
+PASS new account plus trusted session exposes explicit link choice
+PASS linking requires own session, trusted session and confirmation
+PASS explicit dual-proof link preserves saved workspace and identity
+PASS linked identity cannot receive late writes under retired account
+PASS link is immutable
+PASS nonempty new workspace cannot link and disappear
+PASS concurrent workspace creation enforces the owner cap atomically
+PASS quota rejection leaves no orphan owner membership
+{"suite":"FORGE compiled account/security checks","passed":30,"scope":"Local synthetic identities and storage. Not live Google or production qualification."}

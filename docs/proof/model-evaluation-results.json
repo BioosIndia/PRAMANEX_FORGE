@@ -1,0 +1,84 @@
+{
+  "at": "2026-10-05T21:06:31.411Z",
+  "passed": 19,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Missing authoring configuration makes no provider call",
+      "status": "PASS"
+    },
+    {
+      "name": "Typed source-bound candidate never grants approval",
+      "status": "PASS"
+    },
+    {
+      "name": "Silent provider model drift is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing provider model identity is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Forged source fact IDs are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate model fact references cannot omit another approved fact",
+      "status": "PASS"
+    },
+    {
+      "name": "Null candidate elements fail with a governed error",
+      "status": "PASS"
+    },
+    {
+      "name": "Incomplete provider response is not a successful draft",
+      "status": "PASS"
+    },
+    {
+      "name": "Malformed provider envelope is rejected without accepting a draft",
+      "status": "PASS"
+    },
+    {
+      "name": "Oversized advertised response is rejected before body allocation",
+      "status": "PASS"
+    },
+    {
+      "name": "Unadvertised oversized streamed response is cancelled",
+      "status": "PASS"
+    },
+    {
+      "name": "Interrupted provider body remains a transient bounded failure",
+      "status": "PASS"
+    },
+    {
+      "name": "Provider authentication failure never retries as transient success",
+      "status": "PASS"
+    },
+    {
+      "name": "Transient provider failure has a bounded retry budget",
+      "status": "PASS"
+    },
+    {
+      "name": "Vision candidates preserve review boundary even at high confidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Vision box extending beyond original page is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Vision wrong page and invalid confidence are rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Vision model drift cannot masquerade as the pinned parser",
+      "status": "PASS"
+    },
+    {
+      "name": "Unsupported numeric AI assertion fails independent technical QC",
+      "status": "PASS"
+    }
+  ],
+  "boundary": "Adversarial synthetic model-protocol and independent-QC checks. No live inference, scientific accuracy or professional validation."
+}

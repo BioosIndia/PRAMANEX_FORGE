@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-05T21:27:43.034Z",
+  "passed": 5,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Actual production client scripts exist for a meaningful privacy inspection",
+      "status": "PASS"
+    },
+    {
+      "name": "Full internal source register is absent from compiled browser scripts",
+      "status": "PASS"
+    },
+    {
+      "name": "Raw detailed account test records are absent from compiled browser scripts",
+      "status": "PASS"
+    },
+    {
+      "name": "Requirements matrix and original architecture documents are not static assets",
+      "status": "PASS"
+    },
+    {
+      "name": "Replacement quality controls are compiled into the current release",
+      "status": "PASS"
+    }
+  ],
+  "boundary": "Actual built browser assets checked for the listed internal-disclosure markers. This does not make delivered frontend algorithms secret or establish a comprehensive security assessment."
+}

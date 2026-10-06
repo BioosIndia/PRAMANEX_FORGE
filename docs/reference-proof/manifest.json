@@ -1,0 +1,15 @@
+{
+  "reference_files": [
+    "biolab-hero.jpg",
+    "selectra-separated.jpg",
+    "qgen-radial.jpg",
+    "dashboard.png"
+  ],
+  "meaning": "Reference frames, not implementation screenshots",
+  "authoritative_source_sha256": {
+    "docs/enterprise-blueprint.pdf": "6cb6cd933e927b1b959461c5e42f9bc08c7275834b506c1036c82c8c32e89588",
+    "docs/expanded-architecture.pdf": "168735413e552ad8be15657ac7a982325e8b2acc1078c22c374349919d6e7b1d",
+    "docs/acceptance-source.md": "41db6343667461820068072a3eca96918335be61db25a913151a827f0ccee5fb",
+    "lib/source-registry.json": "1b3f987318e3d56afb4cbf77a6681f53fc9d6ccd8577b8322865bfc63c40c45b"
+  }
+}

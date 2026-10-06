@@ -1,0 +1,14 @@
+✔ client request reads saved JSON (3.357211ms)
+✔ client request exposes a server gate error (0.686335ms)
+✔ intermediary HTML produces a safe message instead of a parse error or raw page (0.451721ms)
+✔ timed-out mutation is never repeated and warns that the result can still save (0.346402ms)
+✔ read timeout requests a refresh without claiming a successful check (0.200022ms)
+✔ caller cancellation remains cancellation (0.974069ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 120.26729

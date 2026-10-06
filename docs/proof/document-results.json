@@ -1,0 +1,149 @@
+{
+  "parserVersion": "controlled-document-parameters/1.0.0",
+  "recordedAt": "2026-10-04T16:31:34.056Z",
+  "scope": "Local deterministic typed XML/DOCX/XLSX parser and adversarial archive fixtures; no PDF/OCR/live-vision or professional validation claim.",
+  "passed": 35,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "typed XML preserves original numeric lexemes, raw limits and exact value span",
+      "status": "PASS"
+    },
+    {
+      "name": "XML named entities decode into data while exact original entity survives evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "missing required scientific content remains explicit candidate with warning",
+      "status": "PASS"
+    },
+    {
+      "name": "typed XML rejects DTD and external entity expansion",
+      "status": "PASS"
+    },
+    {
+      "name": "typed XML rejects custom entity use without expansion",
+      "status": "PASS"
+    },
+    {
+      "name": "XML processing instructions and custom instruction nodes are held",
+      "status": "PASS"
+    },
+    {
+      "name": "XML malformed closing tags do not produce partial evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "XML arbitrary schemas and header substitutions are not guessed",
+      "status": "PASS"
+    },
+    {
+      "name": "XML duplicate fields and invalid numeric limit qualifiers hold",
+      "status": "PASS"
+    },
+    {
+      "name": "XML non-UTF8 original and forbidden controls hold",
+      "status": "PASS"
+    },
+    {
+      "name": "DOCX stored archive extracts controlled table with original XML cell coordinates",
+      "status": "PASS"
+    },
+    {
+      "name": "DOCX raw-DEFLATE extraction is bounded and CRC verified",
+      "status": "PASS"
+    },
+    {
+      "name": "DOCX split text runs preserve raw numeric lexeme with multiple original tokens",
+      "status": "PASS"
+    },
+    {
+      "name": "Word merged cells and tracked changes cannot silently change coordinates",
+      "status": "PASS"
+    },
+    {
+      "name": "OOXML package rejects original macro/embedded binary content",
+      "status": "PASS"
+    },
+    {
+      "name": "OOXML external relationship is held even when table looks valid",
+      "status": "PASS"
+    },
+    {
+      "name": "OOXML unsafe traversal and duplicate package names are forbidden",
+      "status": "PASS"
+    },
+    {
+      "name": "OOXML encrypted ZIP flags are forbidden before extraction",
+      "status": "PASS"
+    },
+    {
+      "name": "OOXML archive file-count and decompressed-size limits are enforced",
+      "status": "PASS"
+    },
+    {
+      "name": "OOXML forged small inflation size fails during bounded streaming",
+      "status": "PASS"
+    },
+    {
+      "name": "OOXML CRC mismatch and local-directory mismatch hold",
+      "status": "PASS"
+    },
+    {
+      "name": "OOXML XML attacks in unused parts still hold the original document",
+      "status": "PASS"
+    },
+    {
+      "name": "DOCX MIME/extension and declared main content type must match",
+      "status": "PASS"
+    },
+    {
+      "name": "XLSX preserves numeric original lexemes and worksheet cell coordinates",
+      "status": "PASS"
+    },
+    {
+      "name": "XLSX shared-string evidence links actual worksheet index to original string part",
+      "status": "PASS"
+    },
+    {
+      "name": "XLSX formula cache, merged cells and invalid original cell addresses hold",
+      "status": "PASS"
+    },
+    {
+      "name": "XLSX explicit missing/duplicate cells and unknown column drift hold",
+      "status": "PASS"
+    },
+    {
+      "name": "XLSX unknown shared strings and boolean cell types are never inferred",
+      "status": "PASS"
+    },
+    {
+      "name": "Unsupported PDF/handwriting formats hold without invented OCR",
+      "status": "PASS"
+    },
+    {
+      "name": "Empty and oversized originals hold without extraction",
+      "status": "PASS"
+    },
+    {
+      "name": "Adjacent XML attributes and undeclared prefixes are malformed",
+      "status": "PASS"
+    },
+    {
+      "name": "Numeric precision loss, unsafe integers and exponent underflow hold",
+      "status": "PASS"
+    },
+    {
+      "name": "DOCX unresolved tracked rows and hidden computed field tokens hold",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate package content types and phantom worksheet nodes hold",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual workerd runtime performs Web Crypto and raw-DEFLATE OOXML extraction without Node APIs",
+      "status": "PASS"
+    }
+  ]
+}

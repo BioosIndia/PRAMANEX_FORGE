@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-05T21:27:11.134Z",
+  "passed": 8,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "First read saves and returns one synthetic immutable assessment",
+      "status": "PASS"
+    },
+    {
+      "name": "Fresh readers see the exact saved facts, assessment, decisions and hash",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent readers cannot replace or duplicate the saved record",
+      "status": "PASS"
+    },
+    {
+      "name": "Canonical proof cannot be changed or deleted",
+      "status": "PASS"
+    },
+    {
+      "name": "No private workspace, membership or user approval is created",
+      "status": "PASS"
+    },
+    {
+      "name": "No write API exists for a recruiter to approve or change the proof",
+      "status": "PASS"
+    },
+    {
+      "name": "A workspace query cannot make the public reader access a private ID",
+      "status": "PASS"
+    },
+    {
+      "name": "Saved proof dashboard route renders without a private login requirement",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Compiled Worker, local D1 and synthetic records; not professional validation."
+}
