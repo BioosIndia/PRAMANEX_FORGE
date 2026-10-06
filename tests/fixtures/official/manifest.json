@@ -1,0 +1,44 @@
+{
+  "scope": "Public regulator-guidance intake and preservation only. Not product/batch results, independent extraction accuracy or agency applicability validation.",
+  "sources": [
+    {
+      "id": "m4q-r1",
+      "url": "https://database.ich.org/sites/default/files/M4Q_R1_Guideline.pdf",
+      "resolvedUrl": "https://database.ich.org/sites/default/files/M4Q_R1_Guideline.pdf",
+      "status": 200,
+      "bytes": 273075,
+      "sha256": "c3edcf44203ad72b9eb0e01bfa3cfbcb6ab4ad6e78304bc985e3a1a03bedff58",
+      "retrievedAt": "2026-10-04T16:21:16.634885+00:00",
+      "title": "ICH M4Q(R1)",
+      "pages": 24,
+      "documentLabel": "Step 4 reference, dated 2002-09-12",
+      "file": "m4q-r1.pdf"
+    },
+    {
+      "id": "q1a-r2",
+      "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q-1-r2-stability-testing-new-drug-substances-and-products-step-5_en.pdf",
+      "resolvedUrl": "https://www.ema.europa.eu/en/documents/scientific-guideline/ich-q-1-r2-stability-testing-new-drug-substances-and-products-step-5_en.pdf",
+      "status": 200,
+      "bytes": 254244,
+      "sha256": "d910e354643a486a96c8a9119203fb6608524c9a98249cc03690190103cca0dc",
+      "retrievedAt": "2026-10-04T16:21:24.957338+00:00",
+      "title": "ICH Q1A(R2)",
+      "pages": 20,
+      "documentLabel": "EMA Step 5 reference, dated August 2003",
+      "file": "q1a-r2.pdf"
+    },
+    {
+      "id": "m4q-r2-draft",
+      "url": "https://www.ema.europa.eu/en/documents/scientific-guideline/ich-m4qr2-guideline-common-technical-document-registration-pharmaceuticals-human-use-quality-step-2b_en.pdf",
+      "resolvedUrl": "https://www.ema.europa.eu/en/documents/scientific-guideline/ich-m4qr2-guideline-common-technical-document-registration-pharmaceuticals-human-use-quality-step-2b_en.pdf",
+      "status": 200,
+      "bytes": 1082406,
+      "sha256": "3cdb688205f346ba87703f597120d17253c429a7dbe5c8b4b964c66756e59c09",
+      "retrievedAt": "2026-10-04T16:21:33.218433+00:00",
+      "title": "ICH M4Q(R2)",
+      "pages": 59,
+      "documentLabel": "EMA Step 2b consultation draft, dated 2025-06-19; not final",
+      "file": "m4q-r2-draft.pdf"
+    }
+  ]
+}

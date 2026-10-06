@@ -1,0 +1,12 @@
+services:
+  forge-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "127.0.0.1:5173:5173"
+    volumes:
+      - forge-local-state:/app/.wrangler
+    # Deliberately no real credentials and no public/production deployment.
+volumes:
+  forge-local-state:

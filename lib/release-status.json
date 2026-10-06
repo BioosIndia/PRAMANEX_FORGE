@@ -1,0 +1,67 @@
+{
+  "at": "2026-10-05T21:09:07.638Z",
+  "suites": [
+    {
+      "label": "Saved model-team execution",
+      "passed": 7,
+      "failed": 0,
+      "scope": "Compiled local Worker, saved D1/R2 state and synthetic model responses; no live model-quality claim."
+    },
+    {
+      "label": "Bounded model collaboration",
+      "passed": 24,
+      "failed": 0,
+      "scope": "Model-selected delegation, parallel authors and independent reviewer with synthetic protocol fixtures; one separate live synthetic smoke passed; independently scored scientific quality remains unverified."
+    },
+    {
+      "label": "Workflow controls",
+      "passed": 329,
+      "failed": 0,
+      "scope": "Eight separate synthetic/local engineering suites; no independent regulatory accuracy."
+    },
+    {
+      "label": "Account controls",
+      "passed": 30,
+      "failed": 0,
+      "scope": "Compiled local Worker and synthetic accounts; no production-browser qualification."
+    },
+    {
+      "label": "Dashboard projections",
+      "passed": 16,
+      "failed": 0,
+      "scope": "Saved-record counts and guidance; not rendered visual fidelity."
+    },
+    {
+      "label": "Google protocol",
+      "passed": 12,
+      "failed": 0,
+      "scope": "Synthetic signed OAuth fixtures; real Google setup remains separate."
+    },
+    {
+      "label": "Model gateway safeguards",
+      "passed": 19,
+      "failed": 0,
+      "scope": "Adversarial protocol fixtures; no live model-quality claim."
+    },
+    {
+      "label": "Public document intake",
+      "passed": 25,
+      "failed": 0,
+      "scope": "Real official ICH/EMA document bytes; intake, preservation and safe HOLD only."
+    },
+    {
+      "label": "Public bundle privacy",
+      "passed": 5,
+      "failed": 0,
+      "scope": "Built client assets omit the full internal requirements register; front-end workflow code remains inspectable."
+    }
+  ],
+  "pending": [
+    "Optional vision model setup, sustained provider reliability and independently scored model evaluation; one live synthetic Groq/Firecrawl smoke has passed.",
+    "Representative permissioned product/batch data, qualified reviewer answer key and professional-user pilot.",
+    "Real Google setup, email verification/recovery and production-browser accessibility journeys.",
+    "Unattended worker scheduling, sustained-load SLOs and verified production backup/restore.",
+    "Organization-specific GxP/Part 11 qualification and regulator publishing acceptance."
+  ],
+  "boundary": "Public-safe aggregate evidence only; full internal feature/layer register remains in source documentation."
+}

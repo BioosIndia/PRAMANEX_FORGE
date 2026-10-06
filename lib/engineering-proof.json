@@ -1,0 +1,64 @@
+{
+  "at": "2026-10-04T16:37:35.199Z",
+  "passed": 329,
+  "failed": 0,
+  "suites": [
+    {
+      "name": "Core domain",
+      "file": "domain-results.json",
+      "passed": 88,
+      "failed": 0,
+      "boundary": "Executed synthetic engineering fixtures. These results do not measure independent regulatory accuracy, production load or organizational qualification."
+    },
+    {
+      "name": "D1/R2/API integration",
+      "file": "integration-results.json",
+      "passed": 47,
+      "failed": 0,
+      "boundary": "Actual local D1/R2 and API-handler integration checks; hosted sign-in and browser interaction remain separate."
+    },
+    {
+      "name": "Controlled sharing",
+      "file": "sharing-results.json",
+      "passed": 38,
+      "failed": 0,
+      "boundary": "Actual local D1/R2 and API-handler checks with synthetic identities. External organization onboarding and hosted platform/browser flows are separate. No scientific approval or release is conferred by a grant."
+    },
+    {
+      "name": "Durable runtime",
+      "file": "runtime-results.json",
+      "passed": 21,
+      "failed": 0,
+      "boundary": "Actual local Miniflare D1/R2 and authenticated API-handler tests. Provider failure/retry inputs are explicit protocol mocks; hosted scheduling and live model quality not tested."
+    },
+    {
+      "name": "Document ingestion",
+      "file": "document-results.json",
+      "passed": 35,
+      "failed": 0,
+      "boundary": "Local deterministic typed XML/DOCX/XLSX parser and adversarial archive fixtures; no PDF/OCR/live-vision or professional validation claim."
+    },
+    {
+      "name": "Expanded lifecycle",
+      "file": "lifecycle-results.json",
+      "passed": 58,
+      "failed": 0,
+      "boundary": "Local synthetic exact-source adversarial domain fixtures. No browser/hosted/provider/scientific/regulatory validation claim."
+    },
+    {
+      "name": "File formats",
+      "file": "export-results.json",
+      "passed": 16,
+      "failed": 0,
+      "boundary": "Executed synthetic artifact and file-format engineering checks. Passing technical handoff checks does not establish agency acceptance, production eCTD conformance, scientific regulatory accuracy or organizational qualification."
+    },
+    {
+      "name": "Controlled branches",
+      "file": "branch-results.json",
+      "passed": 26,
+      "failed": 0,
+      "boundary": "Synthetic engineering checks for isolated draft/rule proposals, independent exact-revision review, merge/staleness and fresh approval. No production acceptance or scientific validity claim."
+    }
+  ],
+  "boundary": "Separate synthetic engineering suites. Counts are not regulatory accuracy, hosted visual QA, live-model quality, professional validation or production acceptance."
+}

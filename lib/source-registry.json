@@ -1,0 +1,1778 @@
+{
+  "source_precedence": {
+    "expanded_identity_and_ids": "moat",
+    "canonical_baseline_and_latest_additive_controls": "current",
+    "build_and_proof_contract": "md"
+  },
+  "sources": {
+    "moat": "/workspace/scratch/61995385ee8d/site-documents/PRAMANEX_FORGE_Final_Product_Architecture_Moat_Blueprint.pdf",
+    "current": "/workspace/scratch/61995385ee8d/upload/PRAMANEX_FORGE_Enterprise_SaaS_Master_Blueprint(3)(3).pdf",
+    "md": "/workspace/scratch/61995385ee8d/upload/PRAMANEX_FORGE_Individual_Master_Build_Checklist(2).md"
+  },
+  "claim_boundary": "All entries are source-defined target requirements, not implemented proof. BUILT/TESTED/LIVE/PILOT/VALIDATED require actual artifacts, version, expected-actual cases and independent review as applicable.",
+  "items": [
+    {
+      "id": "F01",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "CMC source intake",
+      "treatment": "KEEP",
+      "purpose": "Controlled truth entry point.",
+      "behavior": "Accept controlled non-confidential or synthetic CMC documents/data; hold wrong-purpose or unsupported input.",
+      "layers": "L01-L04, L06",
+      "behavior_source": "current",
+      "behavior_page": 2
+    },
+    {
+      "id": "F02",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Field extraction",
+      "treatment": "KEEP + EXPAND",
+      "purpose": "Foundation for atomic CMC facts.",
+      "behavior": "Convert chemical/product parameters into typed candidate records with source coordinates.",
+      "layers": "L05, L09",
+      "behavior_source": "current",
+      "behavior_page": 2
+    },
+    {
+      "id": "F03",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Unit / format normalization",
+      "treatment": "KEEP",
+      "purpose": "Preserve raw + approved conversion.",
+      "behavior": "Preserve raw value and record approved conversion; never silently alter meaning.",
+      "layers": "L04-L06, L10",
+      "behavior_source": "current",
+      "behavior_page": 2
+    },
+    {
+      "id": "F04",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Source-span traceability",
+      "treatment": "KEEP - CORE",
+      "purpose": "Every accepted field remains evidence-addressable.",
+      "behavior": "Every field links to exact source version and location; missing link blocks accepted output.",
+      "layers": "L04, L07, L11",
+      "behavior_source": "current",
+      "behavior_page": 2
+    },
+    {
+      "id": "F05",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Completeness check",
+      "treatment": "KEEP",
+      "purpose": "Missing stays missing.",
+      "behavior": "Required missing information remains missing; no invented placeholder as fact.",
+      "layers": "L05-L06, L10",
+      "behavior_source": "current",
+      "behavior_page": 2
+    },
+    {
+      "id": "F06",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Wrong-value anomaly",
+      "treatment": "KEEP + EXPAND",
+      "purpose": "Candidate anomaly, never autonomous batch disposition.",
+      "behavior": "Flag suspicious/inconsistent values for review; do not autonomously declare product/batch failure.",
+      "layers": "L05-L06, L10",
+      "behavior_source": "current",
+      "behavior_page": 2
+    },
+    {
+      "id": "F07",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Cross-document consistency",
+      "treatment": "KEEP - CORE",
+      "purpose": "Preserve disagreements instead of silent merging.",
+      "behavior": "Compare controlled sources and preserve disagreements rather than silently merging them.",
+      "layers": "L04-L07, L10",
+      "behavior_source": "current",
+      "behavior_page": 2
+    },
+    {
+      "id": "F08",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Batch-uniformity map",
+      "treatment": "KEEP + EXPAND",
+      "purpose": "Grow into genealogy/comparability analytics.",
+      "behavior": "Compare defined batch parameters, units and limits; variation is not automatically failure.",
+      "layers": "L05-L07, L11",
+      "behavior_source": "current",
+      "behavior_page": 2
+    },
+    {
+      "id": "F09",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Submission-format preparation",
+      "treatment": "MAJOR EXPANSION",
+      "purpose": "Grow into structured Module 3 authoring/readiness.",
+      "behavior": "Prepare structured downstream CMC content as a draft; no autonomous submission/eCTD-conformance claim.",
+      "layers": "L05-L06, L09-L10",
+      "behavior_source": "current",
+      "behavior_page": 2
+    },
+    {
+      "id": "F10",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Human correction",
+      "treatment": "KEEP - CORE",
+      "purpose": "Human authority and revision discipline.",
+      "behavior": "Authorized reviewer accepts, corrects or rejects extracted fields with reasons; stale approval fails.",
+      "layers": "L02, L08, L10",
+      "behavior_source": "current",
+      "behavior_page": 3
+    },
+    {
+      "id": "F11",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Decision / audit record",
+      "treatment": "KEEP",
+      "purpose": "Decision provenance.",
+      "behavior": "Preserve reviewer, time, evidence version, decision, original and corrected values.",
+      "layers": "L02, L04, L11",
+      "behavior_source": "current",
+      "behavior_page": 3
+    },
+    {
+      "id": "F12",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Version / change record",
+      "treatment": "KEEP - CORE",
+      "purpose": "Selective stale propagation begins here.",
+      "behavior": "Preserve before/after lineage for sources and fields; changed source triggers affected-field review.",
+      "layers": "L04, L08, L11",
+      "behavior_source": "current",
+      "behavior_page": 3
+    },
+    {
+      "id": "F13",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Validation report",
+      "treatment": "KEEP + EXPAND",
+      "purpose": "Become test/assurance evidence layer.",
+      "behavior": "Report executed extraction/checking results, denominator, errors, exceptions and limitations.",
+      "layers": "L10-L11",
+      "behavior_source": "current",
+      "behavior_page": 3
+    },
+    {
+      "id": "F14",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Controlled export",
+      "treatment": "KEEP + EXPAND",
+      "purpose": "Become reproducible submission/evidence package.",
+      "behavior": "Produce reproducible source-linked evidence package; exclude unapproved/unsupported claims.",
+      "layers": "L02, L10-L12",
+      "behavior_source": "current",
+      "behavior_page": 3
+    },
+    {
+      "id": "F-P01",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Field dependency + source-change map",
+      "treatment": "KEEP - MOAT",
+      "purpose": "Reopen only affected downstream work.",
+      "behavior": "Link extracted source fields to downstream draft tables/sections. A changed source marks only dependent fields for re-review.",
+      "behavior_source": "current",
+      "behavior_page": 3
+    },
+    {
+      "id": "F-P02",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Unit + value conflict workbench",
+      "treatment": "KEEP",
+      "purpose": "Human-visible ambiguity.",
+      "behavior": "Show raw values, units, conversion rule, competing sources and unresolved conflict side by side.",
+      "behavior_source": "current",
+      "behavior_page": 3
+    },
+    {
+      "id": "F-P03",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Source-backed drafting contract",
+      "treatment": "KEEP - MOAT",
+      "purpose": "Every material statement supported or explicitly unresolved.",
+      "behavior": "Every material draft statement has source support or explicit MISSING / NEEDS REVIEW.",
+      "behavior_source": "current",
+      "behavior_page": 3
+    },
+    {
+      "id": "F-P04",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Reviewer correction replay",
+      "treatment": "KEEP - MOAT",
+      "purpose": "Preserve who changed what, why and against which source.",
+      "behavior": "Preserve who changed a field, why and against which source; rerun checks and invalidate stale approval.",
+      "behavior_source": "current",
+      "behavior_page": 3
+    },
+    {
+      "id": "F-P05",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Batch comparison with interpretation limits",
+      "treatment": "KEEP",
+      "purpose": "Comparability must include method/unit/limit context.",
+      "behavior": "Compare batches only with explicit method, unit and limit context; flag missing comparability.",
+      "behavior_source": "current",
+      "behavior_page": 3
+    },
+    {
+      "id": "X01",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Enterprise CMC Source Connector Mesh",
+      "layers": "L03/L12",
+      "purpose": "LIMS, MES, QMS, ELN, ERP, stability, RIM and controlled repositories."
+    },
+    {
+      "id": "X02",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Source Adapter SDK",
+      "layers": "L03/L12",
+      "purpose": "Version, test and add connectors without changing FORGE core."
+    },
+    {
+      "id": "X03",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Source Contract Monitor",
+      "layers": "L03/L11",
+      "purpose": "Detect schema/file-format/integration drift before silent failure."
+    },
+    {
+      "id": "X04",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Multimodal CMC Ingestion",
+      "layers": "L03/L05",
+      "purpose": "Structured data, PDF, Word, XML, spreadsheets, tables and scanned records."
+    },
+    {
+      "id": "X05",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Paper Batch Record Intelligence",
+      "layers": "L05/L07",
+      "purpose": "Extract source-addressable facts from legacy/paper manufacturing records."
+    },
+    {
+      "id": "X06",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Atomic CMC Fact Compiler",
+      "layers": "L05/L07",
+      "purpose": "Convert controlled sources into typed reusable CMC facts."
+    },
+    {
+      "id": "X07",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Unit + Scientific Context Engine",
+      "layers": "L05/L06",
+      "purpose": "Normalize units only with method, condition and interpretation context."
+    },
+    {
+      "id": "X08",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "CMC Ontology",
+      "layers": "L05/L07",
+      "purpose": "Controlled concepts for substance, product, process, site, test, specification and batch."
+    },
+    {
+      "id": "X09",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "CMC Regulatory Knowledge Base",
+      "layers": "L06/L07",
+      "purpose": "Versioned ICH and market-specific CMC requirement knowledge."
+    },
+    {
+      "id": "X10",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Requirement-to-Data Mapper",
+      "layers": "L06/L07",
+      "purpose": "Map obligations to required facts, evidence and dossier sections."
+    },
+    {
+      "id": "X11",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "CMC Digital Twin",
+      "layers": "L07",
+      "purpose": "Versioned machine-readable state of product, process, site, materials, specifications, methods and submissions."
+    },
+    {
+      "id": "X12",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Batch Genealogy Graph",
+      "layers": "L07",
+      "purpose": "Raw material -> intermediate -> batch -> finished-product lineage."
+    },
+    {
+      "id": "X13",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Process Genealogy Graph",
+      "layers": "L07",
+      "purpose": "Process step, CPP, CQA, equipment, site and material relationships."
+    },
+    {
+      "id": "X14",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "CMC Evidence Graph",
+      "layers": "L07",
+      "purpose": "Source -> fact -> batch/process -> statement -> dossier -> decision."
+    },
+    {
+      "id": "X15",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Dependency Graph",
+      "layers": "L07/L08",
+      "purpose": "Every downstream object that depends on a source fact or rule."
+    },
+    {
+      "id": "X16",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Cross-Document Consistency Guardian",
+      "layers": "L07/L11",
+      "purpose": "Detect contradictions and duplicated technical truth."
+    },
+    {
+      "id": "X17",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Cross-Dossier Consistency Guardian",
+      "layers": "L07/L11",
+      "purpose": "Check Module 2.3, Module 3, market dossiers and HA responses."
+    },
+    {
+      "id": "X18",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Specification Consistency Engine",
+      "layers": "L07/L11",
+      "purpose": "Compare methods, specifications, limits and versions."
+    },
+    {
+      "id": "X19",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Stability Intelligence",
+      "layers": "L07/L11",
+      "purpose": "Structure stability evidence, trends, gaps and dossier usage."
+    },
+    {
+      "id": "X20",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Comparability Evidence Engine",
+      "layers": "L07/L08",
+      "purpose": "Connect process/product changes to characterization, impurity and stability evidence."
+    },
+    {
+      "id": "X21",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Statistical / Trend Analysis Workspace",
+      "layers": "L07/L11",
+      "purpose": "Analyze manufacturing/CMC trends without autonomous product disposition."
+    },
+    {
+      "id": "X22",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Scale-Up & Tech-Transfer Evidence Map",
+      "layers": "L07",
+      "purpose": "Connect development, scale-up and commercial manufacturing evidence."
+    },
+    {
+      "id": "X23",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Structured CMC Content Library",
+      "layers": "L07/L12",
+      "purpose": "Approved reusable content blocks with lineage and market context."
+    },
+    {
+      "id": "X24",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Modular Module 3 Authoring",
+      "layers": "L08/L09",
+      "purpose": "Generate controlled 3.2.S / 3.2.P content from approved facts."
+    },
+    {
+      "id": "X25",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Evidence-Bound Data-to-Text",
+      "layers": "L09/L10",
+      "purpose": "Every generated statement tied to approved facts and source evidence."
+    },
+    {
+      "id": "X26",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Controlled Content Reuse",
+      "layers": "L08/L10",
+      "purpose": "Reuse approved content while tracking dependencies and stale state."
+    },
+    {
+      "id": "X27",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Template & Style Engine",
+      "layers": "L08/L12",
+      "purpose": "Company/authority templates, terminology and formatting rules."
+    },
+    {
+      "id": "X28",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "AI CMC Authoring Agent",
+      "layers": "L09",
+      "purpose": "Bounded authoring; cannot create unsupported regulated claims."
+    },
+    {
+      "id": "X29",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Independent CMC QC Agent",
+      "layers": "L09/L11",
+      "purpose": "Independent numeric, terminology, citation, table and omission checks."
+    },
+    {
+      "id": "X30",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Technical Formatting Engine",
+      "layers": "L08/L12",
+      "purpose": "Controlled Word/PDF/table/reference preparation."
+    },
+    {
+      "id": "X31",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Module 3 Structural Validator",
+      "layers": "L11",
+      "purpose": "Validate section structure, mandatory content and dependency coverage."
+    },
+    {
+      "id": "X32",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "eCTD Technical Preflight",
+      "layers": "L11/L12",
+      "purpose": "Optional technical preflight before publishing handoff."
+    },
+    {
+      "id": "X33",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Submission Readiness Engine",
+      "layers": "L08/L11",
+      "purpose": "Combine evidence gaps, review, validation and dependency blockers."
+    },
+    {
+      "id": "X34",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "CMC Readiness Scorecard",
+      "layers": "L11",
+      "purpose": "Transparent blocker dimensions, not an opaque single score."
+    },
+    {
+      "id": "X35",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "CDMO Collaboration Workspace",
+      "layers": "L01/L02/L12",
+      "purpose": "Scoped external access to specific CMC objects and review tasks."
+    },
+    {
+      "id": "X36",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Global Market CMC Matrix",
+      "layers": "L06/L07",
+      "purpose": "Product x market x submitted/current CMC state."
+    },
+    {
+      "id": "X37",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Change Classification Assistant",
+      "layers": "L06/L09",
+      "purpose": "Evidence-backed candidate reporting category; human decision required."
+    },
+    {
+      "id": "X38",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Market-Specific Variation Mapper",
+      "layers": "L06/L07",
+      "purpose": "Map CMC change to jurisdictions potentially requiring action."
+    },
+    {
+      "id": "X39",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Global CMC Change Simulator",
+      "layers": "L07/L08",
+      "purpose": "Simulate a proposed change before production adoption."
+    },
+    {
+      "id": "X40",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "CMC Blast-Radius Engine",
+      "layers": "L07/L08",
+      "purpose": "Change -> facts -> batches -> processes -> dossiers -> markets."
+    },
+    {
+      "id": "X41",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Proof-of-Non-Impact",
+      "layers": "L07/L10",
+      "purpose": "Evidence-backed reason an object/market is excluded."
+    },
+    {
+      "id": "X42",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Selective Staleness Propagation",
+      "layers": "L08/L10",
+      "purpose": "Invalidate only dependent work affected by change."
+    },
+    {
+      "id": "X43",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "CMC Regression Engine",
+      "layers": "L08/L11",
+      "purpose": "Re-run consistency/requirement/readiness tests after relevant change."
+    },
+    {
+      "id": "X44",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "CMC Policy-as-Code",
+      "layers": "L06/L11",
+      "purpose": "Version-controlled machine-testable approved controls."
+    },
+    {
+      "id": "X45",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Regulatory Requirement Test Coverage",
+      "layers": "L11",
+      "purpose": "Show obligations with/without executable checks."
+    },
+    {
+      "id": "X46",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Decision Dependency Graph",
+      "layers": "L07/L10",
+      "purpose": "Make every approval dependency explicit."
+    },
+    {
+      "id": "X47",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Revision-Bound CMC Decision Contract",
+      "layers": "L10",
+      "purpose": "Bind evidence + data + rule + reviewer + model/workflow revisions."
+    },
+    {
+      "id": "X48",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Automatic Approval Invalidation",
+      "layers": "L08/L10",
+      "purpose": "Reopen decision when material dependency changes."
+    },
+    {
+      "id": "X49",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Historical CMC Decision Replay",
+      "layers": "L04/L11",
+      "purpose": "Recreate exactly what reviewer saw at decision time."
+    },
+    {
+      "id": "X50",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "CMC State Time Machine",
+      "layers": "L04/L07/L11",
+      "purpose": "View product/dossier state at any selected historical date."
+    },
+    {
+      "id": "X51",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Submission Snapshot",
+      "layers": "L04/L10",
+      "purpose": "Immutable fact/content/evidence state supporting a filing."
+    },
+    {
+      "id": "X52",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "As-Submitted vs Current-State Comparator",
+      "layers": "L07/L11",
+      "purpose": "Identify divergence between filed representation and current CMC truth."
+    },
+    {
+      "id": "X53",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Health Authority Question Intake",
+      "layers": "L03/L08",
+      "purpose": "Ingest and version HA questions and requests."
+    },
+    {
+      "id": "X54",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Similar HAQ / Precedent Retrieval",
+      "layers": "L07/L09",
+      "purpose": "Retrieve approved historic questions/responses and supporting evidence."
+    },
+    {
+      "id": "X55",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Source-Linked HA Response Drafting",
+      "layers": "L09/L10",
+      "purpose": "Generate bounded response candidate with exact CMC evidence."
+    },
+    {
+      "id": "X56",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Query-to-Dossier Dependency Map",
+      "layers": "L07",
+      "purpose": "Connect HA question to dossier sections, facts and source evidence."
+    },
+    {
+      "id": "X57",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Query Outcome Memory",
+      "layers": "L04/L07",
+      "purpose": "Preserve approved response/outcome as institutional knowledge."
+    },
+    {
+      "id": "X58",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Reviewer Query Risk Predictor",
+      "layers": "L09/L11",
+      "purpose": "Surface likely CMC reviewer questions as predictions, not facts."
+    },
+    {
+      "id": "X59",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "CMC Decision Debt Register",
+      "layers": "L08/L10",
+      "purpose": "Track stale, unresolved, overdue and evidence-deficient decisions."
+    },
+    {
+      "id": "X60",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Continuous CMC Drift Detection",
+      "layers": "L07/L11",
+      "purpose": "Detect divergence between source truth and approved dossier state."
+    },
+    {
+      "id": "X61",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Controlled Correction Propagation",
+      "layers": "L08/L10",
+      "purpose": "Safely propagate approved correction to dependent content."
+    },
+    {
+      "id": "X62",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Submission / RIM Handoff",
+      "layers": "L12",
+      "purpose": "Integrate with Veeva/Lorenz/RIM/publishing instead of replacing them."
+    },
+    {
+      "id": "X63",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "QMS Change-Control Handoff",
+      "layers": "L12",
+      "purpose": "Connect CMC regulatory impact to quality change control."
+    },
+    {
+      "id": "X64",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Closure Evidence Verification",
+      "layers": "L10/L11",
+      "purpose": "Compare required outcome vs actual implementation evidence."
+    },
+    {
+      "id": "X65",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Persistent Closure Monitoring",
+      "layers": "L08/L11",
+      "purpose": "Reopen closed work when later evidence invalidates closure."
+    },
+    {
+      "id": "X66",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "CMC Knowledge Memory",
+      "layers": "L07",
+      "purpose": "Approved templates, submissions, HAQs, corrections and precedents."
+    },
+    {
+      "id": "X67",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Portfolio CMC Command Center",
+      "layers": "L08/L11",
+      "purpose": "Cross-product readiness, stale state, risk, HAQ and action queues."
+    },
+    {
+      "id": "X68",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Executive CMC Change Radar",
+      "layers": "L08/L11",
+      "purpose": "Management visibility with drill- down to underlying evidence."
+    },
+    {
+      "id": "L01",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "Workspace, Program & Tenant Isolation",
+      "purpose": "Separate company, product, program, market and CDMO data/workspaces.",
+      "baseline_name": "Workspace & tenant isolation"
+    },
+    {
+      "id": "L02",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "Identity, Authority & Segregation of Duties",
+      "purpose": "Author, reviewer, approver, admin and external- partner authority.",
+      "baseline_name": "Identity, roles & approval"
+    },
+    {
+      "id": "L03",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "CMC Source & Enterprise Connector Mesh",
+      "purpose": "Controlled LIMS/MES/ELN/QMS/ERP/RIM/stability/file intake and connector health.",
+      "baseline_name": "Authorized source & intake"
+    },
+    {
+      "id": "L04",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "Immutable CMC Evidence & Version Ledger",
+      "purpose": "Original files, raw values, hashes, revisions, corrections, submission snapshots and decision history.",
+      "baseline_name": "Storage, metadata & versioning"
+    },
+    {
+      "id": "L05",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "CMC Parsing, Fact Extraction & Semantic Normalization",
+      "purpose": "Extract typed facts, coordinates, methods, units and conditions while preserving originals.",
+      "baseline_name": "Domain parsing & normalization"
+    },
+    {
+      "id": "L06",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "Scientific, Regulatory & Market Context Governance",
+      "purpose": "Product/process context, ICH/market requirements, intended use and permitted transformations.",
+      "baseline_name": "Source / policy / context governance"
+    },
+    {
+      "id": "L07",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "CMC Digital Twin + Evidence + Dependency Graph",
+      "purpose": "Product/process/batch/site/fact/document/ submission/market/decision relationships.",
+      "baseline_name": "Evidence graph, retrieval & analytics"
+    },
+    {
+      "id": "L08",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "CMC Lifecycle & ChangeOps Orchestration",
+      "purpose": "Intake -> check -> author -> review -> handoff -> HAQ -> change -> closure -> replay.",
+      "baseline_name": "Workflow state & orchestration"
+    },
+    {
+      "id": "L09",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "Bounded AI / Agent Runtime",
+      "purpose": "Extraction, research, authoring, QC, comparison and prediction with typed boundaries.",
+      "baseline_name": "Bounded multi-agent / model routing"
+    },
+    {
+      "id": "L10",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "CMC Decision Integrity & Human Authority",
+      "purpose": "Evidence sufficiency, approval gates, revision binding, stale/invalidation and e-signature integration.",
+      "baseline_name": "Safety, security & human decision"
+    },
+    {
+      "id": "L11",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Assurance, Testing, Audit & Observability",
+      "purpose": "Validation, regression, replay, model evaluation, SLOs and audit evidence.",
+      "baseline_name": "Evaluation, audit, reporting & feedback"
+    },
+    {
+      "id": "L12",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Submission Integration, Operations & Scale",
+      "purpose": "RIM/QMS/publishing APIs, queues, notifications, backups, DR and scale.",
+      "baseline_name": "Integration, operations & scale"
+    },
+    {
+      "id": "P01",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "CMC Evidence Integrity",
+      "purpose": "Prove where every accepted fact/statement came from.",
+      "boundary": "No accepted output without exact source/version support."
+    },
+    {
+      "id": "P02",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "CMC State Integrity",
+      "purpose": "Maintain current Digital Twin plus historical states.",
+      "boundary": "Corrections create revisions; historical state is not silently rewritten."
+    },
+    {
+      "id": "P03",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "CMC Change & Lifecycle Integrity",
+      "purpose": "Propagate staleness, regression and market- impact checks.",
+      "boundary": "Material change must trigger dependent re- evaluation."
+    },
+    {
+      "id": "P04",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Submission & Decision Integrity",
+      "purpose": "Keep dossiers, variations, HA responses and approvals revision-bound.",
+      "boundary": "No stale/concurrent approval and no autonomous regulated disposition."
+    },
+    {
+      "id": "A1",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Source Connector Guardian",
+      "purpose": "Connect, authorize, version and health- check sources.",
+      "boundary": "Cannot alter scientific facts."
+    },
+    {
+      "id": "A2",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Multimodal Parser",
+      "purpose": "Parse tables/text/scans and preserve coordinates.",
+      "boundary": "Cannot invent missing content."
+    },
+    {
+      "id": "A3",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "CMC Fact Extractor",
+      "purpose": "Build typed candidate CMC facts.",
+      "boundary": "Low confidence remains candidate."
+    },
+    {
+      "id": "A4",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Unit & Method Normalizer",
+      "purpose": "Normalize comparable data with context.",
+      "boundary": "Raw value always preserved."
+    },
+    {
+      "id": "A5",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Consistency Critic",
+      "purpose": "Detect gaps and contradictions.",
+      "boundary": "Cannot silently select a winning source."
+    },
+    {
+      "id": "A6",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Batch / Process Genealogy Agent",
+      "purpose": "Build material/batch/process relationships.",
+      "boundary": "No autonomous batch disposition."
+    },
+    {
+      "id": "A7",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Regulatory Requirement Agent",
+      "purpose": "Map requirements to facts/sections.",
+      "boundary": "No final legal/regulatory conclusion."
+    },
+    {
+      "id": "A8",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Comparability Agent",
+      "purpose": "Build candidate comparability evidence.",
+      "boundary": "Cannot approve the change."
+    },
+    {
+      "id": "A9",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Blast-Radius Agent",
+      "purpose": "Compute affected dependencies/markets.",
+      "boundary": "Impact remains candidate until reviewed."
+    },
+    {
+      "id": "A10",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Structured Authoring Agent",
+      "purpose": "Compose evidence-bound Module 3 content.",
+      "boundary": "Unsupported statements blocked."
+    },
+    {
+      "id": "A11",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Independent QC Agent",
+      "purpose": "Check numbers, terminology, citations, omissions and consistency.",
+      "boundary": "Separate from authoring; cannot self- approve."
+    },
+    {
+      "id": "A12",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Submission Readiness Agent",
+      "purpose": "Identify evidence/content/review blockers.",
+      "boundary": "Cannot claim authority acceptance."
+    },
+    {
+      "id": "A13",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Variation Classification Agent",
+      "purpose": "Recommend candidate reporting category.",
+      "boundary": "Human decision required."
+    },
+    {
+      "id": "A14",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Reviewer Query Predictor",
+      "purpose": "Surface possible CMC questions.",
+      "boundary": "Prediction clearly labeled."
+    },
+    {
+      "id": "A15",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "HAQ Response Agent",
+      "purpose": "Draft source-linked response candidate.",
+      "boundary": "Human review mandatory."
+    },
+    {
+      "id": "A16",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Decision Integrity Agent",
+      "purpose": "Verify evidence, revision and authority dependencies.",
+      "boundary": "Cannot approve its own validation."
+    },
+    {
+      "id": "A17",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Closure Verifier",
+      "purpose": "Compare expected vs actual implementation evidence.",
+      "boundary": "Cannot self-close."
+    },
+    {
+      "id": "A18",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Audit & Replay Agent",
+      "purpose": "Reconstruct historical CMC state and decision chain.",
+      "boundary": "Cannot modify history."
+    },
+    {
+      "id": "D01",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "CMC Source Contract Tests",
+      "purpose": "Detect connector/schema drift before silent ingestion failures."
+    },
+    {
+      "id": "D02",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "CMC Extraction Unit Tests",
+      "purpose": "Verify known facts, coordinates, gaps and altered values."
+    },
+    {
+      "id": "D03",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Unit / Method Conversion Tests",
+      "purpose": "Prevent unsafe automatic normalization."
+    },
+    {
+      "id": "D04",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Cross-Document Regression Tests",
+      "purpose": "Re-test consistency after source/content changes."
+    },
+    {
+      "id": "D05",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Cross-Dossier Regression Tests",
+      "purpose": "Re-test linked Module 2.3 / Module 3 / market dossiers / HA responses."
+    },
+    {
+      "id": "D06",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Module 3 Requirement Coverage Tests",
+      "purpose": "Track required content and supporting evidence."
+    },
+    {
+      "id": "D07",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "CMC Change Simulation Environment",
+      "purpose": "Test proposed changes without altering approved state."
+    },
+    {
+      "id": "D08",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Draft / Rule Version Branching",
+      "purpose": "Isolate proposed content/rules before approval."
+    },
+    {
+      "id": "D09",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Controlled Review / Merge Gate",
+      "purpose": "Only validated and human-approved revisions become active."
+    },
+    {
+      "id": "D10",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Shadow Model Deployment",
+      "purpose": "Evaluate new models/extractors beside approved runtime."
+    },
+    {
+      "id": "D11",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Agent / Prompt / Extractor Versioning",
+      "purpose": "Every machine output records exact runtime configuration."
+    },
+    {
+      "id": "D12",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Scientific Fixture Library",
+      "purpose": "Frozen cases for repeatable expected-vs-actual testing."
+    },
+    {
+      "id": "D13",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Source Failure / Corruption Chaos Tests",
+      "purpose": "Exercise malformed/partial/missing source behavior."
+    },
+    {
+      "id": "D14",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Connector Failure Tests",
+      "purpose": "Verify bounded retries, hold states and no fabricated success."
+    },
+    {
+      "id": "D15",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Restore + Filing Reconstruction Test",
+      "purpose": "Restore backup and recreate a historical filing/decision package."
+    },
+    {
+      "id": "D16",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Field Traceability SLO",
+      "purpose": "Track accepted content with valid exact evidence."
+    },
+    {
+      "id": "D17",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Evidence Freshness SLO",
+      "purpose": "Track stale/expired evidence and knowledge."
+    },
+    {
+      "id": "D18",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Extraction Accuracy Metrics",
+      "purpose": "Publish actual fixture-based precision/match rates."
+    },
+    {
+      "id": "D19",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Conflict Detection Metrics",
+      "purpose": "Measure expected conflicts surfaced."
+    },
+    {
+      "id": "D20",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Submission Readiness Latency",
+      "purpose": "Measure time from source readiness to controlled draft/readiness state."
+    },
+    {
+      "id": "D21",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Change-to-Impact Detection Latency",
+      "purpose": "Measure time from changed truth to identified dependent impact."
+    },
+    {
+      "id": "D22",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Full CMC Workflow Observability",
+      "purpose": "Trace one correlation ID from source -> agent -> decision -> integration -> closure."
+    },
+    {
+      "id": "01",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "CONNECT",
+      "purpose": "Approved CMC and enterprise sources."
+    },
+    {
+      "id": "02",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "PRESERVE",
+      "purpose": "Raw source bytes/data, hash, metadata and version."
+    },
+    {
+      "id": "03",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "PARSE",
+      "purpose": "Structured/unstructured records with coordinates."
+    },
+    {
+      "id": "04",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "EXTRACT",
+      "purpose": "Typed atomic CMC facts."
+    },
+    {
+      "id": "05",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "NORMALIZE",
+      "purpose": "Units/method/context without destroying raw truth."
+    },
+    {
+      "id": "06",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "TRACE",
+      "purpose": "Every fact to exact evidence."
+    },
+    {
+      "id": "07",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "CHECK",
+      "purpose": "Missing, conflicting and suspicious information."
+    },
+    {
+      "id": "08",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "MODEL",
+      "purpose": "Build/update CMC Digital Twin."
+    },
+    {
+      "id": "09",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "GENEALOGY",
+      "purpose": "Build batch/process/material relationships."
+    },
+    {
+      "id": "10",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "MAP REQUIREMENTS",
+      "purpose": "Connect regulatory obligations to facts/evidence."
+    },
+    {
+      "id": "11",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "COMPARE",
+      "purpose": "Batches, processes, methods and specifications."
+    },
+    {
+      "id": "12",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "COMPARABILITY",
+      "purpose": "Build scientific comparability evidence."
+    },
+    {
+      "id": "13",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "AUTHOR",
+      "purpose": "Generate source-backed structured Module 3 content."
+    },
+    {
+      "id": "14",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "QC",
+      "purpose": "Independent content/data/citation verification."
+    },
+    {
+      "id": "15",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "CONSISTENCY",
+      "purpose": "Cross-document and cross-dossier checks."
+    },
+    {
+      "id": "16",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "READINESS",
+      "purpose": "Assess evidence/review/structure blockers."
+    },
+    {
+      "id": "17",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "HUMAN REVIEW",
+      "purpose": "Approve/revise/request evidence/reject exact revision."
+    },
+    {
+      "id": "18",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "SNAPSHOT",
+      "purpose": "Create immutable submission state."
+    },
+    {
+      "id": "19",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "HANDOFF",
+      "purpose": "RIM/publishing integration."
+    },
+    {
+      "id": "20",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "HAQ INTAKE",
+      "purpose": "Capture health-authority question."
+    },
+    {
+      "id": "21",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "RESEARCH",
+      "purpose": "Retrieve evidence and precedent."
+    },
+    {
+      "id": "22",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "RESPOND",
+      "purpose": "Draft controlled evidence-linked answer."
+    },
+    {
+      "id": "23",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "MEMORY",
+      "purpose": "Store approved question/response/outcome."
+    },
+    {
+      "id": "24",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "CHANGE",
+      "purpose": "Detect proposed or actual CMC change."
+    },
+    {
+      "id": "25",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "BLAST RADIUS",
+      "purpose": "Calculate dependent products, batches, dossiers and markets."
+    },
+    {
+      "id": "26",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "ASSESS",
+      "purpose": "Comparability and evidence sufficiency."
+    },
+    {
+      "id": "27",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "SIMULATE",
+      "purpose": "Model market-specific regulatory consequences."
+    },
+    {
+      "id": "28",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "CLASSIFY",
+      "purpose": "Candidate variation/reporting pathway."
+    },
+    {
+      "id": "29",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "REGRESSION",
+      "purpose": "Re-test impacted CMC state."
+    },
+    {
+      "id": "30",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "INVALIDATE",
+      "purpose": "Mark affected approvals/content stale."
+    },
+    {
+      "id": "31",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "DECIDE",
+      "purpose": "Named human approves action."
+    },
+    {
+      "id": "32",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "PROPAGATE",
+      "purpose": "Apply controlled approved correction/change."
+    },
+    {
+      "id": "33",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "VERIFY CLOSURE",
+      "purpose": "Compare expected vs actual evidence."
+    },
+    {
+      "id": "34",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "MONITOR",
+      "purpose": "Continuously detect CMC drift / closure invalidation."
+    },
+    {
+      "id": "35",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "REPLAY",
+      "purpose": "Reconstruct any historical filing/decision exactly."
+    }
+  ],
+  "additional_controls": [
+    {
+      "id": "L05-vision",
+      "name": "Vision-LLM & Tabular Extraction Pipeline",
+      "source": "current",
+      "page": 5,
+      "purpose": "Deterministic parser first; use Vision-LLM/document AI for complex CoAs, graphs and nested tables; output typed candidate JSON with original bytes, page rendering, coordinates and parser/model version. Unreadable/ambiguous/low confidence -> NEEDS_REVIEW/HOLD.",
+      "maturity": "SPECIFIED"
+    },
+    {
+      "id": "L09-fallback",
+      "name": "Deterministic Fallback & Dead-Letter Queue (DLQ)",
+      "source": "current",
+      "page": 5,
+      "purpose": "Maximum 3 eligible idempotent retries with exponential backoff; noncritical draft/format/async tasks DLQ with run/revision/payload/reason/count; rule/manual verification for mandatory workflow while AI unavailable. No fabricated success or silent model substitution.",
+      "maturity": "SPECIFIED"
+    },
+    {
+      "id": "11A-MDM",
+      "name": "Data model / schema definition - MDM readiness",
+      "source": "current",
+      "page": 10,
+      "purpose": "Product_ID, Batch_ID, Facility_ID, User_ID preserve local IDs and accept external_uuid, external_system, mapping_status (UNMAPPED/MATCHED/CONFLICT/RETIRED), mapping history/effective timestamps. Tenant/purpose/authorization before joins. Correlation key does not grant authority.",
+      "maturity": "SPECIFIED"
+    },
+    {
+      "id": "12A-signature",
+      "name": "Human Authority & Finalization - E-Signature Gateway",
+      "source": "current",
+      "page": 12,
+      "purpose": "Password+OTP or approved biometric second factor; reason for signature; exact dossier/export revision and manifest hash; UTC signer audit. Material change needs re-review/re-sign; stale/hash mismatch/auth failure -> HOLD/REAUTHENTICATE/RE-REVIEW. Part 11 oriented control, not compliance certification.",
+      "maturity": "SPECIFIED"
+    }
+  ],
+  "unresolved_identifiers": [
+    {
+      "id": "S-P01",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    },
+    {
+      "id": "S-P02",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    },
+    {
+      "id": "S-P03",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    },
+    {
+      "id": "S-P04",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    },
+    {
+      "id": "S-P05",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    },
+    {
+      "id": "S-P06",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    }
+  ],
+  "nonnegotiable_boundaries": [
+    "One deterministic parent owns authorization, idempotency, persistence, waits, retries, state transitions and controlled writes.",
+    "Agents perform bounded candidate work; exhausted work is visible HOLD/EXHAUSTED.",
+    "Author A10 differs from independent QC A11 and human approver; A17 cannot self-close.",
+    "Exact source/version/span required for accepted facts and material statements; missing remains missing.",
+    "Original bytes/raw values never overwritten by normalization/model output; corrections create revisions.",
+    "Human authority determines scientific comparability, reporting, batch disposition and release; no autonomous regulated disposition.",
+    "Evidence/data/rule/model/workflow material changes invalidate only affected decisions, preserving historical state and evidence-backed non-impact.",
+    "Frozen scientific fixtures and actual denominators required; synthetic engineering tests do not establish independent RA accuracy or customer outcomes.",
+    "No regulatory acceptance, GxP/Part 11 validation, production security, real-world ROI or world-first claim without separate evidence.",
+    "Cross-tenant object/row/vector/export access prohibited; membership revocation after pauses checked.",
+    "Raw originals, metadata, lineage, coordinates, parser/model/prompt versions preserved before analysis.",
+    "No client secrets, proprietary/company/patient records or confidential analytics without permission and controls."
+  ],
+  "source_gaps_and_reconciliations": [
+    {
+      "issue": "Prior inventory lacked exact X/A/D/workflow names",
+      "resolution": "Expanded moat PDF located locally; it resolves all X01-X68, A1-A18, D01-D22 and 35 stage names."
+    },
+    {
+      "issue": "MD header references Blueprint(1).pdf while current attachment is (3)(3).pdf",
+      "resolution": "Preserve MD acceptance rules; append additive current blueprint controls and source provenance. Do not silently overwrite source versions."
+    },
+    {
+      "issue": "Current product title CMC Documentation & Traceability OS versus expanded final title CMC Digital Thread, Authoring & Lifecycle Integrity OS",
+      "resolution": "Use expanded identity; treat current narrow flow as canonical baseline, not separate parallel product."
+    },
+    {
+      "issue": "Current L names shorter than expanded L names",
+      "resolution": "Preserve stable L IDs and baseline responsibilities; expanded names/meaning are additive."
+    },
+    {
+      "issue": "Six current blueprint practical specialists versus 18 expanded logical roles",
+      "resolution": "Six task functions fit bounded runtime; activate expanded roles only when actual data/task contracts need them. No 18-active-agent claim."
+    },
+    {
+      "issue": "S-P01-S-P06 individual titles unavailable",
+      "resolution": "Keep unresolved ledger entries; implement explicit hardening requirements without inventing source ID semantics."
+    },
+    {
+      "issue": "Production readiness cannot be concluded from specification",
+      "resolution": "Deploy, auth/tenant negatives, backup/restore, external contracts, load/capacity, domain answer key and consented organization pilot required."
+    }
+  ],
+  "workflow_note": "35 ordered named stages are expanded moat p10; current canonical intake-extract-trace-normalize-review-export subflow is a baseline within this larger flow. Runtime may branch; stage names do not require 35 UI screens.",
+  "maturity_sequence": [
+    "SPECIFIED",
+    "BUILT",
+    "TESTED",
+    "LIVE DEMO",
+    "PILOT",
+    "VALIDATED USE"
+  ],
+  "evidence_record_fields": [
+    "ID",
+    "current maturity",
+    "exact artifact",
+    "commit/version",
+    "test case and actual result",
+    "reviewer",
+    "date",
+    "limitation"
+  ]
+}
