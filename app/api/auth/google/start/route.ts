@@ -1,0 +1,2 @@
+import {authFailure,authRateLimit} from '@/lib/forge-auth';import {startGoogle} from '@/lib/google-auth';import {cookie,OAUTH_COOKIE} from '@/lib/auth-policy';
+export async function GET(request:Request){try{await authRateLimit(request,'google','google');const flow=await startGoogle(new URL(request.url).searchParams.get('return_to'));return new Response(null,{status:302,headers:{location:flow.url,'set-cookie':cookie(OAUTH_COOKIE,flow.state,600),'cache-control':'no-store'}});}catch(e){return authFailure(e);}}
