@@ -1,0 +1,1 @@
+Original supplied Bio Lab, Selectra, QGen screen recordings and dashboard reference image, preserved unchanged. These are third-party visual references, not actual FORGE UI captures, demos, endorsements or original FORGE artwork. Review rights before public redistribution. Do not confuse them with the separately labelled synthetic workflow explainer.

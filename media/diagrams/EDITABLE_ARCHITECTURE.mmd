@@ -1,0 +1,10 @@
+flowchart TD
+  S["Authorized versioned source"] --> C["Typed evidence and context"]
+  C --> W["Bounded workflow and saved candidates"]
+  W --> G{"Current and sufficient evidence?"}
+  G -->|No| H["HOLD and request evidence"]
+  G -->|Yes| R["Named human review of exact revision"]
+  R --> O["Controlled output and audit"]
+  H --> C
+  S -->|New revision| T["Affected output and approval stale"]
+  T --> W

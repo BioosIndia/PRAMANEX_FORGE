@@ -1,0 +1,1559 @@
+{
+  "id": "synthetic-cmc-working-proof-v1",
+  "fixtureVersion": "CMC-working-proof/1",
+  "state": {
+    "version": 16,
+    "name": "Drug X · saved CMC work sample",
+    "product": "Drug X 100 mg immediate-release tablet (synthetic)",
+    "purpose": "Controlled CMC evidence and draft preparation",
+    "createdAt": "2026-10-06T06:45:50.058Z",
+    "policy": {
+      "version": "policy/1",
+      "required": [
+        "assay",
+        "water",
+        "impurity",
+        "dissolution"
+      ],
+      "reviewerSeparation": true,
+      "release": false
+    },
+    "sources": [
+      {
+        "id": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+        "logicalId": "doc_7a9b6705-2f7c-4cf6-866c-4922afbe273c",
+        "name": "SYN-COA-A.json",
+        "type": "application/json",
+        "hash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+        "text": "{\n  \"parameters\": [\n    {\n      \"parameter\": \"assay\",\n      \"value\": 98.6,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    },\n    {\n      \"parameter\": \"water\",\n      \"value\": 0.3,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    },\n    {\n      \"parameter\": \"impurity\",\n      \"value\": 0.08,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }\n  ]\n}",
+        "objectKey": null,
+        "permission": "Synthetic portfolio fixture only; no confidential or commercial data.",
+        "purpose": "Controlled CMC evidence and draft preparation",
+        "version": 1,
+        "status": "PARSED",
+        "at": "2026-10-06T06:45:50.067Z",
+        "parser": "forge-typed-parser/1",
+        "product": "Drug X 100 mg immediate-release tablet (synthetic)",
+        "dataLabel": "SYNTHETIC",
+        "uploadedBy": "synthetic-example-author",
+        "extractedAt": "2026-10-06T06:45:50.072Z",
+        "failure": null
+      },
+      {
+        "id": "src_63141b10-7e9e-4c91-9361-ea9eca7257d1",
+        "logicalId": "doc_3775fb30-41af-4ecd-a1e0-f788c706229f",
+        "name": "SYN-BATCH-A.json",
+        "type": "application/json",
+        "hash": "67caf77bf480631f1145acbc1eea91926e6a841d29285853e23037b9becb2211",
+        "text": "{\n  \"parameters\": [\n    {\n      \"parameter\": \"assay\",\n      \"value\": 99.1,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    }\n  ]\n}",
+        "objectKey": null,
+        "permission": "Synthetic portfolio fixture only; no confidential or commercial data.",
+        "purpose": "Controlled CMC evidence and draft preparation",
+        "version": 1,
+        "status": "PARSED",
+        "at": "2026-10-06T06:45:50.073Z",
+        "parser": "forge-typed-parser/1",
+        "product": "Drug X 100 mg immediate-release tablet (synthetic)",
+        "dataLabel": "SYNTHETIC",
+        "uploadedBy": "synthetic-example-author",
+        "extractedAt": "2026-10-06T06:45:50.075Z",
+        "failure": null
+      },
+      {
+        "id": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+        "logicalId": "doc_aafa3313-c3d3-49fa-bdfe-7f21ced53ab7",
+        "name": "SYN-COA-B.json",
+        "type": "application/json",
+        "hash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+        "text": "{\n  \"parameters\": [\n    {\n      \"parameter\": \"assay\",\n      \"value\": 986,\n      \"unit\": \"mg/g\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 950,\n      \"high\": 1050,\n      \"basis\": \"mass\"\n    },\n    {\n      \"parameter\": \"water\",\n      \"value\": 0.4,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    },\n    {\n      \"parameter\": \"impurity\",\n      \"value\": 0.09,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }\n  ]\n}",
+        "objectKey": null,
+        "permission": "Synthetic portfolio fixture only; no confidential or commercial data.",
+        "purpose": "Controlled CMC evidence and draft preparation",
+        "version": 1,
+        "status": "PARSED",
+        "at": "2026-10-06T06:45:50.075Z",
+        "parser": "forge-typed-parser/1",
+        "product": "Drug X 100 mg immediate-release tablet (synthetic)",
+        "dataLabel": "SYNTHETIC",
+        "uploadedBy": "synthetic-example-author",
+        "extractedAt": "2026-10-06T06:45:50.077Z",
+        "failure": null
+      }
+    ],
+    "fields": [
+      {
+        "parameter": "assay",
+        "rawValue": "98.6",
+        "rawUnit": "%",
+        "method": "HPLC-SYN-01",
+        "batch": "SYN-A",
+        "product": "Drug X 100 mg immediate-release tablet (synthetic)",
+        "facility": "",
+        "low": 95,
+        "high": 105,
+        "rawLowLexeme": "95",
+        "rawHighLexeme": "105",
+        "condition": "",
+        "timePoint": null,
+        "timeUnit": "",
+        "rawTimePoint": null,
+        "basis": "mass",
+        "span": {
+          "page": null,
+          "line": 3,
+          "table": "parameters",
+          "row": 1,
+          "column": "value",
+          "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 98.6,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    }",
+          "path": "parameters[0].value",
+          "start": 24,
+          "end": 212,
+          "offsetKind": "UTF-16 character offsets",
+          "valueToken": "98.6"
+        },
+        "id": "fact_a8cbb83f-43a3-4811-ac32-07ea90b4ee5d",
+        "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+        "sourceVersion": 1,
+        "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+        "revision": 1,
+        "at": "2026-10-06T06:45:50.071Z",
+        "rawLow": 95,
+        "rawHigh": 105,
+        "value": 98.6,
+        "unit": "%",
+        "status": "NEEDS_REVIEW",
+        "normalization": null,
+        "issues": [
+          "UNRESOLVED_CONFLICT"
+        ]
+      },
+      {
+        "parameter": "water",
+        "rawValue": "0.3",
+        "rawUnit": "%",
+        "method": "KF-SYN-01",
+        "batch": "SYN-A",
+        "product": "Drug X 100 mg immediate-release tablet (synthetic)",
+        "facility": "",
+        "low": 0,
+        "high": 1,
+        "rawLowLexeme": "0",
+        "rawHighLexeme": "1",
+        "condition": "",
+        "timePoint": null,
+        "timeUnit": "",
+        "rawTimePoint": null,
+        "basis": "mass",
+        "span": {
+          "page": null,
+          "line": 13,
+          "table": "parameters",
+          "row": 2,
+          "column": "value",
+          "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.3,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+          "path": "parameters[1].value",
+          "start": 218,
+          "end": 400,
+          "offsetKind": "UTF-16 character offsets",
+          "valueToken": "0.3"
+        },
+        "id": "fact_5c3b463f-6faa-40bf-9dca-9b0af3ae1bab",
+        "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+        "sourceVersion": 1,
+        "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+        "revision": 1,
+        "at": "2026-10-06T06:45:50.072Z",
+        "rawLow": 0,
+        "rawHigh": 1,
+        "value": 0.3,
+        "unit": "%",
+        "status": "APPROVED",
+        "normalization": null,
+        "issues": []
+      },
+      {
+        "parameter": "impurity",
+        "rawValue": "0.08",
+        "rawUnit": "%",
+        "method": "HPLC-SYN-02",
+        "batch": "SYN-A",
+        "product": "Drug X 100 mg immediate-release tablet (synthetic)",
+        "facility": "",
+        "low": 0,
+        "high": 0.2,
+        "rawLowLexeme": "0",
+        "rawHighLexeme": "0.2",
+        "condition": "",
+        "timePoint": null,
+        "timeUnit": "",
+        "rawTimePoint": null,
+        "basis": "mass",
+        "span": {
+          "page": null,
+          "line": 23,
+          "table": "parameters",
+          "row": 3,
+          "column": "value",
+          "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.08,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+          "path": "parameters[2].value",
+          "start": 406,
+          "end": 596,
+          "offsetKind": "UTF-16 character offsets",
+          "valueToken": "0.08"
+        },
+        "id": "fact_593b613b-614b-4bfe-b18a-cc6e47e7e114",
+        "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+        "sourceVersion": 1,
+        "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+        "revision": 1,
+        "at": "2026-10-06T06:45:50.072Z",
+        "rawLow": 0,
+        "rawHigh": 0.2,
+        "value": 0.08,
+        "unit": "%",
+        "status": "APPROVED",
+        "normalization": null,
+        "issues": []
+      },
+      {
+        "parameter": "assay",
+        "rawValue": "99.1",
+        "rawUnit": "%",
+        "method": "HPLC-SYN-01",
+        "batch": "SYN-A",
+        "product": "Drug X 100 mg immediate-release tablet (synthetic)",
+        "facility": "",
+        "low": 95,
+        "high": 105,
+        "rawLowLexeme": "95",
+        "rawHighLexeme": "105",
+        "condition": "",
+        "timePoint": null,
+        "timeUnit": "",
+        "rawTimePoint": null,
+        "basis": "mass",
+        "span": {
+          "page": null,
+          "line": 3,
+          "table": "parameters",
+          "row": 1,
+          "column": "value",
+          "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 99.1,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    }",
+          "path": "parameters[0].value",
+          "start": 24,
+          "end": 212,
+          "offsetKind": "UTF-16 character offsets",
+          "valueToken": "99.1"
+        },
+        "id": "fact_1977bb42-707f-40df-b0bf-6f957085d11f",
+        "sourceId": "src_63141b10-7e9e-4c91-9361-ea9eca7257d1",
+        "sourceVersion": 1,
+        "sourceHash": "67caf77bf480631f1145acbc1eea91926e6a841d29285853e23037b9becb2211",
+        "revision": 1,
+        "at": "2026-10-06T06:45:50.075Z",
+        "rawLow": 95,
+        "rawHigh": 105,
+        "value": 99.1,
+        "unit": "%",
+        "status": "NEEDS_REVIEW",
+        "normalization": null,
+        "issues": [
+          "UNRESOLVED_CONFLICT"
+        ]
+      },
+      {
+        "parameter": "assay",
+        "rawValue": "986",
+        "rawUnit": "mg/g",
+        "method": "HPLC-SYN-01",
+        "batch": "SYN-B",
+        "product": "Drug X 100 mg immediate-release tablet (synthetic)",
+        "facility": "",
+        "low": 95,
+        "high": 105,
+        "rawLowLexeme": "950",
+        "rawHighLexeme": "1050",
+        "condition": "",
+        "timePoint": null,
+        "timeUnit": "",
+        "rawTimePoint": null,
+        "basis": "mass",
+        "span": {
+          "page": null,
+          "line": 3,
+          "table": "parameters",
+          "row": 1,
+          "column": "value",
+          "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 986,\n      \"unit\": \"mg/g\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 950,\n      \"high\": 1050,\n      \"basis\": \"mass\"\n    }",
+          "path": "parameters[0].value",
+          "start": 24,
+          "end": 216,
+          "offsetKind": "UTF-16 character offsets",
+          "valueToken": "986"
+        },
+        "id": "fact_9656e9e9-d577-40dc-b8d3-e9b16fe462bb",
+        "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+        "sourceVersion": 1,
+        "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+        "revision": 1,
+        "at": "2026-10-06T06:45:50.077Z",
+        "rawLow": 950,
+        "rawHigh": 1050,
+        "value": 98.6,
+        "unit": "%",
+        "status": "APPROVED",
+        "normalization": {
+          "rule": "approved-unit-rule/1: mg/g to percent (mass basis)",
+          "rawValue": "986",
+          "rawUnit": "mg/g",
+          "value": 98.6,
+          "unit": "%",
+          "at": "2026-10-06T06:45:50.077Z",
+          "basis": "mass"
+        },
+        "issues": []
+      },
+      {
+        "parameter": "water",
+        "rawValue": "0.4",
+        "rawUnit": "%",
+        "method": "KF-SYN-01",
+        "batch": "SYN-B",
+        "product": "Drug X 100 mg immediate-release tablet (synthetic)",
+        "facility": "",
+        "low": 0,
+        "high": 1,
+        "rawLowLexeme": "0",
+        "rawHighLexeme": "1",
+        "condition": "",
+        "timePoint": null,
+        "timeUnit": "",
+        "rawTimePoint": null,
+        "basis": "mass",
+        "span": {
+          "page": null,
+          "line": 13,
+          "table": "parameters",
+          "row": 2,
+          "column": "value",
+          "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.4,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+          "path": "parameters[1].value",
+          "start": 222,
+          "end": 404,
+          "offsetKind": "UTF-16 character offsets",
+          "valueToken": "0.4"
+        },
+        "id": "fact_4563060d-6ee0-4428-afbd-6a0da15e6c79",
+        "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+        "sourceVersion": 1,
+        "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+        "revision": 1,
+        "at": "2026-10-06T06:45:50.077Z",
+        "rawLow": 0,
+        "rawHigh": 1,
+        "value": 0.4,
+        "unit": "%",
+        "status": "APPROVED",
+        "normalization": null,
+        "issues": []
+      },
+      {
+        "parameter": "impurity",
+        "rawValue": "0.09",
+        "rawUnit": "%",
+        "method": "HPLC-SYN-02",
+        "batch": "SYN-B",
+        "product": "Drug X 100 mg immediate-release tablet (synthetic)",
+        "facility": "",
+        "low": 0,
+        "high": 0.2,
+        "rawLowLexeme": "0",
+        "rawHighLexeme": "0.2",
+        "condition": "",
+        "timePoint": null,
+        "timeUnit": "",
+        "rawTimePoint": null,
+        "basis": "mass",
+        "span": {
+          "page": null,
+          "line": 23,
+          "table": "parameters",
+          "row": 3,
+          "column": "value",
+          "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.09,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+          "path": "parameters[2].value",
+          "start": 410,
+          "end": 600,
+          "offsetKind": "UTF-16 character offsets",
+          "valueToken": "0.09"
+        },
+        "id": "fact_745d9b12-7c6b-47dc-bb71-8e4606bfac75",
+        "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+        "sourceVersion": 1,
+        "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+        "revision": 1,
+        "at": "2026-10-06T06:45:50.077Z",
+        "rawLow": 0,
+        "rawHigh": 0.2,
+        "value": 0.09,
+        "unit": "%",
+        "status": "APPROVED",
+        "normalization": null,
+        "issues": []
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "conflict_8d4fee3c-187d-41f0-818c-f956acbf6c53",
+        "key": "assay|SYN-A|Drug X 100 mg immediate-release tablet (synthetic)|HPLC-SYN-01||mass||",
+        "type": "VALUE_CONFLICT",
+        "fieldIds": [
+          "fact_a8cbb83f-43a3-4811-ac32-07ea90b4ee5d",
+          "fact_1977bb42-707f-40df-b0bf-6f957085d11f"
+        ],
+        "parameter": "assay",
+        "batch": "SYN-A",
+        "status": "OPEN",
+        "at": "2026-10-06T06:45:50.075Z"
+      }
+    ],
+    "drafts": [
+      {
+        "id": "draft_3c812529-5d00-439b-840c-a4aba78cd16c",
+        "title": "Drug X · source-linked Module 3 draft candidate",
+        "section": "3.2.P",
+        "revision": 1,
+        "authorPrincipal": "author/deterministic-template-1",
+        "modelVersion": "deterministic/no-model",
+        "fieldIds": [
+          "fact_5c3b463f-6faa-40bf-9dca-9b0af3ae1bab",
+          "fact_593b613b-614b-4bfe-b18a-cc6e47e7e114",
+          "fact_9656e9e9-d577-40dc-b8d3-e9b16fe462bb",
+          "fact_4563060d-6ee0-4428-afbd-6a0da15e6c79",
+          "fact_745d9b12-7c6b-47dc-bb71-8e4606bfac75"
+        ],
+        "statements": [
+          {
+            "id": "statement_a5a35e94-1573-42ef-b8e1-b0d822d3cdaa",
+            "fieldId": "fact_5c3b463f-6faa-40bf-9dca-9b0af3ae1bab",
+            "value": 0.3,
+            "unit": "%",
+            "text": "The recorded water for batch SYN-A is 0.3 %, determined using KF-SYN-01.",
+            "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+            "sourceVersion": 1,
+            "span": {
+              "page": null,
+              "line": 13,
+              "table": "parameters",
+              "row": 2,
+              "column": "value",
+              "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.3,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+              "path": "parameters[1].value",
+              "start": 218,
+              "end": 400,
+              "offsetKind": "UTF-16 character offsets",
+              "valueToken": "0.3"
+            }
+          },
+          {
+            "id": "statement_710ee40d-7c7b-4ee8-80d7-47c7df50a5d1",
+            "fieldId": "fact_593b613b-614b-4bfe-b18a-cc6e47e7e114",
+            "value": 0.08,
+            "unit": "%",
+            "text": "The recorded impurity for batch SYN-A is 0.08 %, determined using HPLC-SYN-02.",
+            "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+            "sourceVersion": 1,
+            "span": {
+              "page": null,
+              "line": 23,
+              "table": "parameters",
+              "row": 3,
+              "column": "value",
+              "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.08,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+              "path": "parameters[2].value",
+              "start": 406,
+              "end": 596,
+              "offsetKind": "UTF-16 character offsets",
+              "valueToken": "0.08"
+            }
+          },
+          {
+            "id": "statement_6e67f3a8-7d45-42b2-bd04-b1dbcca932c3",
+            "fieldId": "fact_9656e9e9-d577-40dc-b8d3-e9b16fe462bb",
+            "value": 98.6,
+            "unit": "%",
+            "text": "The recorded assay for batch SYN-B is 98.6 %, determined using HPLC-SYN-01.",
+            "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+            "sourceVersion": 1,
+            "span": {
+              "page": null,
+              "line": 3,
+              "table": "parameters",
+              "row": 1,
+              "column": "value",
+              "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 986,\n      \"unit\": \"mg/g\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 950,\n      \"high\": 1050,\n      \"basis\": \"mass\"\n    }",
+              "path": "parameters[0].value",
+              "start": 24,
+              "end": 216,
+              "offsetKind": "UTF-16 character offsets",
+              "valueToken": "986"
+            }
+          },
+          {
+            "id": "statement_3609ac5f-0857-457e-b4f2-586bbb6d7b08",
+            "fieldId": "fact_4563060d-6ee0-4428-afbd-6a0da15e6c79",
+            "value": 0.4,
+            "unit": "%",
+            "text": "The recorded water for batch SYN-B is 0.4 %, determined using KF-SYN-01.",
+            "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+            "sourceVersion": 1,
+            "span": {
+              "page": null,
+              "line": 13,
+              "table": "parameters",
+              "row": 2,
+              "column": "value",
+              "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.4,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+              "path": "parameters[1].value",
+              "start": 222,
+              "end": 404,
+              "offsetKind": "UTF-16 character offsets",
+              "valueToken": "0.4"
+            }
+          },
+          {
+            "id": "statement_639a0081-eba6-4e7c-bea2-f9d4897f4543",
+            "fieldId": "fact_745d9b12-7c6b-47dc-bb71-8e4606bfac75",
+            "value": 0.09,
+            "unit": "%",
+            "text": "The recorded impurity for batch SYN-B is 0.09 %, determined using HPLC-SYN-02.",
+            "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+            "sourceVersion": 1,
+            "span": {
+              "page": null,
+              "line": 23,
+              "table": "parameters",
+              "row": 3,
+              "column": "value",
+              "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.09,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+              "path": "parameters[2].value",
+              "start": 410,
+              "end": 600,
+              "offsetKind": "UTF-16 character offsets",
+              "valueToken": "0.09"
+            }
+          }
+        ],
+        "status": "NEEDS_REVIEW",
+        "at": "2026-10-06T06:45:50.081Z",
+        "limitation": "Technical draft from approved facts. No autonomous scientific disposition or eCTD conformance claim.",
+        "qc": {
+          "id": "qc_4950e73d-fee4-42ee-93c5-5d3d94044b57",
+          "principal": "independent-qc/rules-1",
+          "authorPrincipal": "author/deterministic-template-1",
+          "at": "2026-10-06T06:45:50.082Z",
+          "passed": false,
+          "issues": [
+            {
+              "code": "REQUIRED_DATA_MISSING",
+              "message": "Missing required parameters: dissolution."
+            }
+          ],
+          "denominator": 5,
+          "checks": [
+            "source revision",
+            "field approval",
+            "numeric value",
+            "unit",
+            "citation",
+            "required parameter coverage"
+          ],
+          "limitation": "Deterministic technical checks; qualified scientific/regulatory review is still required."
+        }
+      }
+    ],
+    "decisions": [
+      {
+        "id": "decision_80d1c557-6390-4327-87af-f028a9c5b43e",
+        "targetId": "fact_a8cbb83f-43a3-4811-ac32-07ea90b4ee5d",
+        "kind": "field",
+        "revision": 1,
+        "workspaceRevision": 6,
+        "sourceHashes": [
+          "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578"
+        ],
+        "ruleVersion": "policy/1",
+        "workflowVersion": "forge-2.1.0",
+        "modelVersion": "deterministic/no-model",
+        "reviewer": "synthetic-example-reviewer",
+        "action": "REQUEST_EVIDENCE",
+        "reason": "Illustrative review: conflicting SYN-A assay values remain unresolved; request the original supporting record.",
+        "status": "CURRENT",
+        "at": "2026-10-06T06:45:50.077Z"
+      },
+      {
+        "id": "decision_721d8ea7-5105-48a0-a8f5-a351d9c55116",
+        "targetId": "fact_5c3b463f-6faa-40bf-9dca-9b0af3ae1bab",
+        "kind": "field",
+        "revision": 1,
+        "workspaceRevision": 7,
+        "sourceHashes": [
+          "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578"
+        ],
+        "ruleVersion": "policy/1",
+        "workflowVersion": "forge-2.1.0",
+        "modelVersion": "deterministic/no-model",
+        "reviewer": "synthetic-example-reviewer",
+        "action": "APPROVE",
+        "reason": "Illustrative fixture check only: value, unit and source span match. This is not a qualified professional approval.",
+        "status": "CURRENT",
+        "at": "2026-10-06T06:45:50.078Z"
+      },
+      {
+        "id": "decision_063e5838-f9d9-4dd4-b9bd-c75576910aa0",
+        "targetId": "fact_593b613b-614b-4bfe-b18a-cc6e47e7e114",
+        "kind": "field",
+        "revision": 1,
+        "workspaceRevision": 8,
+        "sourceHashes": [
+          "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578"
+        ],
+        "ruleVersion": "policy/1",
+        "workflowVersion": "forge-2.1.0",
+        "modelVersion": "deterministic/no-model",
+        "reviewer": "synthetic-example-reviewer",
+        "action": "APPROVE",
+        "reason": "Illustrative fixture check only: value, unit and source span match. This is not a qualified professional approval.",
+        "status": "CURRENT",
+        "at": "2026-10-06T06:45:50.078Z"
+      },
+      {
+        "id": "decision_f644819b-cebd-4098-9dfe-39a947bda9bd",
+        "targetId": "fact_1977bb42-707f-40df-b0bf-6f957085d11f",
+        "kind": "field",
+        "revision": 1,
+        "workspaceRevision": 9,
+        "sourceHashes": [
+          "67caf77bf480631f1145acbc1eea91926e6a841d29285853e23037b9becb2211"
+        ],
+        "ruleVersion": "policy/1",
+        "workflowVersion": "forge-2.1.0",
+        "modelVersion": "deterministic/no-model",
+        "reviewer": "synthetic-example-reviewer",
+        "action": "REQUEST_EVIDENCE",
+        "reason": "Illustrative review: conflicting SYN-A assay values remain unresolved; request the original supporting record.",
+        "status": "CURRENT",
+        "at": "2026-10-06T06:45:50.079Z"
+      },
+      {
+        "id": "decision_941833bf-9423-469e-aed3-eb688eb6a1d0",
+        "targetId": "fact_9656e9e9-d577-40dc-b8d3-e9b16fe462bb",
+        "kind": "field",
+        "revision": 1,
+        "workspaceRevision": 10,
+        "sourceHashes": [
+          "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0"
+        ],
+        "ruleVersion": "policy/1",
+        "workflowVersion": "forge-2.1.0",
+        "modelVersion": "deterministic/no-model",
+        "reviewer": "synthetic-example-reviewer",
+        "action": "APPROVE",
+        "reason": "Illustrative fixture check only: value, unit and source span match. This is not a qualified professional approval.",
+        "status": "CURRENT",
+        "at": "2026-10-06T06:45:50.079Z"
+      },
+      {
+        "id": "decision_42534a45-b2f8-4d5c-b1b0-9771255e22de",
+        "targetId": "fact_4563060d-6ee0-4428-afbd-6a0da15e6c79",
+        "kind": "field",
+        "revision": 1,
+        "workspaceRevision": 11,
+        "sourceHashes": [
+          "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0"
+        ],
+        "ruleVersion": "policy/1",
+        "workflowVersion": "forge-2.1.0",
+        "modelVersion": "deterministic/no-model",
+        "reviewer": "synthetic-example-reviewer",
+        "action": "APPROVE",
+        "reason": "Illustrative fixture check only: value, unit and source span match. This is not a qualified professional approval.",
+        "status": "CURRENT",
+        "at": "2026-10-06T06:45:50.079Z"
+      },
+      {
+        "id": "decision_5a19729c-5594-49ca-a06e-56f42d6bd2ec",
+        "targetId": "fact_745d9b12-7c6b-47dc-bb71-8e4606bfac75",
+        "kind": "field",
+        "revision": 1,
+        "workspaceRevision": 12,
+        "sourceHashes": [
+          "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0"
+        ],
+        "ruleVersion": "policy/1",
+        "workflowVersion": "forge-2.1.0",
+        "modelVersion": "deterministic/no-model",
+        "reviewer": "synthetic-example-reviewer",
+        "action": "APPROVE",
+        "reason": "Illustrative fixture check only: value, unit and source span match. This is not a qualified professional approval.",
+        "status": "CURRENT",
+        "at": "2026-10-06T06:45:50.081Z"
+      },
+      {
+        "id": "decision_79f53034-574a-4c3e-8631-d14437bc2497",
+        "targetId": "draft_3c812529-5d00-439b-840c-a4aba78cd16c",
+        "kind": "draft",
+        "revision": 1,
+        "workspaceRevision": 15,
+        "sourceHashes": [
+          "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+          "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+          "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+          "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+          "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0"
+        ],
+        "ruleVersion": "policy/1",
+        "workflowVersion": "forge-2.1.0",
+        "modelVersion": "deterministic/no-model",
+        "reviewer": "synthetic-example-reviewer",
+        "action": "REQUEST_EVIDENCE",
+        "reason": "Illustrative decision: HOLD. Resolve the assay conflict and supply dissolution, composition, method-validation and stability evidence before considering an accepted output.",
+        "status": "CURRENT",
+        "at": "2026-10-06T06:45:50.083Z"
+      }
+    ],
+    "changes": [],
+    "exports": [],
+    "queries": [],
+    "actions": [],
+    "mappings": [],
+    "requirements": [],
+    "templates": [],
+    "jobs": [],
+    "audit": [
+      {
+        "id": "event_e23a7382-1557-49e5-905f-f7f9333f667a",
+        "sequence": 1,
+        "actor": "synthetic-example-author",
+        "role": "author",
+        "action": "intake",
+        "objectId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+        "details": {
+          "result": {
+            "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4"
+          },
+          "reason": null
+        },
+        "at": "2026-10-06T06:45:50.067Z",
+        "traceId": "run_acc9eed2-d83e-45ab-931f-38d5eb3a2448",
+        "revision": 1
+      },
+      {
+        "id": "event_0f306d41-f0e4-4a04-b4ce-e5e964db8b00",
+        "sequence": 2,
+        "actor": "synthetic-example-author",
+        "role": "author",
+        "action": "extract",
+        "objectId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+        "details": {
+          "result": {
+            "count": 3
+          },
+          "reason": null
+        },
+        "at": "2026-10-06T06:45:50.072Z",
+        "traceId": "run_0f6c7ed4-1871-404b-89cb-e4788e0e358c",
+        "revision": 2
+      },
+      {
+        "id": "event_5d8279ac-bf1a-4535-9e25-e85c041fa0a7",
+        "sequence": 3,
+        "actor": "synthetic-example-author",
+        "role": "author",
+        "action": "intake",
+        "objectId": "src_63141b10-7e9e-4c91-9361-ea9eca7257d1",
+        "details": {
+          "result": {
+            "sourceId": "src_63141b10-7e9e-4c91-9361-ea9eca7257d1"
+          },
+          "reason": null
+        },
+        "at": "2026-10-06T06:45:50.074Z",
+        "traceId": "run_f71d8694-7f4c-4f1b-a364-29b6e7b46d6f",
+        "revision": 3
+      },
+      {
+        "id": "event_db6ebb58-f6e6-4739-a831-5f2bb0f3a89c",
+        "sequence": 4,
+        "actor": "synthetic-example-author",
+        "role": "author",
+        "action": "extract",
+        "objectId": "src_63141b10-7e9e-4c91-9361-ea9eca7257d1",
+        "details": {
+          "result": {
+            "count": 1
+          },
+          "reason": null
+        },
+        "at": "2026-10-06T06:45:50.075Z",
+        "traceId": "run_92f9e73d-b47c-4e76-bb37-a805cc991482",
+        "revision": 4
+      },
+      {
+        "id": "event_176a20b7-81cc-43d3-a035-b7f340df78c4",
+        "sequence": 5,
+        "actor": "synthetic-example-author",
+        "role": "author",
+        "action": "intake",
+        "objectId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+        "details": {
+          "result": {
+            "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d"
+          },
+          "reason": null
+        },
+        "at": "2026-10-06T06:45:50.075Z",
+        "traceId": "run_56cf0d08-32a6-43bd-923e-b88c50a90996",
+        "revision": 5
+      },
+      {
+        "id": "event_e9fc5a12-7143-4d74-936e-8c39082b7247",
+        "sequence": 6,
+        "actor": "synthetic-example-author",
+        "role": "author",
+        "action": "extract",
+        "objectId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+        "details": {
+          "result": {
+            "count": 3
+          },
+          "reason": null
+        },
+        "at": "2026-10-06T06:45:50.077Z",
+        "traceId": "run_258545ab-1c7e-4b61-9796-aaecbba18c87",
+        "revision": 6
+      },
+      {
+        "id": "event_cc9be444-f4df-4cee-8c8d-d4b28caa3744",
+        "sequence": 7,
+        "actor": "synthetic-example-reviewer",
+        "role": "reviewer",
+        "action": "review",
+        "objectId": "fact_a8cbb83f-43a3-4811-ac32-07ea90b4ee5d",
+        "details": {
+          "result": {
+            "decisionId": "decision_80d1c557-6390-4327-87af-f028a9c5b43e"
+          },
+          "reason": "Illustrative review: conflicting SYN-A assay values remain unresolved; request the original supporting record."
+        },
+        "at": "2026-10-06T06:45:50.077Z",
+        "traceId": "run_09309ec2-5582-4ec6-a5c2-9d39f1627019",
+        "revision": 7
+      },
+      {
+        "id": "event_8a63d669-4a4b-48ab-9c3d-6bea16d28ef6",
+        "sequence": 8,
+        "actor": "synthetic-example-reviewer",
+        "role": "reviewer",
+        "action": "review",
+        "objectId": "fact_5c3b463f-6faa-40bf-9dca-9b0af3ae1bab",
+        "details": {
+          "result": {
+            "decisionId": "decision_721d8ea7-5105-48a0-a8f5-a351d9c55116"
+          },
+          "reason": "Illustrative fixture check only: value, unit and source span match. This is not a qualified professional approval."
+        },
+        "at": "2026-10-06T06:45:50.078Z",
+        "traceId": "run_b5c9d81b-4b4b-4a05-99f1-032168da48d7",
+        "revision": 8
+      },
+      {
+        "id": "event_94e0fbe1-f6c8-477a-87a4-686e231e8886",
+        "sequence": 9,
+        "actor": "synthetic-example-reviewer",
+        "role": "reviewer",
+        "action": "review",
+        "objectId": "fact_593b613b-614b-4bfe-b18a-cc6e47e7e114",
+        "details": {
+          "result": {
+            "decisionId": "decision_063e5838-f9d9-4dd4-b9bd-c75576910aa0"
+          },
+          "reason": "Illustrative fixture check only: value, unit and source span match. This is not a qualified professional approval."
+        },
+        "at": "2026-10-06T06:45:50.078Z",
+        "traceId": "run_c83941d7-a94f-428c-8902-1e589f02c19d",
+        "revision": 9
+      },
+      {
+        "id": "event_09c26fc7-c45d-40dc-8c77-a15c6e5089de",
+        "sequence": 10,
+        "actor": "synthetic-example-reviewer",
+        "role": "reviewer",
+        "action": "review",
+        "objectId": "fact_1977bb42-707f-40df-b0bf-6f957085d11f",
+        "details": {
+          "result": {
+            "decisionId": "decision_f644819b-cebd-4098-9dfe-39a947bda9bd"
+          },
+          "reason": "Illustrative review: conflicting SYN-A assay values remain unresolved; request the original supporting record."
+        },
+        "at": "2026-10-06T06:45:50.079Z",
+        "traceId": "run_48d33053-3376-43ae-87a1-24ef2eb2f55d",
+        "revision": 10
+      },
+      {
+        "id": "event_eed9cafe-51dc-448f-97e7-1bd81f3b1b80",
+        "sequence": 11,
+        "actor": "synthetic-example-reviewer",
+        "role": "reviewer",
+        "action": "review",
+        "objectId": "fact_9656e9e9-d577-40dc-b8d3-e9b16fe462bb",
+        "details": {
+          "result": {
+            "decisionId": "decision_941833bf-9423-469e-aed3-eb688eb6a1d0"
+          },
+          "reason": "Illustrative fixture check only: value, unit and source span match. This is not a qualified professional approval."
+        },
+        "at": "2026-10-06T06:45:50.079Z",
+        "traceId": "run_b2835c28-a78a-42d9-93be-b8d7cb8d76a3",
+        "revision": 11
+      },
+      {
+        "id": "event_7e11d6ac-e884-41fc-aa56-47b4df3f772f",
+        "sequence": 12,
+        "actor": "synthetic-example-reviewer",
+        "role": "reviewer",
+        "action": "review",
+        "objectId": "fact_4563060d-6ee0-4428-afbd-6a0da15e6c79",
+        "details": {
+          "result": {
+            "decisionId": "decision_42534a45-b2f8-4d5c-b1b0-9771255e22de"
+          },
+          "reason": "Illustrative fixture check only: value, unit and source span match. This is not a qualified professional approval."
+        },
+        "at": "2026-10-06T06:45:50.079Z",
+        "traceId": "run_9354d8af-c76a-401f-8192-8424d0298bbb",
+        "revision": 12
+      },
+      {
+        "id": "event_c08c6f18-0a52-427c-8e9e-d7f5207a1fb1",
+        "sequence": 13,
+        "actor": "synthetic-example-reviewer",
+        "role": "reviewer",
+        "action": "review",
+        "objectId": "fact_745d9b12-7c6b-47dc-bb71-8e4606bfac75",
+        "details": {
+          "result": {
+            "decisionId": "decision_5a19729c-5594-49ca-a06e-56f42d6bd2ec"
+          },
+          "reason": "Illustrative fixture check only: value, unit and source span match. This is not a qualified professional approval."
+        },
+        "at": "2026-10-06T06:45:50.081Z",
+        "traceId": "run_f3715a01-89c4-4884-9b56-2ab01e1fa721",
+        "revision": 13
+      },
+      {
+        "id": "event_06e40dc9-8c8f-4fb7-b66b-73d48707bf77",
+        "sequence": 14,
+        "actor": "synthetic-example-author",
+        "role": "author",
+        "action": "draft",
+        "objectId": "draft_3c812529-5d00-439b-840c-a4aba78cd16c",
+        "details": {
+          "result": {
+            "draftId": "draft_3c812529-5d00-439b-840c-a4aba78cd16c"
+          },
+          "reason": null
+        },
+        "at": "2026-10-06T06:45:50.082Z",
+        "traceId": "run_5b49ef75-dff5-4a7d-b8c9-560d86feb3f8",
+        "revision": 14
+      },
+      {
+        "id": "event_fe599b6f-d46b-4986-b3a0-10393b3a101d",
+        "sequence": 15,
+        "actor": "synthetic-example-reviewer",
+        "role": "reviewer",
+        "action": "qc",
+        "objectId": "draft_3c812529-5d00-439b-840c-a4aba78cd16c",
+        "details": {
+          "result": {
+            "qc": {
+              "id": "qc_4950e73d-fee4-42ee-93c5-5d3d94044b57",
+              "principal": "independent-qc/rules-1",
+              "authorPrincipal": "author/deterministic-template-1",
+              "at": "2026-10-06T06:45:50.082Z",
+              "passed": false,
+              "issues": [
+                {
+                  "code": "REQUIRED_DATA_MISSING",
+                  "message": "Missing required parameters: dissolution."
+                }
+              ],
+              "denominator": 5,
+              "checks": [
+                "source revision",
+                "field approval",
+                "numeric value",
+                "unit",
+                "citation",
+                "required parameter coverage"
+              ],
+              "limitation": "Deterministic technical checks; qualified scientific/regulatory review is still required."
+            }
+          },
+          "reason": null
+        },
+        "at": "2026-10-06T06:45:50.083Z",
+        "traceId": "run_4fd00ed8-62ae-4d87-8d97-a4f89c18440d",
+        "revision": 15
+      },
+      {
+        "id": "event_f2e26417-3b64-430a-9856-7fbcbb298bd8",
+        "sequence": 16,
+        "actor": "synthetic-example-reviewer",
+        "role": "reviewer",
+        "action": "review",
+        "objectId": "draft_3c812529-5d00-439b-840c-a4aba78cd16c",
+        "details": {
+          "result": {
+            "decisionId": "decision_79f53034-574a-4c3e-8631-d14437bc2497"
+          },
+          "reason": "Illustrative decision: HOLD. Resolve the assay conflict and supply dissolution, composition, method-validation and stability evidence before considering an accepted output."
+        },
+        "at": "2026-10-06T06:45:50.083Z",
+        "traceId": "run_0c857f6f-f954-44a7-ad3d-6172c99e8c99",
+        "revision": 16
+      }
+    ],
+    "markets": [],
+    "lineage": [],
+    "validationRuns": [],
+    "plans": [],
+    "agentRuns": [],
+    "retention": {
+      "days": 365,
+      "status": "ORGANIZATION_REVIEW_REQUIRED"
+    },
+    "ext": {
+      "workingProof": {
+        "id": "synthetic-cmc-working-proof-v1",
+        "version": "CMC-working-proof/1",
+        "synthetic": true,
+        "readOnly": true,
+        "assessment": {
+          "title": "CMC GAP ASSESSMENT",
+          "status": "HOLD",
+          "revision": 16,
+          "rows": [
+            {
+              "item": "Product and scope",
+              "sourceStatus": "HYPOTHETICAL",
+              "observation": "Drug X 100 mg immediate-release tablet is an illustrative case label. Strength and dosage form are assumptions, not verified product facts.",
+              "gap": "Actual product definition and composition not supplied.",
+              "module3": "3.2.P.1",
+              "why": "A case label cannot establish actual product composition.",
+              "next": "Obtain an authorized product/composition record.",
+              "reviewStatus": "REVIEW REQUIRED",
+              "evidence": []
+            },
+            {
+              "item": "SYN-A assay",
+              "sourceStatus": "CONFLICT",
+              "observation": "COA: 98.6%; batch record: 99.1%. Same batch and method; difference is 0.5 percentage points.",
+              "gap": "No source supports choosing either result as the accepted value.",
+              "module3": "3.2.P.5.4",
+              "why": "Conflicting results cannot support an accepted batch-analysis statement.",
+              "next": "Request the original result and a qualified discrepancy assessment.",
+              "reviewStatus": "HOLD",
+              "evidence": [
+                {
+                  "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+                  "sourceName": "SYN-COA-A.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+                  "fieldId": "fact_a8cbb83f-43a3-4811-ac32-07ea90b4ee5d",
+                  "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 98.6,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    }",
+                  "line": 3,
+                  "start": 24,
+                  "end": 212
+                },
+                {
+                  "sourceId": "src_63141b10-7e9e-4c91-9361-ea9eca7257d1",
+                  "sourceName": "SYN-BATCH-A.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "67caf77bf480631f1145acbc1eea91926e6a841d29285853e23037b9becb2211",
+                  "fieldId": "fact_1977bb42-707f-40df-b0bf-6f957085d11f",
+                  "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 99.1,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    }",
+                  "line": 3,
+                  "start": 24,
+                  "end": 212
+                }
+              ]
+            },
+            {
+              "item": "Water and impurity results",
+              "sourceStatus": "AVAILABLE",
+              "observation": "SYN-A water 0.3%, impurity 0.08%; SYN-B water 0.4%, impurity 0.09%.",
+              "gap": "These are synthetic analytical records, not commercial batch evidence.",
+              "module3": "3.2.P.5.4",
+              "why": "Values remain useful only with batch, method, unit and exact source attached.",
+              "next": "Verify against permitted real originals before professional use.",
+              "reviewStatus": "ILLUSTRATIVE CHECK ONLY",
+              "evidence": [
+                {
+                  "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+                  "sourceName": "SYN-COA-A.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+                  "fieldId": "fact_5c3b463f-6faa-40bf-9dca-9b0af3ae1bab",
+                  "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.3,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+                  "line": 13,
+                  "start": 218,
+                  "end": 400
+                },
+                {
+                  "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+                  "sourceName": "SYN-COA-B.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+                  "fieldId": "fact_4563060d-6ee0-4428-afbd-6a0da15e6c79",
+                  "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.4,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+                  "line": 13,
+                  "start": 222,
+                  "end": 404
+                },
+                {
+                  "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+                  "sourceName": "SYN-COA-A.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+                  "fieldId": "fact_593b613b-614b-4bfe-b18a-cc6e47e7e114",
+                  "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.08,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+                  "line": 23,
+                  "start": 406,
+                  "end": 596
+                },
+                {
+                  "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+                  "sourceName": "SYN-COA-B.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+                  "fieldId": "fact_745d9b12-7c6b-47dc-bb71-8e4606bfac75",
+                  "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.09,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+                  "line": 23,
+                  "start": 410,
+                  "end": 600
+                }
+              ]
+            },
+            {
+              "item": "SYN-B assay normalization",
+              "sourceStatus": "AVAILABLE",
+              "observation": "Raw 986 mg/g is retained alongside the recorded mass-basis conversion to 98.6%.",
+              "gap": "The conversion does not resolve the separate SYN-A conflict.",
+              "module3": "3.2.P.5.4",
+              "why": "A normalized value must not conceal the original unit or batch context.",
+              "next": "Confirm conversion basis and applicable specification with a professional.",
+              "reviewStatus": "ILLUSTRATIVE CHECK ONLY",
+              "evidence": [
+                {
+                  "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+                  "sourceName": "SYN-COA-B.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+                  "fieldId": "fact_9656e9e9-d577-40dc-b8d3-e9b16fe462bb",
+                  "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 986,\n      \"unit\": \"mg/g\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 950,\n      \"high\": 1050,\n      \"basis\": \"mass\"\n    }",
+                  "line": 3,
+                  "start": 24,
+                  "end": 216
+                }
+              ]
+            },
+            {
+              "item": "Dissolution",
+              "sourceStatus": "MISSING",
+              "observation": "No dissolution result is provided. It is an explicit required item in this synthetic exercise.",
+              "gap": "Result, procedure and acceptance criteria are absent.",
+              "module3": "3.2.P.5.1 / 3.2.P.5.2",
+              "why": "The missing critical value must remain missing, never guessed.",
+              "next": "Request the relevant permitted dissolution evidence.",
+              "reviewStatus": "HOLD",
+              "evidence": []
+            },
+            {
+              "item": "Analytical procedures and validation",
+              "sourceStatus": "INCOMPLETE",
+              "observation": "Only synthetic method identifiers are supplied.",
+              "gap": "Full procedures and validation evidence are unavailable.",
+              "module3": "3.2.P.5.2 / 3.2.P.5.3",
+              "why": "A method identifier is not evidence of validated performance.",
+              "next": "Obtain procedures and validation records for qualified review.",
+              "reviewStatus": "REVIEW REQUIRED",
+              "evidence": [
+                {
+                  "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+                  "sourceName": "SYN-COA-A.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+                  "fieldId": "fact_a8cbb83f-43a3-4811-ac32-07ea90b4ee5d",
+                  "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 98.6,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    }",
+                  "line": 3,
+                  "start": 24,
+                  "end": 212
+                },
+                {
+                  "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+                  "sourceName": "SYN-COA-A.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+                  "fieldId": "fact_5c3b463f-6faa-40bf-9dca-9b0af3ae1bab",
+                  "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.3,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+                  "line": 13,
+                  "start": 218,
+                  "end": 400
+                },
+                {
+                  "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+                  "sourceName": "SYN-COA-A.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+                  "fieldId": "fact_593b613b-614b-4bfe-b18a-cc6e47e7e114",
+                  "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.08,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+                  "line": 23,
+                  "start": 406,
+                  "end": 596
+                },
+                {
+                  "sourceId": "src_63141b10-7e9e-4c91-9361-ea9eca7257d1",
+                  "sourceName": "SYN-BATCH-A.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "67caf77bf480631f1145acbc1eea91926e6a841d29285853e23037b9becb2211",
+                  "fieldId": "fact_1977bb42-707f-40df-b0bf-6f957085d11f",
+                  "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 99.1,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    }",
+                  "line": 3,
+                  "start": 24,
+                  "end": 212
+                },
+                {
+                  "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+                  "sourceName": "SYN-COA-B.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+                  "fieldId": "fact_9656e9e9-d577-40dc-b8d3-e9b16fe462bb",
+                  "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 986,\n      \"unit\": \"mg/g\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 950,\n      \"high\": 1050,\n      \"basis\": \"mass\"\n    }",
+                  "line": 3,
+                  "start": 24,
+                  "end": 216
+                },
+                {
+                  "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+                  "sourceName": "SYN-COA-B.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+                  "fieldId": "fact_4563060d-6ee0-4428-afbd-6a0da15e6c79",
+                  "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.4,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+                  "line": 13,
+                  "start": 222,
+                  "end": 404
+                },
+                {
+                  "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+                  "sourceName": "SYN-COA-B.json",
+                  "sourceVersion": 1,
+                  "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+                  "fieldId": "fact_745d9b12-7c6b-47dc-bb71-8e4606bfac75",
+                  "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.09,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+                  "line": 23,
+                  "start": 410,
+                  "end": 600
+                }
+              ]
+            },
+            {
+              "item": "Stability",
+              "sourceStatus": "MISSING",
+              "observation": "No timepoints, storage conditions or stability results are supplied.",
+              "gap": "No shelf-life or storage claim is supported.",
+              "module3": "3.2.P.8",
+              "why": "Analytical fixture values cannot establish stability.",
+              "next": "Request an authorized stability data package.",
+              "reviewStatus": "HOLD",
+              "evidence": []
+            }
+          ],
+          "decision": "Request evidence; do not select an unsupported assay value or invent a missing result.",
+          "humanBoundary": "Qualified CMC / RA / QA review remains required. Recorded example decisions are synthetic and are not professional sign-off.",
+          "nextProof": "Resolve the discrepancy using supplied evidence, then recheck the changed revision before named human review."
+        }
+      }
+    }
+  },
+  "assessment": {
+    "title": "CMC GAP ASSESSMENT",
+    "status": "HOLD",
+    "revision": 16,
+    "rows": [
+      {
+        "item": "Product and scope",
+        "sourceStatus": "HYPOTHETICAL",
+        "observation": "Drug X 100 mg immediate-release tablet is an illustrative case label. Strength and dosage form are assumptions, not verified product facts.",
+        "gap": "Actual product definition and composition not supplied.",
+        "module3": "3.2.P.1",
+        "why": "A case label cannot establish actual product composition.",
+        "next": "Obtain an authorized product/composition record.",
+        "reviewStatus": "REVIEW REQUIRED",
+        "evidence": []
+      },
+      {
+        "item": "SYN-A assay",
+        "sourceStatus": "CONFLICT",
+        "observation": "COA: 98.6%; batch record: 99.1%. Same batch and method; difference is 0.5 percentage points.",
+        "gap": "No source supports choosing either result as the accepted value.",
+        "module3": "3.2.P.5.4",
+        "why": "Conflicting results cannot support an accepted batch-analysis statement.",
+        "next": "Request the original result and a qualified discrepancy assessment.",
+        "reviewStatus": "HOLD",
+        "evidence": [
+          {
+            "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+            "sourceName": "SYN-COA-A.json",
+            "sourceVersion": 1,
+            "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+            "fieldId": "fact_a8cbb83f-43a3-4811-ac32-07ea90b4ee5d",
+            "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 98.6,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    }",
+            "line": 3,
+            "start": 24,
+            "end": 212
+          },
+          {
+            "sourceId": "src_63141b10-7e9e-4c91-9361-ea9eca7257d1",
+            "sourceName": "SYN-BATCH-A.json",
+            "sourceVersion": 1,
+            "sourceHash": "67caf77bf480631f1145acbc1eea91926e6a841d29285853e23037b9becb2211",
+            "fieldId": "fact_1977bb42-707f-40df-b0bf-6f957085d11f",
+            "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 99.1,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    }",
+            "line": 3,
+            "start": 24,
+            "end": 212
+          }
+        ]
+      },
+      {
+        "item": "Water and impurity results",
+        "sourceStatus": "AVAILABLE",
+        "observation": "SYN-A water 0.3%, impurity 0.08%; SYN-B water 0.4%, impurity 0.09%.",
+        "gap": "These are synthetic analytical records, not commercial batch evidence.",
+        "module3": "3.2.P.5.4",
+        "why": "Values remain useful only with batch, method, unit and exact source attached.",
+        "next": "Verify against permitted real originals before professional use.",
+        "reviewStatus": "ILLUSTRATIVE CHECK ONLY",
+        "evidence": [
+          {
+            "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+            "sourceName": "SYN-COA-A.json",
+            "sourceVersion": 1,
+            "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+            "fieldId": "fact_5c3b463f-6faa-40bf-9dca-9b0af3ae1bab",
+            "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.3,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+            "line": 13,
+            "start": 218,
+            "end": 400
+          },
+          {
+            "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+            "sourceName": "SYN-COA-B.json",
+            "sourceVersion": 1,
+            "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+            "fieldId": "fact_4563060d-6ee0-4428-afbd-6a0da15e6c79",
+            "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.4,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+            "line": 13,
+            "start": 222,
+            "end": 404
+          },
+          {
+            "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+            "sourceName": "SYN-COA-A.json",
+            "sourceVersion": 1,
+            "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+            "fieldId": "fact_593b613b-614b-4bfe-b18a-cc6e47e7e114",
+            "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.08,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+            "line": 23,
+            "start": 406,
+            "end": 596
+          },
+          {
+            "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+            "sourceName": "SYN-COA-B.json",
+            "sourceVersion": 1,
+            "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+            "fieldId": "fact_745d9b12-7c6b-47dc-bb71-8e4606bfac75",
+            "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.09,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+            "line": 23,
+            "start": 410,
+            "end": 600
+          }
+        ]
+      },
+      {
+        "item": "SYN-B assay normalization",
+        "sourceStatus": "AVAILABLE",
+        "observation": "Raw 986 mg/g is retained alongside the recorded mass-basis conversion to 98.6%.",
+        "gap": "The conversion does not resolve the separate SYN-A conflict.",
+        "module3": "3.2.P.5.4",
+        "why": "A normalized value must not conceal the original unit or batch context.",
+        "next": "Confirm conversion basis and applicable specification with a professional.",
+        "reviewStatus": "ILLUSTRATIVE CHECK ONLY",
+        "evidence": [
+          {
+            "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+            "sourceName": "SYN-COA-B.json",
+            "sourceVersion": 1,
+            "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+            "fieldId": "fact_9656e9e9-d577-40dc-b8d3-e9b16fe462bb",
+            "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 986,\n      \"unit\": \"mg/g\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 950,\n      \"high\": 1050,\n      \"basis\": \"mass\"\n    }",
+            "line": 3,
+            "start": 24,
+            "end": 216
+          }
+        ]
+      },
+      {
+        "item": "Dissolution",
+        "sourceStatus": "MISSING",
+        "observation": "No dissolution result is provided. It is an explicit required item in this synthetic exercise.",
+        "gap": "Result, procedure and acceptance criteria are absent.",
+        "module3": "3.2.P.5.1 / 3.2.P.5.2",
+        "why": "The missing critical value must remain missing, never guessed.",
+        "next": "Request the relevant permitted dissolution evidence.",
+        "reviewStatus": "HOLD",
+        "evidence": []
+      },
+      {
+        "item": "Analytical procedures and validation",
+        "sourceStatus": "INCOMPLETE",
+        "observation": "Only synthetic method identifiers are supplied.",
+        "gap": "Full procedures and validation evidence are unavailable.",
+        "module3": "3.2.P.5.2 / 3.2.P.5.3",
+        "why": "A method identifier is not evidence of validated performance.",
+        "next": "Obtain procedures and validation records for qualified review.",
+        "reviewStatus": "REVIEW REQUIRED",
+        "evidence": [
+          {
+            "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+            "sourceName": "SYN-COA-A.json",
+            "sourceVersion": 1,
+            "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+            "fieldId": "fact_a8cbb83f-43a3-4811-ac32-07ea90b4ee5d",
+            "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 98.6,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    }",
+            "line": 3,
+            "start": 24,
+            "end": 212
+          },
+          {
+            "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+            "sourceName": "SYN-COA-A.json",
+            "sourceVersion": 1,
+            "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+            "fieldId": "fact_5c3b463f-6faa-40bf-9dca-9b0af3ae1bab",
+            "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.3,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+            "line": 13,
+            "start": 218,
+            "end": 400
+          },
+          {
+            "sourceId": "src_83de76eb-9101-4085-af29-3bfc6e1eb7e4",
+            "sourceName": "SYN-COA-A.json",
+            "sourceVersion": 1,
+            "sourceHash": "aaf8564b7404b624e46b4efa0d775aa5b32292b451cc68508379eab1bddcd578",
+            "fieldId": "fact_593b613b-614b-4bfe-b18a-cc6e47e7e114",
+            "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.08,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-A\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+            "line": 23,
+            "start": 406,
+            "end": 596
+          },
+          {
+            "sourceId": "src_63141b10-7e9e-4c91-9361-ea9eca7257d1",
+            "sourceName": "SYN-BATCH-A.json",
+            "sourceVersion": 1,
+            "sourceHash": "67caf77bf480631f1145acbc1eea91926e6a841d29285853e23037b9becb2211",
+            "fieldId": "fact_1977bb42-707f-40df-b0bf-6f957085d11f",
+            "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 99.1,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-A\",\n      \"low\": 95,\n      \"high\": 105,\n      \"basis\": \"mass\"\n    }",
+            "line": 3,
+            "start": 24,
+            "end": 212
+          },
+          {
+            "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+            "sourceName": "SYN-COA-B.json",
+            "sourceVersion": 1,
+            "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+            "fieldId": "fact_9656e9e9-d577-40dc-b8d3-e9b16fe462bb",
+            "raw": "{\n      \"parameter\": \"assay\",\n      \"value\": 986,\n      \"unit\": \"mg/g\",\n      \"method\": \"HPLC-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 950,\n      \"high\": 1050,\n      \"basis\": \"mass\"\n    }",
+            "line": 3,
+            "start": 24,
+            "end": 216
+          },
+          {
+            "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+            "sourceName": "SYN-COA-B.json",
+            "sourceVersion": 1,
+            "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+            "fieldId": "fact_4563060d-6ee0-4428-afbd-6a0da15e6c79",
+            "raw": "{\n      \"parameter\": \"water\",\n      \"value\": 0.4,\n      \"unit\": \"%\",\n      \"method\": \"KF-SYN-01\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 1,\n      \"basis\": \"mass\"\n    }",
+            "line": 13,
+            "start": 222,
+            "end": 404
+          },
+          {
+            "sourceId": "src_491ca403-43ca-4aea-9d6a-36cd31ec164d",
+            "sourceName": "SYN-COA-B.json",
+            "sourceVersion": 1,
+            "sourceHash": "fd8857241af9994d8dfa2676e1a3a01992d5d9812d36e3b29b5e4802fbf45cc0",
+            "fieldId": "fact_745d9b12-7c6b-47dc-bb71-8e4606bfac75",
+            "raw": "{\n      \"parameter\": \"impurity\",\n      \"value\": 0.09,\n      \"unit\": \"%\",\n      \"method\": \"HPLC-SYN-02\",\n      \"batch\": \"SYN-B\",\n      \"low\": 0,\n      \"high\": 0.2,\n      \"basis\": \"mass\"\n    }",
+            "line": 23,
+            "start": 410,
+            "end": 600
+          }
+        ]
+      },
+      {
+        "item": "Stability",
+        "sourceStatus": "MISSING",
+        "observation": "No timepoints, storage conditions or stability results are supplied.",
+        "gap": "No shelf-life or storage claim is supported.",
+        "module3": "3.2.P.8",
+        "why": "Analytical fixture values cannot establish stability.",
+        "next": "Request an authorized stability data package.",
+        "reviewStatus": "HOLD",
+        "evidence": []
+      }
+    ],
+    "decision": "Request evidence; do not select an unsupported assay value or invent a missing result.",
+    "humanBoundary": "Qualified CMC / RA / QA review remains required. Recorded example decisions are synthetic and are not professional sign-off.",
+    "nextProof": "Resolve the discrepancy using supplied evidence, then recheck the changed revision before named human review."
+  },
+  "summary": {
+    "missing": [
+      "dissolution"
+    ],
+    "openConflicts": 1,
+    "uncertain": 2,
+    "anomalies": 0,
+    "unreviewed": 2,
+    "stale": 0,
+    "traceCoverage": {
+      "numerator": 7,
+      "denominator": 7
+    },
+    "approvedDrafts": 0,
+    "exportReady": false,
+    "release": false
+  },
+  "synthetic": true,
+  "readOnly": true,
+  "release": false,
+  "providerExecution": false,
+  "boundary": "Independent portfolio exercise. Synthetic product data. Not a commercial submission, regulatory advice or evidence of commercial CMC experience."
+}
