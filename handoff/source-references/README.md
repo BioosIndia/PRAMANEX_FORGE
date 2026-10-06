@@ -1,0 +1,1 @@
+Recovered original available source specifications/reference documents. These describe target design or earlier proof snapshots; presence in the archive is not evidence that every feature is implemented. Current source and handoff/CURRENT_STATUS.md are authoritative for executed delivery status. Review rights and intended visibility before publishing the repository.

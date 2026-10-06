@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1791052412915,
+      "tag": "0000_bright_scream",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1791058112005,
+      "tag": "0001_familiar_quicksilver",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791128358650,
+      "tag": "0002_forge_accounts",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1791235364204,
+      "tag": "0003_faulty_fat_cobra",
+      "breakpoints": true
+    }
+  ]
+}

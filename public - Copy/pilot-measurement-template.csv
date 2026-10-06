@@ -1,0 +1,2 @@
+case_id,data_type,source_revision,qualified_reviewer,manual_minutes,assisted_minutes,manual_missed_items,assisted_missed_items,manual_corrections,assisted_corrections,unsupported_claims,review_decision,notes
+SYNTHETIC-EXAMPLE,synthetic,fixture-v1,,,,,,,,,,

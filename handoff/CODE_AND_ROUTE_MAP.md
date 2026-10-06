@@ -1,0 +1,30 @@
+# Code and route map
+
+- `app/api/auth/google/callback/route.ts`
+- `app/api/auth/google/start/route.ts`
+- `app/api/auth/link-legacy/route.ts`
+- `app/api/auth/login/route.ts`
+- `app/api/auth/logout/route.ts`
+- `app/api/auth/session/route.ts`
+- `app/api/auth/signup/route.ts`
+- `app/api/export/route.ts`
+- `app/api/files/[id]/route.ts`
+- `app/api/forge/route.ts`
+- `app/api/provider-proof/route.ts`
+- `app/api/readiness/route.ts`
+- `app/api/runtime/route.ts`
+- `app/api/sharing/route.ts`
+- `app/api/upload/route.ts`
+- `app/api/working-proof/route.ts`
+- `app/app/page.tsx`
+- `app/collaboration/page.tsx`
+- `app/demo/page.tsx`
+- `app/login/page.tsx`
+- `app/logout/page.tsx`
+- `app/mvp-checklist/page.tsx`
+- `app/page.tsx`
+- `app/product/page.tsx`
+- `app/recruiter/page.tsx`
+- `app/working-proof/page.tsx`
+
+See `lib/` for domain logic, `db/` and `drizzle/` for persistence, and `tests/` for executable boundaries. Routes listed above are actual source paths; route availability still depends on authentication and current runtime configuration.

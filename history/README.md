@@ -1,0 +1,2 @@
+# Available source history
+Complete reachable history of source revision `97a2c8ab8cb4322ccf18752faa7791fcaa43d73d` is in the Git bundle. It contains committed source and original commit dates, not account credentials, Git remote configuration or runtime databases. Generic commit titles do not establish a daily development narrative. New export additions are outside the original source history. Clone the bundle to a separate directory to inspect it; copy the handoff additions afterwards if desired. No GitHub repository was published.

@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-05T20:00:42Z",
+  "scope": "One live provider smoke using synthetic facts and one public FDA listing",
+  "status": "SYNTHETIC_SMOKE_PASSED",
+  "savedReadbackVerified": true,
+  "checks": [
+    {
+      "name": "Groq bounded model team",
+      "status": "PASS",
+      "models": [
+        "openai/gpt-oss-20b",
+        "openai/gpt-oss-120b"
+      ],
+      "latencyMs": 1081
+    },
+    {
+      "name": "Firecrawl public FDA discovery",
+      "status": "PASS",
+      "latencyMs": 2024,
+      "retrievalMode": "FIRECRAWL_DERIVED_DISCOVERY",
+      "originalBytesVerified": false
+    }
+  ],
+  "customerBenefitProven": false,
+  "professionalValidation": false,
+  "release": false
+}

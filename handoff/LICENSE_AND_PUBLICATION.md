@@ -1,0 +1,2 @@
+# Publication and rights
+Independent portfolio/research work by Rahul Dewangan. No invented employment or confidential client work. The archive does not assign a new blanket license. Keep third-party dependency/font licenses. Uploaded blueprints, design-reference captures and public official guidance are reference materials; do not describe them as original application screenshots or redistribute under an invented license. Review public repository visibility and rights before publishing. Secrets and private runtime data are excluded; no GitHub upload was performed.

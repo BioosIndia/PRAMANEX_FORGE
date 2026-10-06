@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-04",
+  "scope": "Separate local/synthetic engineering suites; no regulatory accuracy or production qualification",
+  "accountChecks": {
+    "passed": 30,
+    "total": 30,
+    "source": "tests/accounts.mjs",
+    "evidence": "docs/proof/account-results.json"
+  },
+  "googleProtocol": {
+    "passed": 12,
+    "total": 12,
+    "source": "tests/google-accounts.mjs",
+    "scope": "Locally signed synthetic RSA identity tokens; no real Google account"
+  },
+  "uiProjection": {
+    "passed": 16,
+    "total": 16,
+    "evidence": "docs/proof/reference-ui-results.json"
+  },
+  "priorEngineering": {
+    "passed": 329,
+    "total": 329,
+    "source": "lib/engineering-proof.json"
+  },
+  "limitations": [
+    "Browser, WebGL, mobile and real hosted account journeys unverified",
+    "Google client provisioning and email verification/recovery remain pending",
+    "Site audience unchanged; hosting access and workspace access are distinct",
+    "No regulatory release, validation, real accuracy uplift or unbounded scaling claim"
+  ],
+  "boundedModelTeam": {
+    "policy": "forge-bounded-model-team/1",
+    "protocolChecks": {
+      "passed": 24,
+      "total": 24,
+      "scope": "Synthetic protocol and runtime-domain checks"
+    },
+    "savedApiChecks": {
+      "passed": 7,
+      "total": 7,
+      "scope": "Compiled local Worker and D1/R2 with synthetic provider responses"
+    },
+    "productionProvider": "NOT_CONFIGURED",
+    "liveProviderQuality": "NOT_ESTABLISHED",
+    "automaticRelease": false
+  }
+}
