@@ -1,0 +1,20 @@
+✔ Exact supported context can progress to human review, not approval (3.377275ms)
+✔ Changed batch is blocked although numerical value and citation are unchanged (0.240503ms)
+✔ Missing method is blocked (0.155345ms)
+✔ Different parameter is blocked (0.126601ms)
+✔ Correct unit elsewhere cannot conceal wrong unit beside the result (0.149105ms)
+✔ Extra quantity with same numeric value but different unit is blocked (0.118549ms)
+✔ Scientific notation remains paired to its unit (0.823052ms)
+✔ Wrong quantity makes readable brief HOLD and excludes supported findings (0.282006ms)
+✔ Changed source hash blocks old current-looking draft (1.033809ms)
+✔ Approval needs a current decision for the exact revision (0.47071ms)
+✔ Reading brief cannot mutate conflict state or saved QC (0.243518ms)
+✔ A newly detected conflict blocks QC even when facts were marked approved (0.440364ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13.75378

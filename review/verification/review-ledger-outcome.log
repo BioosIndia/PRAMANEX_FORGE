@@ -1,0 +1,23 @@
+✔ Completed source-backed candidate stays human-controlled, never approved (1.289064ms)
+✔ Critical missing result does not become a guessed finding (0.162685ms)
+✔ 94.2 percent cannot be silently rewritten as 99.1 percent (0.155744ms)
+✔ Source revision invalidates a previously supported citation (0.168253ms)
+✔ Changed target invalidates all prior-run findings (0.19927ms)
+✔ A real conflict stays visible even after successful model review (0.248275ms)
+✔ Foreign source ID is not accepted into the target findings (0.154603ms)
+✔ Configured live mode without successful receipts is not shown as demonstrated AI (0.189696ms)
+✔ A shared underlying model cannot establish independent review (0.226152ms)
+✔ Interrupted run cannot look like a completed reviewed output (0.252541ms)
+✔ Deterministic specialist spans remain useful and explicitly non-generative (0.187013ms)
+✔ Saved evidence and jobs are not mutated by reading the outcome (0.149496ms)
+✔ An unresolved source gap cannot appear as a supported finding (1.169114ms)
+✔ A source awaiting review cannot be presented as current support (0.129515ms)
+✔ Provider failure has a recovery action without claiming completed review (0.191699ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10.942457

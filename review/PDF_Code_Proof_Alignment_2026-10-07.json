@@ -1,0 +1,1118 @@
+[
+  {
+    "Project": "BEACON",
+    "Requirement": "F01",
+    "Meaning": "Official source registry",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/sources.ts; lib/public-discovery.mjs",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F02",
+    "Meaning": "Scheduled source monitoring",
+    "Assessment": "PARTIAL / OPERATIONS PENDING",
+    "Source implementation": "lib/monitor-runtime.ts; lib/monitor-service.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Saved fetch/recovery boundary works; paused unattended schedules cannot support a continuous-monitoring claim."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F03",
+    "Meaning": "Snapshot and version lineage",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/archive-store.ts; lib/intake.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F04",
+    "Meaning": "Exact and semantic change detection",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/beacon.ts; lib/ai-ris.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F05",
+    "Meaning": "Deduplication and event consolidation",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/monitor-runtime.ts; lib/beacon.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F06",
+    "Meaning": "Regulatory status classification",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/beacon.ts; lib/ris.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F07",
+    "Meaning": "Requirement / obligation extraction",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/ai-ris.ts; lib/ris.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F08",
+    "Meaning": "Jurisdiction and lifecycle tagging",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/records.ts; lib/assessment.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F09",
+    "Meaning": "Customer applicability profile",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/master-data.ts; lib/assessment.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F10",
+    "Meaning": "Product / process / document impact map",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/master-data.ts; lib/assessment.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F11",
+    "Meaning": "Priority and confidence",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/assessment.ts; lib/ris.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F12",
+    "Meaning": "Evidence-linked decision record",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/workflow.ts; lib/decision-outcome.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F13",
+    "Meaning": "Alert and digest",
+    "Assessment": "PARTIAL / DELIVERY CONFIGURATION",
+    "Source implementation": "lib/delivery.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Delivery/dedup controls exist; unattended dispatch and real recipient delivery require configured operational proof."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F14",
+    "Meaning": "Owner, action and closure",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/workflow.ts; lib/outcomes.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F15",
+    "Meaning": "Dashboard and audit export",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "app/workspace; lib/permissions.ts; lib/outcomes.ts",
+    "Verification evidence": "tests/*.test.ts; tests/runtime.mjs; tests/monitor-background-runtime.mjs",
+    "Remaining boundary": "Public/synthetic technical scope; qualified RA applicability and real-user benefits not established."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "F03A",
+    "Meaning": "Original language / conditional translation",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/ai-ris.ts; lib/ris.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Translation is a candidate, not a replacement for the original official source or qualified language review."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "B-RI01",
+    "Meaning": "Versioned related-evidence retrieval",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/retrieval.ts; lib/ris.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Related evidence cannot silently become controlling evidence."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "B-RI02",
+    "Meaning": "Historical / cross-market context",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/ris.ts; lib/assessment.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Cross-market similarity does not establish local applicability."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "B-RI03",
+    "Meaning": "Readable evidence-bound intelligence brief",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/decision-outcome.ts; app/workspace/decision-view.tsx",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "An unapproved readable brief is separate from approved controlled export."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "B-RI04",
+    "Meaning": "Gaps and competing evidence",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/ris.ts; lib/decision-outcome.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Uncertainty must remain UNKNOWN/HOLD until named review."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "B-P01",
+    "Meaning": "Why / exclusion rationale",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/assessment.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Company-specific conclusions need authorized context."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "B-P02",
+    "Meaning": "Historical evidence replay",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/archive-store.ts; lib/workflow.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Local engineering replay is not a full disaster-recovery qualification."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "B-P03",
+    "Meaning": "Material source change invalidates approval",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/workflow.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Fresh human review of the exact revision is required."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "B-P04",
+    "Meaning": "Source-health evidence gaps",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/monitor-runtime.ts; lib/monitor-execution.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Failure or overdue state is not no change."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "B-P05",
+    "Meaning": "Closure before/after proof",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/outcomes.ts; lib/workflow.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "No invented time saving or efficacy percentage."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "S-P01",
+    "Meaning": "Allowlist / redirect / time / size boundaries",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/request-bounds.ts; lib/intake.ts; lib/monitor-execution.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "External availability remains outside application control."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "S-P02",
+    "Meaning": "Recheck authority after wait",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/permissions.ts; lib/workflow.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Hosted organizational role qualification remains separate."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "S-P03",
+    "Meaning": "Outbox / duplicate-action control",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/delivery.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "External recipient delivery not established by local tests."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "S-P04",
+    "Meaning": "Atomic revision state",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/workflow.ts; app/api",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Local transaction tests do not prove global scale."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "S-P05",
+    "Meaning": "Negative isolation checks",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "lib/permissions.ts; tests/runtime.mjs",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Independent production security assessment remains pending."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "S-P06",
+    "Meaning": "Restore decision reconstruction",
+    "Assessment": "IMPLEMENTED / BOUNDED SCOPE",
+    "Source implementation": "tests/security-recovery.py; lib/archive-store.ts",
+    "Verification evidence": "Source audit plus current engineering suites where covered",
+    "Remaining boundary": "Fresh complete production disaster recovery was not executed in this review."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F01",
+    "Meaning": "CMC source intake",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F02",
+    "Meaning": "Field extraction",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F03",
+    "Meaning": "Normalization with retained raw values",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F04",
+    "Meaning": "Source-to-field traceability",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F05",
+    "Meaning": "Completeness checks",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F06",
+    "Meaning": "Anomaly checks",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F07",
+    "Meaning": "Cross-document consistency",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F08",
+    "Meaning": "Batch comparison",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F09",
+    "Meaning": "Source-backed draft candidates",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F10",
+    "Meaning": "Human correction",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F11",
+    "Meaning": "Decision / audit record",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F12",
+    "Meaning": "Version / change record",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F13",
+    "Meaning": "Check report",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F14",
+    "Meaning": "Controlled export",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/runtime-repository.ts; app/Workspace.tsx",
+    "Verification evidence": "88 domain; 47 saved integration; 12 outcome; 16 export checks",
+    "Remaining boundary": "Synthetic/controlled-format proof; representative CMC data, qualified answers and customer outcomes remain pending."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F-P01",
+    "Meaning": "Field dependency / source-change map",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/statement-controls.mjs; lib/draft-outcome.mjs",
+    "Verification evidence": "tests/run.mjs; tests/integration.mjs; tests/draft-outcome.mjs",
+    "Remaining boundary": "Checks preserve HOLD; they do not establish scientific comparability, real submission quality or professional accuracy."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F-P02",
+    "Meaning": "Unit / value conflict workbench",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/statement-controls.mjs; lib/draft-outcome.mjs",
+    "Verification evidence": "tests/run.mjs; tests/integration.mjs; tests/draft-outcome.mjs",
+    "Remaining boundary": "Checks preserve HOLD; they do not establish scientific comparability, real submission quality or professional accuracy."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F-P03",
+    "Meaning": "Source-backed drafting contract",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/statement-controls.mjs; lib/draft-outcome.mjs",
+    "Verification evidence": "tests/run.mjs; tests/integration.mjs; tests/draft-outcome.mjs",
+    "Remaining boundary": "Checks preserve HOLD; they do not establish scientific comparability, real submission quality or professional accuracy."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F-P04",
+    "Meaning": "Reviewer correction replay",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/statement-controls.mjs; lib/draft-outcome.mjs",
+    "Verification evidence": "tests/run.mjs; tests/integration.mjs; tests/draft-outcome.mjs",
+    "Remaining boundary": "Checks preserve HOLD; they do not establish scientific comparability, real submission quality or professional accuracy."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "F-P05",
+    "Meaning": "Batch comparison interpretation limits",
+    "Assessment": "IMPLEMENTED / ENGINEERING CHECKS",
+    "Source implementation": "lib/core.mjs; lib/runtime.mjs; lib/statement-controls.mjs; lib/draft-outcome.mjs",
+    "Verification evidence": "tests/run.mjs; tests/integration.mjs; tests/draft-outcome.mjs",
+    "Remaining boundary": "Checks preserve HOLD; they do not establish scientific comparability, real submission quality or professional accuracy."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F01",
+    "Meaning": "Controlled Quality Source & Document Registry",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Originals and checked candidate transcription are preserved; automated PDF/table/OCR intake is not a complete built-in supported-format service."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F02",
+    "Meaning": "Requirement Extraction & Exact Evidence Traceability",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Exact text requirement candidates with source/version/span/offset; named review controls acceptance. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F03",
+    "Meaning": "Regulation-to-SOP / Requirement Mapping",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "SOP coverage, rationale, linked requirement and source records; missing support blocks approval. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F04",
+    "Meaning": "Compliance Gap, Conflict & Evidence-Sufficiency Control",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Saved gaps, conflict and dependency states; unsupported candidates fail grounding checks. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F05",
+    "Meaning": "Quality Risk, Severity & Confidence Assessment",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Separate severity, likelihood, controls and confidence fields; human root cause and disposition. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F06",
+    "Meaning": "Deviation Investigation Review",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Investigation chronology, hypotheses, human conclusions and immutable contribution trail. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F07",
+    "Meaning": "OOS/OOT Investigation Review",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Synthetic OOS assay conflict 94.2% vs 99.1%; missing rationale remains HOLD. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F08",
+    "Meaning": "Bidirectional Change-Control & Impact Assessment",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Transitive saved links, quality-to-AI invalidation, AI-to-quality links and historical decisions preserved. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F09",
+    "Meaning": "RCA-CAPA Lifecycle & Effectiveness Verification",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Implementation/effectiveness/cause gates, due dates and signed closure; missing proof blocks closure. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F10",
+    "Meaning": "Training Impact & Retraining Traceability",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Role/version/completion evidence and fresh review requirements. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F11",
+    "Meaning": "Audit / Inspection Finding & Readiness Management",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Finding, owner, linked action and evidence packet; no formal inspection-readiness certification. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F12",
+    "Meaning": "PQR/APQR & Quality Trend Review",
+    "Assessment": "PARTIAL / TREND PROJECTION",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Saved counts and time windows exist. A complete qualified PQR/APQR authoring/assessment service is not established."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F13",
+    "Meaning": "Owner, Deadline, Escalation & Closure Control",
+    "Assessment": "PARTIAL / EXTERNAL DELIVERY",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Saved owners/dates/manual escalation exist. External notification delivery is not configured/verified."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F14",
+    "Meaning": "Human QA Review, Override & Controlled Correction",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Current role/revision/hash, password plus real TOTP, decisions and reviewed regression proposals. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F15",
+    "Meaning": "Audit/Version Reconstruction, Event Forensics & Controlled Export",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Revision replay, append audit, R2 packets, checksummed backup and isolated copy restore. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F16",
+    "Meaning": "AI Model / Use / Context & Release Registry",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Intended/excluded use, model/config/expiry, signed passport states; synthetic authority only. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F17",
+    "Meaning": "AI Provenance, Transparency & Contribution Record",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Saved parent/specialist/reviewer outputs, attempts, input hashes, correlation and human contribution boundary. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F18",
+    "Meaning": "AI Evaluation, Grounding & Hallucination Suite",
+    "Assessment": "IMPLEMENTED / SYNTHETIC ENGINEERING SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Executed deterministic controls plus signed frozen cases and optional provider comparison. Representative professional qualification remains pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F19",
+    "Meaning": "Bias, Edge-Case & Consistency Verification",
+    "Assessment": "PARTIAL / REPRESENTATIVE EVALUATION",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Synthetic adverse/frozen-answer checks exist. Representative subgroup fairness and repeated live model quality remain unproven."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "F20",
+    "Meaning": "Assurance Monitoring, Regression, Blast Radius & Revalidation",
+    "Assessment": "PARTIAL / UNATTENDED OPERATIONS",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts; lib/ledger/outcome.ts; app/[screen]/page.tsx",
+    "Verification evidence": "65 integration; 15 outcome; 9 server-render checks",
+    "Remaining boundary": "Source-change/expiry invalidation and revalidation gates exist. An unattended monitoring heartbeat and operating alerts are not established."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "LQ-P01",
+    "Meaning": "Bidirectional dependency invalidation",
+    "Assessment": "IMPLEMENTED / BOUNDED SYNTHETIC SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts",
+    "Verification evidence": "tests/integration.mjs; tests/outcome.test.mjs",
+    "Remaining boundary": "Do not translate synthetic controls into professional accuracy or outcome percentages; live recovery and representative qualification remain pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "LQ-P02",
+    "Meaning": "AI-contribution forensics",
+    "Assessment": "IMPLEMENTED / BOUNDED SYNTHETIC SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts",
+    "Verification evidence": "tests/integration.mjs; tests/outcome.test.mjs",
+    "Remaining boundary": "Do not translate synthetic controls into professional accuracy or outcome percentages; live recovery and representative qualification remain pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "LQ-P03",
+    "Meaning": "Human correction firewall",
+    "Assessment": "IMPLEMENTED / BOUNDED SYNTHETIC SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts",
+    "Verification evidence": "tests/integration.mjs; tests/outcome.test.mjs",
+    "Remaining boundary": "Do not translate synthetic controls into professional accuracy or outcome percentages; live recovery and representative qualification remain pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "LQ-P04",
+    "Meaning": "Assurance debt",
+    "Assessment": "IMPLEMENTED / BOUNDED SYNTHETIC SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts",
+    "Verification evidence": "tests/integration.mjs; tests/outcome.test.mjs",
+    "Remaining boundary": "Do not translate synthetic controls into professional accuracy or outcome percentages; live recovery and representative qualification remain pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "LQ-P05",
+    "Meaning": "Task success / abstention / critical failure denominators",
+    "Assessment": "IMPLEMENTED / BOUNDED SYNTHETIC SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts",
+    "Verification evidence": "tests/integration.mjs; tests/outcome.test.mjs",
+    "Remaining boundary": "Do not translate synthetic controls into professional accuracy or outcome percentages; live recovery and representative qualification remain pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "LQ-R01",
+    "Meaning": "Unit / batch / operator mutations",
+    "Assessment": "IMPLEMENTED / BOUNDED SYNTHETIC SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts",
+    "Verification evidence": "tests/integration.mjs; tests/outcome.test.mjs",
+    "Remaining boundary": "Do not translate synthetic controls into professional accuracy or outcome percentages; live recovery and representative qualification remain pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "LQ-R02",
+    "Meaning": "Evidence removal test",
+    "Assessment": "IMPLEMENTED / BOUNDED SYNTHETIC SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts",
+    "Verification evidence": "tests/integration.mjs; tests/outcome.test.mjs",
+    "Remaining boundary": "Do not translate synthetic controls into professional accuracy or outcome percentages; live recovery and representative qualification remain pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "LQ-R03",
+    "Meaning": "Paired model-change evaluation",
+    "Assessment": "IMPLEMENTED / BOUNDED SYNTHETIC SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts",
+    "Verification evidence": "tests/integration.mjs; tests/outcome.test.mjs",
+    "Remaining boundary": "Do not translate synthetic controls into professional accuracy or outcome percentages; live recovery and representative qualification remain pending."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "LQ-R04",
+    "Meaning": "First-failure recording",
+    "Assessment": "IMPLEMENTED / BOUNDED SYNTHETIC SCOPE",
+    "Source implementation": "lib/ledger/engine.ts; lib/ledger/api.ts",
+    "Verification evidence": "tests/integration.mjs; tests/outcome.test.mjs",
+    "Remaining boundary": "Do not translate synthetic controls into professional accuracy or outcome percentages; live recovery and representative qualification remain pending."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L01",
+    "Meaning": "Workspace / tenant isolation",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L02",
+    "Meaning": "Identity / roles / approval",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L03",
+    "Meaning": "Authorized source / intake",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L04",
+    "Meaning": "Storage / metadata / versions",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L05",
+    "Meaning": "Parsing / normalization",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed. Supported formats and visual extraction need format-specific professional qualification."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L06",
+    "Meaning": "Source / policy / context governance",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L07",
+    "Meaning": "Evidence links / retrieval / analytics",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L08",
+    "Meaning": "Workflow / saved orchestration",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L09",
+    "Meaning": "Bounded specialists / model routing",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed. Specialist roles are not independent autonomous agents with unrestricted tools or release authority."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L10",
+    "Meaning": "Safety / quality / human gates",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L11",
+    "Meaning": "Evaluation / audit / controlled outputs",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "BEACON",
+    "Requirement": "L12",
+    "Meaning": "Operations / monitoring / recovery",
+    "Assessment": "PARTIAL / PRODUCTION OPERATIONS",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Local recovery/storage controls exist; sustained load, incident drill, external alerts, unattended schedules and full hosted backup/restore remain separate proof."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L01",
+    "Meaning": "Workspace / tenant isolation",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L02",
+    "Meaning": "Identity / roles / approval",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L03",
+    "Meaning": "Authorized source / intake",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L04",
+    "Meaning": "Storage / metadata / versions",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L05",
+    "Meaning": "Parsing / normalization",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed. Supported formats and visual extraction need format-specific professional qualification."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L06",
+    "Meaning": "Source / policy / context governance",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L07",
+    "Meaning": "Evidence links / retrieval / analytics",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L08",
+    "Meaning": "Workflow / saved orchestration",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L09",
+    "Meaning": "Bounded specialists / model routing",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed. Specialist roles are not independent autonomous agents with unrestricted tools or release authority."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L10",
+    "Meaning": "Safety / quality / human gates",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L11",
+    "Meaning": "Evaluation / audit / controlled outputs",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "FORGE",
+    "Requirement": "L12",
+    "Meaning": "Operations / monitoring / recovery",
+    "Assessment": "PARTIAL / PRODUCTION OPERATIONS",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Local recovery/storage controls exist; sustained load, incident drill, external alerts, unattended schedules and full hosted backup/restore remain separate proof."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L01",
+    "Meaning": "Workspace / tenant isolation",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L02",
+    "Meaning": "Identity / roles / approval",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L03",
+    "Meaning": "Authorized source / intake",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L04",
+    "Meaning": "Storage / metadata / versions",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L05",
+    "Meaning": "Parsing / normalization",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed. Supported formats and visual extraction need format-specific professional qualification."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L06",
+    "Meaning": "Source / policy / context governance",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L07",
+    "Meaning": "Evidence links / retrieval / analytics",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L08",
+    "Meaning": "Workflow / saved orchestration",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L09",
+    "Meaning": "Bounded specialists / model routing",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed. Specialist roles are not independent autonomous agents with unrestricted tools or release authority."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L10",
+    "Meaning": "Safety / quality / human gates",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L11",
+    "Meaning": "Evaluation / audit / controlled outputs",
+    "Assessment": "IMPLEMENTED / BOUNDED APPLICATION SCOPE",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Implemented with current Sites Worker/D1/R2 application stack; not a claim that the PDF reference stack is literally deployed."
+  },
+  {
+    "Project": "LEDGER-Q",
+    "Requirement": "L12",
+    "Meaning": "Operations / monitoring / recovery",
+    "Assessment": "PARTIAL / PRODUCTION OPERATIONS",
+    "Source implementation": "See canonical feature rows and full preserved source",
+    "Verification evidence": "Current domain/API/outcome suites; operations limits recorded",
+    "Remaining boundary": "Local recovery/storage controls exist; sustained load, incident drill, external alerts, unattended schedules and full hosted backup/restore remain separate proof."
+  },
+  {
+    "Project": "ALL THREE",
+    "Requirement": "AGENTIC-1",
+    "Meaning": "Goal / planning",
+    "Assessment": "PRESENT / BOUNDED IMPLEMENTATION",
+    "Source implementation": "BEACON lib/agent-runtime.ts; FORGE lib/agentic.mjs; LEDGER-Q lib/ledger/provider.ts",
+    "Verification evidence": "Source + engineering checks; live/model limits in report",
+    "Remaining boundary": "Bounded goal plans and review-on-conflict; no unrestricted goal invention."
+  },
+  {
+    "Project": "ALL THREE",
+    "Requirement": "AGENTIC-2",
+    "Meaning": "Tools / APIs",
+    "Assessment": "PRESENT / BOUNDED IMPLEMENTATION",
+    "Source implementation": "BEACON lib/monitor-execution.ts; FORGE lib/tool-adapters.mjs; LEDGER-Q lib/ledger/api.ts",
+    "Verification evidence": "Source + engineering checks; live/model limits in report",
+    "Remaining boundary": "Only supported allowed tools; speculative integrations are not deployed features."
+  },
+  {
+    "Project": "ALL THREE",
+    "Requirement": "AGENTIC-3",
+    "Meaning": "Shared saved context / history",
+    "Assessment": "PRESENT / BOUNDED IMPLEMENTATION",
+    "Source implementation": "BEACON lib/records.ts; FORGE lib/runtime-repository.ts; LEDGER-Q lib/ledger/api.ts",
+    "Verification evidence": "Source + engineering checks; live/model limits in report",
+    "Remaining boundary": "Saved job/evidence state is not unrestricted long-term learning or silent self-training."
+  },
+  {
+    "Project": "ALL THREE",
+    "Requirement": "AGENTIC-4",
+    "Meaning": "Orchestration / runtime",
+    "Assessment": "PRESENT / BOUNDED IMPLEMENTATION",
+    "Source implementation": "BEACON lib/agent-runtime.ts; FORGE lib/runtime.mjs; LEDGER-Q lib/ledger/api.ts",
+    "Verification evidence": "Source + engineering checks; live/model limits in report",
+    "Remaining boundary": "Bounded attempts, phase/state controls and HOLD. Durable unattended operational proof remains incomplete."
+  },
+  {
+    "Project": "ALL THREE",
+    "Requirement": "AGENTIC-5",
+    "Meaning": "Specialist collaboration",
+    "Assessment": "PRESENT / BOUNDED IMPLEMENTATION",
+    "Source implementation": "BEACON lib/ai-ris.ts; FORGE lib/agentic.mjs; LEDGER-Q lib/ledger/provider.ts",
+    "Verification evidence": "Source + engineering checks; live/model limits in report",
+    "Remaining boundary": "Controlled parent with typed specialist candidates and conflict checks; no full autonomous swarm."
+  },
+  {
+    "Project": "ALL THREE",
+    "Requirement": "AGENTIC-6",
+    "Meaning": "Human decision interface",
+    "Assessment": "PRESENT / BOUNDED IMPLEMENTATION",
+    "Source implementation": "BEACON lib/workflow.ts; FORGE lib/signature.mjs; LEDGER-Q lib/ledger/api.ts",
+    "Verification evidence": "Source + engineering checks; live/model limits in report",
+    "Remaining boundary": "A candidate/model run cannot grant qualified approval or regulatory release."
+  },
+  {
+    "Project": "ALL THREE",
+    "Requirement": "AGENTIC-7",
+    "Meaning": "Permissions / safe boundaries",
+    "Assessment": "PRESENT / BOUNDED IMPLEMENTATION",
+    "Source implementation": "BEACON lib/permissions.ts; FORGE lib/core.mjs; LEDGER-Q lib/ledger/security.ts",
+    "Verification evidence": "Source + engineering checks; live/model limits in report",
+    "Remaining boundary": "Technical guardrails require production security review and customer policy qualification."
+  },
+  {
+    "Project": "ALL THREE",
+    "Requirement": "AGENTIC-8",
+    "Meaning": "Saved runs / evaluation / observability",
+    "Assessment": "PRESENT / BOUNDED IMPLEMENTATION",
+    "Source implementation": "BEACON lib/agent-runtime.ts; FORGE lib/model-gateway.mjs; LEDGER-Q lib/ledger/provider.ts",
+    "Verification evidence": "Source + engineering checks; live/model limits in report",
+    "Remaining boundary": "Attempts, failures and available provider usage are recorded; not a full live monitoring/SLO service."
+  },
+  {
+    "Project": "ALL THREE",
+    "Requirement": "AGENTIC-9",
+    "Meaning": "Governance / evidence / audit",
+    "Assessment": "PRESENT / BOUNDED IMPLEMENTATION",
+    "Source implementation": "BEACON lib/workflow.ts; FORGE lib/runtime.mjs; LEDGER-Q lib/ledger/engine.ts",
+    "Verification evidence": "Source + engineering checks; live/model limits in report",
+    "Remaining boundary": "Audit/revision/role controls are not legal clearance, system qualification or compliance certification."
+  }
+]

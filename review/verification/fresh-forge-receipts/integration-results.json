@@ -1,0 +1,196 @@
+{
+  "at": "2026-10-07T10:21:36.939Z",
+  "passed": 47,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Authenticated workspace creation persists membership",
+      "status": "PASS"
+    },
+    {
+      "name": "Cross-tenant workspace read is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Anonymous API access is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Cross-origin write is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Stored intake and extraction survive fresh server read",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate operation returns prior result without duplicate records",
+      "status": "PASS"
+    },
+    {
+      "name": "Idempotency key reuse for different input is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent edits yield one winner and one stale rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "Revoked reviewer cannot commit a paused-workflow result",
+      "status": "PASS"
+    },
+    {
+      "name": "Audit hash chain verifies actual persisted events",
+      "status": "PASS"
+    },
+    {
+      "name": "Historical replay verifies exact revision hash",
+      "status": "PASS"
+    },
+    {
+      "name": "Original upload bytes are stored and retrieved with permissions",
+      "status": "PASS"
+    },
+    {
+      "name": "Cross-tenant original file cannot be downloaded",
+      "status": "PASS"
+    },
+    {
+      "name": "Signing factor is stored encrypted and enrollment is private",
+      "status": "PASS"
+    },
+    {
+      "name": "Source approval and draft review persist through actual API",
+      "status": "PASS"
+    },
+    {
+      "name": "Client-supplied signature cannot finalize an export",
+      "status": "PASS"
+    },
+    {
+      "name": "AI provider permission is mandatory before inference",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing AI configuration persists HOLD with no fabricated draft",
+      "status": "PASS"
+    },
+    {
+      "name": "Confirmed second factor signs the exact persisted evidence revision",
+      "status": "PASS"
+    },
+    {
+      "name": "Consumed signing code cannot finalize another package",
+      "status": "PASS"
+    },
+    {
+      "name": "Authorized export preflight uses the exact persisted signed snapshot",
+      "status": "PASS"
+    },
+    {
+      "name": "Real PDF, Word, HTML and ZIP downloads resolve from stored evidence",
+      "status": "PASS"
+    },
+    {
+      "name": "Anonymous and cross-tenant exports are rejected before formatting",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown snapshot and unsupported format do not generate an artifact",
+      "status": "PASS"
+    },
+    {
+      "name": "Persisted checksum corruption blocks export with a controlled failure",
+      "status": "PASS"
+    },
+    {
+      "name": "Original XML extraction persists exact source span and unapproved raw value",
+      "status": "PASS"
+    },
+    {
+      "name": "Unsafe XML is held with no partial persisted facts",
+      "status": "PASS"
+    },
+    {
+      "name": "Lifecycle candidate persists exact source-backed batch through the API",
+      "status": "PASS"
+    },
+    {
+      "name": "Lifecycle self-approval fails and an independent named reviewer persists approval",
+      "status": "PASS"
+    },
+    {
+      "name": "Revoked lifecycle reviewer cannot commit a result prepared before revocation",
+      "status": "PASS"
+    },
+    {
+      "name": "Uploaded original revision preserves both byte histories and selectively stales dependent facts",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid original replacement reason or bytes commits no source or original object",
+      "status": "PASS"
+    },
+    {
+      "name": "Direct JSON replacement cannot bypass preserved original upload controls",
+      "status": "PASS"
+    },
+    {
+      "name": "Upload idempotency binds original predecessor and recorded revision reason",
+      "status": "PASS"
+    },
+    {
+      "name": "UTF8 BOM JSON upload preserves original hash and exact extraction offsets",
+      "status": "PASS"
+    },
+    {
+      "name": "UTF8 BOM XML upload and document extraction preserve original value spans",
+      "status": "PASS"
+    },
+    {
+      "name": "Audit tampering is detected rather than reported as valid",
+      "status": "PASS"
+    },
+    {
+      "name": "Restored database snapshot reconstructs the same filing state",
+      "status": "PASS"
+    },
+    {
+      "name": "Readiness probes actual D1 migrations, queue and scoped R2 originals",
+      "status": "PASS"
+    },
+    {
+      "name": "Readiness denies anonymous and cross-tenant inspection",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing provider readiness remains HOLD rather than advertised healthy",
+      "status": "PASS"
+    },
+    {
+      "name": "Database dependency failure cannot report ready",
+      "status": "PASS"
+    },
+    {
+      "name": "Queue migration loss blocks readiness despite database liveness",
+      "status": "PASS"
+    },
+    {
+      "name": "Storage binding with failed reads stays on HOLD",
+      "status": "PASS"
+    },
+    {
+      "name": "Corrupt sampled original blocks readiness before returning healthy",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact branch API persists candidates and blocks revoked reviewer replay",
+      "status": "PASS"
+    },
+    {
+      "name": "Revoked proposal reviewer blocks merge including the final commit race",
+      "status": "PASS"
+    }
+  ],
+  "boundary": "Actual local D1/R2 and API-handler integration checks; hosted sign-in and browser interaction remain separate."
+}

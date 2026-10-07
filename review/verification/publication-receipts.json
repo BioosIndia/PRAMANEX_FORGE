@@ -1,0 +1,45 @@
+{
+  "updated": "2026-10-07",
+  "ledger": {
+    "source": {
+      "project_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73",
+      "commit_sha": "5544d6892bb90edbace6c7385a9fadcacfa33d35"
+    },
+    "deployment": {
+      "id": "appgdep_6ac61efd88d88191b0aa3c049726fe29",
+      "project_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73",
+      "title": "PRAMANEX LEDGER-Q | Quality & AI Assurance",
+      "version_id": "appgprj_6ac4de4b7ba881918706f67b0d056d73~appgver_263ae6d715a481918eccf80d5be87e7c",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://ledger-q.r4dewangan.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6ac4de4b7ba881918706f67b0d056d73",
+      "failure_message": null,
+      "env_set_revision": 2,
+      "updated_at": "2026-10-07T10:29:39.582425+00:00"
+    }
+  },
+  "portfolio": {
+    "source": {
+      "project_id": "appgprj_6aba8a7e9e488191ad4fd70cd2eede3b",
+      "commit_sha": "033109226d68bd8ae5465d79f4cd138867fa4a00"
+    },
+    "deployment": {
+      "id": "appgdep_6ac61f33764c81918c2c9af38f7a99d0",
+      "project_id": "appgprj_6aba8a7e9e488191ad4fd70cd2eede3b",
+      "title": "Rahul Dewangan | Regulatory Portfolio",
+      "version_id": "appgprj_6aba8a7e9e488191ad4fd70cd2eede3b~appgver_843a9b4d38908191931594436b1dada7",
+      "type": "publish",
+      "status": "succeeded",
+      "url": "https://portfolio.r4dewangan.chatgpt.site",
+      "has_mcp": false,
+      "screenshot_asset_pointer": null,
+      "provider_deployment_id": "site---6aba8a7e9e488191ad4fd70cd2eede3b",
+      "failure_message": null,
+      "env_set_revision": 0,
+      "updated_at": "2026-10-07T10:30:27.613188+00:00"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+PASS Quality workbench preserves conflicting original/transcribed values and HOLD
+PASS Read-only workbench cannot offer an enabled signing action
+PASS Map draws every saved dependency and identifies exact source revision
+PASS Owner-only role cannot enable reviewer signing in review dock
+PASS Audit workspace keeps packet state and human approval requirement visible
+PASS Empty quality workspace explains missing source rather than inventing a case
+PASS Fresh outcome view contains zero saved counts and directs to originals, never preloads proof
+PASS Saved outcome view retains uncertainty and avoids treating historical decisions as approval
+PASS Motion model is decorative and does not imply saved facts or approval

@@ -1,0 +1,812 @@
+{
+  "executed": true,
+  "version": "forge-2.1.0",
+  "at": "2026-10-07T10:21:27.910Z",
+  "passed": 88,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Authorized structured source preserves original hash",
+      "ids": [
+        "F01",
+        "F04",
+        "L03",
+        "L04"
+      ],
+      "status": "PASS",
+      "latencyMs": 4
+    },
+    {
+      "name": "Missing source rights are blocked",
+      "ids": [
+        "F01",
+        "L03"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Unsupported executable file is blocked",
+      "ids": [
+        "F01",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Traversal filename is blocked",
+      "ids": [
+        "F01",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Wrong-purpose source is blocked",
+      "ids": [
+        "F01",
+        "L06"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Viewer cannot write",
+      "ids": [
+        "L01",
+        "L02",
+        "P04"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Anonymous action is blocked",
+      "ids": [
+        "L02"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Stale workspace revision is blocked",
+      "ids": [
+        "F10",
+        "X47",
+        "P02"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Unknown workflow action is blocked",
+      "ids": [
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Known values and source coordinates extracted",
+      "ids": [
+        "F02",
+        "F04",
+        "D02",
+        "D16"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Extraction is idempotent for same source",
+      "ids": [
+        "F02",
+        "L08"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Bad JSON produces visible SOURCE_FAILED",
+      "ids": [
+        "F02",
+        "D13"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "PDF is preserved and held without invented extraction",
+      "ids": [
+        "X04",
+        "X05",
+        "L05"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Active HTML is rejected as source content",
+      "ids": [
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Quoted CSV handles comma without losing coordinates",
+      "ids": [
+        "F02",
+        "D02"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Unclosed CSV is not silently parsed",
+      "ids": [
+        "D13"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Oversized parameter set is blocked",
+      "ids": [
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Unit conversion preserves raw value and scales limits",
+      "ids": [
+        "F03",
+        "F-P02",
+        "D03"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Conversion without scientific basis remains uncertain",
+      "ids": [
+        "F03",
+        "X07"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Non-numeric field remains uncertain",
+      "ids": [
+        "F02",
+        "F05"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Absent field remains MISSING",
+      "ids": [
+        "F05"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Cross-document disagreement remains open",
+      "ids": [
+        "F07",
+        "X16",
+        "D04"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Conflicted fact cannot be approved",
+      "ids": [
+        "F10",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Conflict choice outside candidate set is blocked",
+      "ids": [
+        "F07"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Conflict resolution retains rejected source and reason",
+      "ids": [
+        "F07",
+        "F11"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Author cannot approve facts",
+      "ids": [
+        "L02",
+        "L09"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Field review checks exact candidate revision",
+      "ids": [
+        "F10",
+        "X47"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Unsupported correction value is blocked",
+      "ids": [
+        "F-P04",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Batch comparison uses context and preserves interpretation limit",
+      "ids": [
+        "F08",
+        "F-P05",
+        "X20"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Different methods block batch comparability",
+      "ids": [
+        "F08",
+        "D03"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Draft cannot use unapproved facts",
+      "ids": [
+        "F09",
+        "F-P03"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Approved facts produce independently checked technical draft",
+      "ids": [
+        "F09",
+        "X24",
+        "X25",
+        "X29",
+        "F13"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Wrong numeric assertion is caught by QC",
+      "ids": [
+        "F-P03",
+        "D05"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Missing citation is caught by independent QC",
+      "ids": [
+        "F04",
+        "X29"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Draft value mismatch cannot pass",
+      "ids": [
+        "X29",
+        "D05"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Required parameter gaps block draft approval",
+      "ids": [
+        "F05",
+        "X31",
+        "X33"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Controlled export preserves snapshot and release=false",
+      "ids": [
+        "F14",
+        "X51",
+        "P04"
+      ],
+      "status": "PASS",
+      "latencyMs": 4
+    },
+    {
+      "name": "Unapproved draft cannot export",
+      "ids": [
+        "F14",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Source revision selectively stales dependencies",
+      "ids": [
+        "F12",
+        "F-P01",
+        "X40",
+        "X42",
+        "X48"
+      ],
+      "status": "PASS",
+      "latencyMs": 4
+    },
+    {
+      "name": "Stale draft cannot export after change",
+      "ids": [
+        "F14",
+        "X48"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Non-impact evidence identifies actual excluded nodes",
+      "ids": [
+        "X41"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Graph edges connect actual source facts",
+      "ids": [
+        "X14",
+        "X15"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Filed snapshot stays unchanged after new source",
+      "ids": [
+        "X49",
+        "X51",
+        "X52"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "HA response without approved facts stays empty",
+      "ids": [
+        "X53",
+        "X55"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Legacy response review cannot invent an authority outcome in governed memory",
+      "ids": [
+        "X54",
+        "X57",
+        "X66"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Stale fact cannot enter approved memory",
+      "ids": [
+        "X66",
+        "P01"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Closure cannot self-approve",
+      "ids": [
+        "X64",
+        "A17",
+        "L02"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Independent closure records actual evidence",
+      "ids": [
+        "X64"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "New evidence reopens dependent closed action",
+      "ids": [
+        "X65"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "External mapping preserves predecessor history",
+      "ids": [
+        "L04",
+        "L06"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Arbitrary mapping status is blocked",
+      "ids": [
+        "L06"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "All nine agentic parts are allocated",
+      "ids": [
+        "L08",
+        "L09"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Planner blocks unsupported free-form tool instructions",
+      "ids": [
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Planner introduces human wait for conflict",
+      "ids": [
+        "L08"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Replan uses current approved evidence",
+      "ids": [
+        "L08"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Every specialist returns typed candidate without approval",
+      "ids": [
+        "A1",
+        "A18",
+        "L09"
+      ],
+      "status": "PASS",
+      "latencyMs": 4
+    },
+    {
+      "name": "Cross-revision specialist merge is held",
+      "ids": [
+        "L09",
+        "P02"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Unknown agent cannot execute",
+      "ids": [
+        "L09"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Specialist jobs record trace and measured latency",
+      "ids": [
+        "L11",
+        "D22"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Network connector blocks private destination",
+      "ids": [
+        "L10",
+        "D14"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Network connector blocks non-allowlisted host",
+      "ids": [
+        "L03",
+        "D14"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Connector contract drift is visible",
+      "ids": [
+        "X03",
+        "D01"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Connector request uses redirect error and timeout",
+      "ids": [
+        "L12",
+        "D14"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Authenticator follows known HOTP vectors",
+      "ids": [
+        "L02"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Authenticator code replay is rejected",
+      "ids": [
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Encrypted signature secret round-trips and wrong key fails",
+      "ids": [
+        "L02",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Signature requires controlled reason and exact revision hash",
+      "ids": [
+        "F11",
+        "F14"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Finalized signature binds current scientific evidence",
+      "ids": [
+        "F11",
+        "F14",
+        "L02"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Signature from another evidence revision is blocked",
+      "ids": [
+        "F14",
+        "X47",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "QC observation time does not alter scientific signature binding",
+      "ids": [
+        "F11",
+        "F14"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Human editor cannot approve their own revised draft",
+      "ids": [
+        "F10",
+        "L02"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Human correction requires a different approving reviewer",
+      "ids": [
+        "F10",
+        "F-P04",
+        "L02"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Decision debt exposes unresolved records",
+      "ids": [
+        "X59",
+        "X67"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "JSON numeric lexeme and original snippet remain unchanged",
+      "ids": [
+        "F03",
+        "F04"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "CSV quoted original row and true multiline location preserved",
+      "ids": [
+        "F04"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Source content hash mismatch is blocked",
+      "ids": [
+        "F04",
+        "P01"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "All expanded capability IDs resolve with honest boundaries",
+      "ids": [
+        "X01",
+        "X68"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Missing AI provider stays unavailable",
+      "ids": [
+        "L09"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Typed AI protocol fixture preserves field references",
+      "ids": [
+        "X28",
+        "L09"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "AI response with forged source ID is held",
+      "ids": [
+        "X25",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Initial invocation and three retries exhaust into owned DLQ",
+      "ids": [
+        "L08",
+        "L09"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Unsafe scientific number precision, overflow and underflow cannot become facts",
+      "ids": [
+        "F02",
+        "F03",
+        "F04",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Raw scientific limit lexemes survive JSON parsing",
+      "ids": [
+        "F03",
+        "F04"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Duplicate CSV headers and ragged rows cannot silently discard evidence",
+      "ids": [
+        "F02",
+        "F04",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Absent specification limits cannot become a proven comparable context",
+      "ids": [
+        "F08",
+        "X18"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "UTF8 BOM JSON preserves original hash and character offsets",
+      "ids": [
+        "F02",
+        "F04"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Internal inquiry rejects self approval and stale or administrator review",
+      "ids": [
+        "L02",
+        "X47"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Readiness inspection cannot silently mutate saved scientific state",
+      "ids": [
+        "P01",
+        "P02",
+        "X47"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    }
+  ],
+  "boundary": "Executed synthetic engineering fixtures. These results do not measure independent regulatory accuracy, production load or organizational qualification."
+}

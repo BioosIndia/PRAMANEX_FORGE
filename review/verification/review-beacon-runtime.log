@@ -1,0 +1,92 @@
+PASS anonymous reports rejected
+PASS unrelated workspace rejected
+PASS admin cannot self-grant reviewer
+PASS auditor cannot change membership
+PASS official exact evidence linked
+PASS anonymous assistant access is rejected
+PASS assistant cannot read a foreign report
+PASS assistant returns exact quotations without approving an action
+PASS invented assistant quote fails closed and is saved as failure
+PASS assistant missing evidence never becomes a supported answer
+PASS assistant questions are saved in their authorized workspace
+PASS assistant rechecks membership after provider response before saving
+PASS assistant budget is persistent and checked before provider dispatch
+PASS anonymous outcomes rejected
+PASS empty foreign workspace outcomes remain empty and unmeasured
+PASS outcomes derive scoped saved archive binding without an accuracy claim
+PASS forged official passage rejected
+PASS cross-workspace evidence blocked
+PASS cross-workspace audit export blocked
+PASS admin approval forbidden
+PASS second approval loses revision race
+PASS non-reviewer cannot close own action
+PASS independent closure accepted
+PASS outcomes record actual saved independent closure and sample durations
+PASS audit reconstructs source and human chain
+PASS anonymous master registry forbidden
+PASS anonymous source execution forbidden
+PASS analyst cannot execute source monitor
+PASS cross-tenant mapping references rejected
+PASS master creator cannot self approve
+PASS cross-workspace checkpoint denied
+PASS planner checkpoint persisted
+PASS lost revision cannot mutate checkpoint
+PASS paused job cannot execute
+PASS full agent workflow reaches human review
+PASS assessment preserves ID mapping and evidence
+PASS client cannot forge internal agent report ID
+PASS checkpoint trace records actual durations and token use
+PASS audit includes exact master and agent chain
+PASS new research blocks closure until renewed approval
+PASS transient failure invokes replanner and persists retry
+PASS retry backoff prevents immediate execution
+PASS retry recovers same failed checkpoint
+PASS active lease prevents duplicate work
+PASS active lease blocks conflicting control transition
+PASS expired lease recovers saved stage
+PASS zero-call packaging succeeds at model budget limit
+PASS readiness requires authentication
+PASS readiness distinguishes configured models from qualification
+PASS new report contract binds source hashes and reviewed IDs
+PASS new research visibly requires fresh review in delivery projection
+PASS concurrent duplicate request creates one job and immutable creation event
+PASS reusing idempotency key for altered input rejected
+PASS provider dispatch observes persistent pre-call reservation
+PASS server executes remaining stages and stops at human review
+PASS action updates preserve stable identity and explicit revisions
+PASS superseded action cannot be independently closed
+PASS closed action revision cannot be rewritten as progress
+PASS completed server chain cannot execute again
+PASS paused run can be cancelled without provider execution
+PASS expired crash lease retains budget and blocks ninth provider call
+PASS unarchived evidence enters HOLD before any provider call
+PASS 25 concurrent creates obey atomic 20-active-run quota
+PASS cross-site monitor trigger blocked before outbound work
+PASS monitor POST records only its workspace and exact cached results
+PASS expired monitor lease is reclaimed and completed safely
+PASS approved MDM report is unaffected by unrelated profile edits
+PASS new official original is object-backed with no duplicated D1 base64
+PASS archived original verifies integrity and downloads successfully
+PASS repeated identical intake does not duplicate evidence
+PASS object tampering cannot download as trusted original
+PASS missing archived original reports recovery instead of an empty success
+PASS simultaneous source writers cannot fork one predecessor
+PASS operations counts all reports beyond prior 100-row cap
+PASS keyset pagination includes tied timestamps once and isolates tenants
+PASS malformed page request is rejected
+PASS another workspace cannot mark notification read
+PASS master supersession atomically invalidates report
+PASS superseded mapping enters HOLD before model call
+PASS historical entity approval rejected at database boundary
+PASS mapping historical refs rejected at database boundary
+PASS master event history cannot be deleted
+PASS revocation rechecked on read
+PASS stale assistant evidence is rejected before calling the model
+PASS stale reports reject action
+PASS archived evidence rejects mutation
+PASS workflow history rejects deletion
+PASS original report rejects rewriting
+PASS render /
+PASS render /product
+PASS render /intelligence
+PASS render /architecture

@@ -1,0 +1,2978 @@
+{
+  "version": "forge-2.1.0",
+  "at": "2026-10-04T16:37:35.197Z",
+  "items": [
+    {
+      "id": "F01",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "CMC source intake",
+      "treatment": "KEEP",
+      "purpose": "Controlled truth entry point.",
+      "behavior": "Accept controlled non-confidential or synthetic CMC documents/data; hold wrong-purpose or unsupported input.",
+      "layers": "L01-L04, L06",
+      "behavior_source": "current",
+      "behavior_page": 2,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Authorized structured source preserves original hash",
+        "Core domain: Missing source rights are blocked",
+        "Core domain: Unsupported executable file is blocked",
+        "Core domain: Traversal filename is blocked",
+        "Core domain: Wrong-purpose source is blocked"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F02",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Field extraction",
+      "treatment": "KEEP + EXPAND",
+      "purpose": "Foundation for atomic CMC facts.",
+      "behavior": "Convert chemical/product parameters into typed candidate records with source coordinates.",
+      "layers": "L05, L09",
+      "behavior_source": "current",
+      "behavior_page": 2,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Known values and source coordinates extracted",
+        "Core domain: Extraction is idempotent for same source",
+        "Core domain: Bad JSON produces visible SOURCE_FAILED",
+        "Core domain: Quoted CSV handles comma without losing coordinates",
+        "Core domain: Non-numeric field remains uncertain",
+        "Core domain: Unsafe scientific number precision, overflow and underflow cannot become facts",
+        "Core domain: Duplicate CSV headers and ragged rows cannot silently discard evidence",
+        "Core domain: UTF8 BOM JSON preserves original hash and character offsets"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F03",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Unit / format normalization",
+      "treatment": "KEEP",
+      "purpose": "Preserve raw + approved conversion.",
+      "behavior": "Preserve raw value and record approved conversion; never silently alter meaning.",
+      "layers": "L04-L06, L10",
+      "behavior_source": "current",
+      "behavior_page": 2,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Unit conversion preserves raw value and scales limits",
+        "Core domain: Conversion without scientific basis remains uncertain",
+        "Core domain: JSON numeric lexeme and original snippet remain unchanged",
+        "Core domain: Unsafe scientific number precision, overflow and underflow cannot become facts",
+        "Core domain: Raw scientific limit lexemes survive JSON parsing"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F04",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Source-span traceability",
+      "treatment": "KEEP - CORE",
+      "purpose": "Every accepted field remains evidence-addressable.",
+      "behavior": "Every field links to exact source version and location; missing link blocks accepted output.",
+      "layers": "L04, L07, L11",
+      "behavior_source": "current",
+      "behavior_page": 2,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Authorized structured source preserves original hash",
+        "Core domain: Known values and source coordinates extracted",
+        "Core domain: Missing citation is caught by independent QC",
+        "Core domain: JSON numeric lexeme and original snippet remain unchanged",
+        "Core domain: CSV quoted original row and true multiline location preserved",
+        "Core domain: Source content hash mismatch is blocked",
+        "Core domain: Unsafe scientific number precision, overflow and underflow cannot become facts",
+        "Core domain: Raw scientific limit lexemes survive JSON parsing",
+        "Core domain: Duplicate CSV headers and ragged rows cannot silently discard evidence",
+        "Core domain: UTF8 BOM JSON preserves original hash and character offsets",
+        "File formats: A source citation gap blocks all artifact formats"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F05",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Completeness check",
+      "treatment": "KEEP",
+      "purpose": "Missing stays missing.",
+      "behavior": "Required missing information remains missing; no invented placeholder as fact.",
+      "layers": "L05-L06, L10",
+      "behavior_source": "current",
+      "behavior_page": 2,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Non-numeric field remains uncertain",
+        "Core domain: Absent field remains MISSING",
+        "Core domain: Required parameter gaps block draft approval"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F06",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Wrong-value anomaly",
+      "treatment": "KEEP + EXPAND",
+      "purpose": "Candidate anomaly, never autonomous batch disposition.",
+      "behavior": "Flag suspicious/inconsistent values for review; do not autonomously declare product/batch failure.",
+      "layers": "L05-L06, L10",
+      "behavior_source": "current",
+      "behavior_page": 2,
+      "status": "BUILT",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F07",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Cross-document consistency",
+      "treatment": "KEEP - CORE",
+      "purpose": "Preserve disagreements instead of silent merging.",
+      "behavior": "Compare controlled sources and preserve disagreements rather than silently merging them.",
+      "layers": "L04-L07, L10",
+      "behavior_source": "current",
+      "behavior_page": 2,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Cross-document disagreement remains open",
+        "Core domain: Conflict choice outside candidate set is blocked",
+        "Core domain: Conflict resolution retains rejected source and reason"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F08",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Batch-uniformity map",
+      "treatment": "KEEP + EXPAND",
+      "purpose": "Grow into genealogy/comparability analytics.",
+      "behavior": "Compare defined batch parameters, units and limits; variation is not automatically failure.",
+      "layers": "L05-L07, L11",
+      "behavior_source": "current",
+      "behavior_page": 2,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Batch comparison uses context and preserves interpretation limit",
+        "Core domain: Different methods block batch comparability",
+        "Core domain: Absent specification limits cannot become a proven comparable context"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F09",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Submission-format preparation",
+      "treatment": "MAJOR EXPANSION",
+      "purpose": "Grow into structured Module 3 authoring/readiness.",
+      "behavior": "Prepare structured downstream CMC content as a draft; no autonomous submission/eCTD-conformance claim.",
+      "layers": "L05-L06, L09-L10",
+      "behavior_source": "current",
+      "behavior_page": 2,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Draft cannot use unapproved facts",
+        "Core domain: Approved facts produce independently checked technical draft"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F10",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Human correction",
+      "treatment": "KEEP - CORE",
+      "purpose": "Human authority and revision discipline.",
+      "behavior": "Authorized reviewer accepts, corrects or rejects extracted fields with reasons; stale approval fails.",
+      "layers": "L02, L08, L10",
+      "behavior_source": "current",
+      "behavior_page": 3,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Stale workspace revision is blocked",
+        "Core domain: Conflicted fact cannot be approved",
+        "Core domain: Field review checks exact candidate revision",
+        "Core domain: Human editor cannot approve their own revised draft",
+        "Core domain: Human correction requires a different approving reviewer"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F11",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Decision / audit record",
+      "treatment": "KEEP",
+      "purpose": "Decision provenance.",
+      "behavior": "Preserve reviewer, time, evidence version, decision, original and corrected values.",
+      "layers": "L02, L04, L11",
+      "behavior_source": "current",
+      "behavior_page": 3,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Conflict resolution retains rejected source and reason",
+        "Core domain: Signature requires controlled reason and exact revision hash",
+        "Core domain: Finalized signature binds current scientific evidence",
+        "Core domain: QC observation time does not alter scientific signature binding"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F12",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Version / change record",
+      "treatment": "KEEP - CORE",
+      "purpose": "Selective stale propagation begins here.",
+      "behavior": "Preserve before/after lineage for sources and fields; changed source triggers affected-field review.",
+      "layers": "L04, L08, L11",
+      "behavior_source": "current",
+      "behavior_page": 3,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Source revision selectively stales dependencies",
+        "Controlled branches: Editing retains immutable candidate history and exact source pins"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F13",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Validation report",
+      "treatment": "KEEP + EXPAND",
+      "purpose": "Become test/assurance evidence layer.",
+      "behavior": "Report executed extraction/checking results, denominator, errors, exceptions and limitations.",
+      "layers": "L10-L11",
+      "behavior_source": "current",
+      "behavior_page": 3,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Approved facts produce independently checked technical draft"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F14",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Controlled export",
+      "treatment": "KEEP + EXPAND",
+      "purpose": "Become reproducible submission/evidence package.",
+      "behavior": "Produce reproducible source-linked evidence package; exclude unapproved/unsupported claims.",
+      "layers": "L02, L10-L12",
+      "behavior_source": "current",
+      "behavior_page": 3,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Controlled export preserves snapshot and release=false",
+        "Core domain: Unapproved draft cannot export",
+        "Core domain: Stale draft cannot export after change",
+        "Core domain: Signature requires controlled reason and exact revision hash",
+        "Core domain: Finalized signature binds current scientific evidence",
+        "Core domain: Signature from another evidence revision is blocked",
+        "Core domain: QC observation time does not alter scientific signature binding",
+        "File formats: Frozen approved source package passes technical profile",
+        "File formats: DOCX is an actual OOXML ZIP with CRC and exact frozen XML",
+        "File formats: PDF embeds Unicode and is a genuine multipage PDF",
+        "File formats: HTML escapes untrusted text and disallows active content",
+        "File formats: A source citation gap blocks all artifact formats",
+        "File formats: Unsupported draft statements cannot be formatted",
+        "File formats: Release=true or stale approval cannot pass technical handoff",
+        "File formats: Frozen snapshot and artifacts stay independent of live source edits",
+        "File formats: Server-owned manifest checksum mismatch blocks rendering",
+        "File formats: Signature-bound record is displayed only when exact payload binds",
+        "File formats: Unsupported PDF glyph visibly rejects while DOCX preserves Unicode",
+        "File formats: Traversal, extension mismatch and internal controls are blocked",
+        "File formats: Table and reference CSV retain raw/normalized values and source IDs",
+        "File formats: Handoff ZIP has true formats, checksums and a safe technical XML skeleton",
+        "File formats: Independent Python PDF, OOXML, attachment and package XML readers verify generated files"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F-P01",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Field dependency + source-change map",
+      "treatment": "KEEP - MOAT",
+      "purpose": "Reopen only affected downstream work.",
+      "behavior": "Link extracted source fields to downstream draft tables/sections. A changed source marks only dependent fields for re-review.",
+      "behavior_source": "current",
+      "behavior_page": 3,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Source revision selectively stales dependencies",
+        "Controlled branches: Source replacement blocks merge and marks branch stale on read"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F-P02",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Unit + value conflict workbench",
+      "treatment": "KEEP",
+      "purpose": "Human-visible ambiguity.",
+      "behavior": "Show raw values, units, conversion rule, competing sources and unresolved conflict side by side.",
+      "behavior_source": "current",
+      "behavior_page": 3,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Unit conversion preserves raw value and scales limits"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F-P03",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Source-backed drafting contract",
+      "treatment": "KEEP - MOAT",
+      "purpose": "Every material statement supported or explicitly unresolved.",
+      "behavior": "Every material draft statement has source support or explicit MISSING / NEEDS REVIEW.",
+      "behavior_source": "current",
+      "behavior_page": 3,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Draft cannot use unapproved facts",
+        "Core domain: Wrong numeric assertion is caught by QC"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F-P04",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Reviewer correction replay",
+      "treatment": "KEEP - MOAT",
+      "purpose": "Preserve who changed what, why and against which source.",
+      "behavior": "Preserve who changed a field, why and against which source; rerun checks and invalidate stale approval.",
+      "behavior_source": "current",
+      "behavior_page": 3,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Unsupported correction value is blocked",
+        "Core domain: Human correction requires a different approving reviewer"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "F-P05",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Batch comparison with interpretation limits",
+      "treatment": "KEEP",
+      "purpose": "Comparability must include method/unit/limit context.",
+      "behavior": "Compare batches only with explicit method, unit and limit context; flag missing comparability.",
+      "behavior_source": "current",
+      "behavior_page": 3,
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Batch comparison uses context and preserves interpretation limit"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "X01",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Enterprise CMC Source Connector Mesh",
+      "layers": "L03/L12",
+      "purpose": "LIMS, MES, QMS, ELN, ERP, stability, RIM and controlled repositories.",
+      "status": "SPECIFIED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: All expanded capability IDs resolve with honest boundaries"
+      ],
+      "limitation": "Configured vendor/agency/paper-record workflow has not been demonstrated. Contract/HOLD behavior exists; this feature is not promoted by those negative tests."
+    },
+    {
+      "id": "X02",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Source Adapter SDK",
+      "layers": "L03/L12",
+      "purpose": "Version, test and add connectors without changing FORGE core.",
+      "status": "BUILT",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X03",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Source Contract Monitor",
+      "layers": "L03/L11",
+      "purpose": "Detect schema/file-format/integration drift before silent failure.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Connector contract drift is visible"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X04",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Multimodal CMC Ingestion",
+      "layers": "L03/L05",
+      "purpose": "Structured data, PDF, Word, XML, spreadsheets, tables and scanned records.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: PDF is preserved and held without invented extraction"
+      ],
+      "limitation": "Typed XML/DOCX/XLSX original-byte parser is tested. PDF/image candidate gateway exists but live vision credentials and representative extraction answer key remain required."
+    },
+    {
+      "id": "X05",
+      "source": "moat",
+      "page": 3,
+      "maturity": "SPECIFIED",
+      "name": "Paper Batch Record Intelligence",
+      "layers": "L05/L07",
+      "purpose": "Extract source-addressable facts from legacy/paper manufacturing records.",
+      "status": "SPECIFIED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: PDF is preserved and held without invented extraction"
+      ],
+      "limitation": "Configured vendor/agency/paper-record workflow has not been demonstrated. Contract/HOLD behavior exists; this feature is not promoted by those negative tests."
+    },
+    {
+      "id": "X06",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Atomic CMC Fact Compiler",
+      "layers": "L05/L07",
+      "purpose": "Convert controlled sources into typed reusable CMC facts.",
+      "status": "BUILT",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X07",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Unit + Scientific Context Engine",
+      "layers": "L05/L06",
+      "purpose": "Normalize units only with method, condition and interpretation context.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Conversion without scientific basis remains uncertain"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X08",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "CMC Ontology",
+      "layers": "L05/L07",
+      "purpose": "Controlled concepts for substance, product, process, site, test, specification and batch.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Source-backed entity stores exact fact and source revisions",
+        "Expanded lifecycle: Invented scientific scalar rejected by strict schema",
+        "Expanded lifecycle: Invented object identity rejected",
+        "Expanded lifecycle: Missing actual stored fact rejected",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: Capability dispatch returns real controlled lifecycle projections"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X09",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "CMC Regulatory Knowledge Base",
+      "layers": "L06/L07",
+      "purpose": "Versioned ICH and market-specific CMC requirement knowledge.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Citation bounds and unknown source blocked",
+        "Expanded lifecycle: Requirement identity and market require real cited evidence",
+        "Expanded lifecycle: Versioned requirement DSL executes actual approved count check",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X10",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Requirement-to-Data Mapper",
+      "layers": "L06/L07",
+      "purpose": "Map obligations to required facts, evidence and dossier sections.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Missing actual stored fact rejected",
+        "Expanded lifecycle: Duplicate fact cannot inflate evidence count",
+        "Expanded lifecycle: Requirement identity and market require real cited evidence",
+        "Expanded lifecycle: Approved dossier maps actual obligation evidence and sections",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: Wrong-market requirement cannot authorize dossier approval"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X11",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "CMC Digital Twin",
+      "layers": "L07",
+      "purpose": "Versioned machine-readable state of product, process, site, materials, specifications, methods and submissions.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Lifecycle hydration preserves all existing source data",
+        "Expanded lifecycle: Source-backed entity stores exact fact and source revisions",
+        "Expanded lifecycle: Entity predecessor remains immutable; only newest version current",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: Capability dispatch returns real controlled lifecycle projections"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X12",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Batch Genealogy Graph",
+      "layers": "L07",
+      "purpose": "Raw material -> intermediate -> batch -> finished-product lineage.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Genealogy creates source-linked material to intermediate to batch",
+        "Expanded lifecycle: Genealogy cycles blocked before scientific interpretation",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X13",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Process Genealogy Graph",
+      "layers": "L07",
+      "purpose": "Process step, CPP, CQA, equipment, site and material relationships.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Genealogy cycles blocked before scientific interpretation",
+        "Expanded lifecycle: Process graph validates equipment/site relation types",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X14",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "CMC Evidence Graph",
+      "layers": "L07",
+      "purpose": "Source -> fact -> batch/process -> statement -> dossier -> decision.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Graph edges connect actual source facts"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X15",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Dependency Graph",
+      "layers": "L07/L08",
+      "purpose": "Every downstream object that depends on a source fact or rule.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Graph edges connect actual source facts"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X16",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Cross-Document Consistency Guardian",
+      "layers": "L07/L11",
+      "purpose": "Detect contradictions and duplicated technical truth.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Cross-document disagreement remains open"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X17",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Cross-Dossier Consistency Guardian",
+      "layers": "L07/L11",
+      "purpose": "Check Module 2.3, Module 3, market dossiers and HA responses.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Cross-dossier conflicts are measured with exact cited records",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X18",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Specification Consistency Engine",
+      "layers": "L07/L11",
+      "purpose": "Compare methods, specifications, limits and versions.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Absent specification limits cannot become a proven comparable context",
+        "Expanded lifecycle: Cross-dossier conflicts are measured with exact cited records",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X19",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Stability Intelligence",
+      "layers": "L07/L11",
+      "purpose": "Structure stability evidence, trends, gaps and dossier usage.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Observed stability trend has no extrapolation or shelf-life claim",
+        "Expanded lifecycle: Stability batch mismatch cannot fabricate an observation",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X20",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Comparability Evidence Engine",
+      "layers": "L07/L08",
+      "purpose": "Connect process/product changes to characterization, impurity and stability evidence.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Batch comparison uses context and preserves interpretation limit",
+        "Expanded lifecycle: Comparability and transfer are recorded evidence assessments",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X21",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Statistical / Trend Analysis Workspace",
+      "layers": "L07/L11",
+      "purpose": "Analyze manufacturing/CMC trends without autonomous product disposition.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Observed stability trend has no extrapolation or shelf-life claim",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X22",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Scale-Up & Tech-Transfer Evidence Map",
+      "layers": "L07",
+      "purpose": "Connect development, scale-up and commercial manufacturing evidence.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Comparability and transfer are recorded evidence assessments",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X23",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Structured CMC Content Library",
+      "layers": "L07/L12",
+      "purpose": "Approved reusable content blocks with lineage and market context.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Content block and controlled reuse preserve scientific text",
+        "Expanded lifecycle: Content cannot reuse an unapproved block or wrong revision",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: Content-linked graph renders exact approved draft edge without mutation"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X24",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Modular Module 3 Authoring",
+      "layers": "L08/L09",
+      "purpose": "Generate controlled 3.2.S / 3.2.P content from approved facts.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Approved facts produce independently checked technical draft"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X25",
+      "source": "moat",
+      "page": 4,
+      "maturity": "SPECIFIED",
+      "name": "Evidence-Bound Data-to-Text",
+      "layers": "L09/L10",
+      "purpose": "Every generated statement tied to approved facts and source evidence.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Approved facts produce independently checked technical draft",
+        "Core domain: AI response with forged source ID is held"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X26",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Controlled Content Reuse",
+      "layers": "L08/L10",
+      "purpose": "Reuse approved content while tracking dependencies and stale state.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Content block and controlled reuse preserve scientific text",
+        "Expanded lifecycle: Content cannot reuse an unapproved block or wrong revision",
+        "Expanded lifecycle: Controlled correction makes new dependent candidates and transfers no approval",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X27",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Template & Style Engine",
+      "layers": "L08/L12",
+      "purpose": "Company/authority templates, terminology and formatting rules.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Content block and controlled reuse preserve scientific text",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X28",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "AI CMC Authoring Agent",
+      "layers": "L09",
+      "purpose": "Bounded authoring; cannot create unsupported regulated claims.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Typed AI protocol fixture preserves field references"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X29",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Independent CMC QC Agent",
+      "layers": "L09/L11",
+      "purpose": "Independent numeric, terminology, citation, table and omission checks.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Approved facts produce independently checked technical draft",
+        "Core domain: Missing citation is caught by independent QC",
+        "Core domain: Draft value mismatch cannot pass"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X30",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Technical Formatting Engine",
+      "layers": "L08/L12",
+      "purpose": "Controlled Word/PDF/table/reference preparation.",
+      "status": "TESTED",
+      "artifact": "lib/format-export.mjs; app/api/export; tests/format-export.mjs",
+      "proofCases": [
+        "File formats: Frozen approved source package passes technical profile",
+        "File formats: DOCX is an actual OOXML ZIP with CRC and exact frozen XML",
+        "File formats: PDF embeds Unicode and is a genuine multipage PDF",
+        "File formats: HTML escapes untrusted text and disallows active content",
+        "File formats: A source citation gap blocks all artifact formats",
+        "File formats: Unsupported draft statements cannot be formatted",
+        "File formats: Frozen snapshot and artifacts stay independent of live source edits",
+        "File formats: Signature-bound record is displayed only when exact payload binds",
+        "File formats: Unsupported PDF glyph visibly rejects while DOCX preserves Unicode",
+        "File formats: Table and reference CSV retain raw/normalized values and source IDs",
+        "File formats: Handoff ZIP has true formats, checksums and a safe technical XML skeleton",
+        "File formats: Independent Python PDF, OOXML, attachment and package XML readers verify generated files"
+      ],
+      "limitation": "Actual PDF/DOCX/HTML/ZIP with frozen provenance and technical preflight. No PDF/A qualification, agency eCTD conformity or validated publishing-system claim."
+    },
+    {
+      "id": "X31",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Module 3 Structural Validator",
+      "layers": "L11",
+      "purpose": "Validate section structure, mandatory content and dependency coverage.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Required parameter gaps block draft approval",
+        "Expanded lifecycle: Approved dossier maps actual obligation evidence and sections",
+        "Expanded lifecycle: Dossier with missing required parameter cannot be approved",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: No requirement profile cannot pass dossier approval",
+        "Expanded lifecycle: A regression cannot pass an unconfigured dossier obligation profile",
+        "File formats: Frozen approved source package passes technical profile",
+        "File formats: A source citation gap blocks all artifact formats",
+        "File formats: Release=true or stale approval cannot pass technical handoff",
+        "File formats: Handoff ZIP has true formats, checksums and a safe technical XML skeleton",
+        "File formats: Independent Python PDF, OOXML, attachment and package XML readers verify generated files"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X32",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "eCTD Technical Preflight",
+      "layers": "L11/L12",
+      "purpose": "Optional technical preflight before publishing handoff.",
+      "status": "SPECIFIED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "File formats: Unknown regional publishing profile is visibly not implemented"
+      ],
+      "limitation": "Configured vendor/agency/paper-record workflow has not been demonstrated. Contract/HOLD behavior exists; this feature is not promoted by those negative tests."
+    },
+    {
+      "id": "X33",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Submission Readiness Engine",
+      "layers": "L08/L11",
+      "purpose": "Combine evidence gaps, review, validation and dependency blockers.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Required parameter gaps block draft approval"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X34",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "CMC Readiness Scorecard",
+      "layers": "L11",
+      "purpose": "Transparent blocker dimensions, not an opaque single score.",
+      "status": "BUILT",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X35",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "CDMO Collaboration Workspace",
+      "layers": "L01/L02/L12",
+      "purpose": "Scoped external access to specific CMC objects and review tasks.",
+      "status": "TESTED",
+      "artifact": "lib/sharing*.mjs/ts; app/api/sharing; app/CollaborationPanel.tsx; tests/sharing.mjs",
+      "proofCases": [],
+      "limitation": "Exact-object grants, redacted projections, notes, review requests, expiry/revoke and original permissions; hosted partner onboarding and organizational DLP/retention require separate qualification."
+    },
+    {
+      "id": "X36",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Global Market CMC Matrix",
+      "layers": "L06/L07",
+      "purpose": "Product x market x submitted/current CMC state.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Approved dossier maps actual obligation evidence and sections",
+        "Expanded lifecycle: Market classification is rule-backed candidate, never legal clearance",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: Wrong-market requirement cannot authorize dossier approval"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X37",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Change Classification Assistant",
+      "layers": "L06/L09",
+      "purpose": "Evidence-backed candidate reporting category; human decision required.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Arbitrary policy code and uncited category blocked",
+        "Expanded lifecycle: Market classification is rule-backed candidate, never legal clearance",
+        "Expanded lifecycle: Unknown/conflicting reporting categories remain HOLD/CONFLICT",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X38",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Market-Specific Variation Mapper",
+      "layers": "L06/L07",
+      "purpose": "Map CMC change to jurisdictions potentially requiring action.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Market classification is rule-backed candidate, never legal clearance",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: Change candidate rejects evidence from a different source"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X39",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Global CMC Change Simulator",
+      "layers": "L07/L08",
+      "purpose": "Simulate a proposed change before production adoption.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Change simulation creates read-only scientific branch snapshot",
+        "Expanded lifecycle: Simulated unsupported parameter replacement rejected",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: Simulation cannot borrow baseline facts from another source"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X40",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "CMC Blast-Radius Engine",
+      "layers": "L07/L08",
+      "purpose": "Change -> facts -> batches -> processes -> dossiers -> markets.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Source revision selectively stales dependencies",
+        "Expanded lifecycle: Graph blast radius includes causal rule/content decisions and excludes unrelated facts",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X41",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Proof-of-Non-Impact",
+      "layers": "L07/L10",
+      "purpose": "Evidence-backed reason an object/market is excluded.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Non-impact evidence identifies actual excluded nodes",
+        "Expanded lifecycle: Graph blast radius includes causal rule/content decisions and excludes unrelated facts",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X42",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Selective Staleness Propagation",
+      "layers": "L08/L10",
+      "purpose": "Invalidate only dependent work affected by change.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Source revision selectively stales dependencies",
+        "Expanded lifecycle: Selective staleness preserves immutable records and independent source data",
+        "Expanded lifecycle: Source revision change automatically invalidates expanded lifecycle graph",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: Rejected dependency revokes downstream current approval"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X43",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "CMC Regression Engine",
+      "layers": "L08/L11",
+      "purpose": "Re-run consistency/requirement/readiness tests after relevant change.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Regression runs persist expected/actual rule and coverage checks",
+        "Expanded lifecycle: Empty regression cannot fabricate success",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: A regression cannot pass an unconfigured dossier obligation profile"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X44",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "CMC Policy-as-Code",
+      "layers": "L06/L11",
+      "purpose": "Version-controlled machine-testable approved controls.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Arbitrary policy code and uncited category blocked",
+        "Expanded lifecycle: Versioned requirement DSL executes actual approved count check",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: Capability dispatch returns real controlled lifecycle projections",
+        "Controlled branches: Rule branch cannot inject executable DSL or invented categories",
+        "Controlled branches: Rule merge preserves predecessor and creates an unapproved source-cited revision"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X45",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Regulatory Requirement Test Coverage",
+      "layers": "L11",
+      "purpose": "Show obligations with/without executable checks.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Duplicate fact cannot inflate evidence count",
+        "Expanded lifecycle: Versioned requirement DSL executes actual approved count check",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: No requirement profile cannot pass dossier approval"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X46",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Decision Dependency Graph",
+      "layers": "L07/L10",
+      "purpose": "Make every approval dependency explicit.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Entity author cannot approve their own revision",
+        "Expanded lifecycle: Technical administrator cannot grant scientific approval",
+        "Expanded lifecycle: Revision and digest mismatch reject approval",
+        "Expanded lifecycle: Approved revision binds independent identity, sources and policy",
+        "Expanded lifecycle: Graph blast radius includes causal rule/content decisions and excludes unrelated facts",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection",
+        "Expanded lifecycle: Content-linked graph renders exact approved draft edge without mutation",
+        "Expanded lifecycle: Rejected dependency revokes downstream current approval"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X47",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Revision-Bound CMC Decision Contract",
+      "layers": "L10",
+      "purpose": "Bind evidence + data + rule + reviewer + model/workflow revisions.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Stale workspace revision is blocked",
+        "Core domain: Field review checks exact candidate revision",
+        "Core domain: Signature from another evidence revision is blocked",
+        "Core domain: Internal inquiry rejects self approval and stale or administrator review",
+        "Core domain: Readiness inspection cannot silently mutate saved scientific state",
+        "File formats: Server-owned manifest checksum mismatch blocks rendering",
+        "File formats: Signature-bound record is displayed only when exact payload binds",
+        "Controlled branches: Old branch digest fails even with current workspace revision",
+        "Controlled branches: Independent decision binds exact candidate digest",
+        "Controlled branches: Fresh independent scientific approval is required after proposal merge"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X48",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Automatic Approval Invalidation",
+      "layers": "L08/L10",
+      "purpose": "Reopen decision when material dependency changes.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Source revision selectively stales dependencies",
+        "Core domain: Stale draft cannot export after change",
+        "Controlled branches: Reviewed merge creates a candidate and stales prior main approval"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X49",
+      "source": "moat",
+      "page": 5,
+      "maturity": "SPECIFIED",
+      "name": "Historical CMC Decision Replay",
+      "layers": "L04/L11",
+      "purpose": "Recreate exactly what reviewer saw at decision time.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Filed snapshot stays unchanged after new source"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X50",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "CMC State Time Machine",
+      "layers": "L04/L07/L11",
+      "purpose": "View product/dossier state at any selected historical date.",
+      "status": "BUILT",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X51",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Submission Snapshot",
+      "layers": "L04/L10",
+      "purpose": "Immutable fact/content/evidence state supporting a filing.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Controlled export preserves snapshot and release=false",
+        "Core domain: Filed snapshot stays unchanged after new source",
+        "File formats: Frozen snapshot and artifacts stay independent of live source edits"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X52",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "As-Submitted vs Current-State Comparator",
+      "layers": "L07/L11",
+      "purpose": "Identify divergence between filed representation and current CMC truth.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Filed snapshot stays unchanged after new source"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X53",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Health Authority Question Intake",
+      "layers": "L03/L08",
+      "purpose": "Ingest and version HA questions and requests.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: HA response without approved facts stays empty",
+        "Expanded lifecycle: Actual source-linked HAQ and approved outcome enter governed memory",
+        "Expanded lifecycle: Invented authority question or outcome cannot enter memory",
+        "Expanded lifecycle: Actual question cannot invent its jurisdiction"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X54",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Similar HAQ / Precedent Retrieval",
+      "layers": "L07/L09",
+      "purpose": "Retrieve approved historic questions/responses and supporting evidence.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Legacy response review cannot invent an authority outcome in governed memory",
+        "Expanded lifecycle: Actual source-linked HAQ and approved outcome enter governed memory",
+        "Expanded lifecycle: Source staleness removes approved HAQ outcome from current memory",
+        "Expanded lifecycle: Governed memory excludes legacy free-text response comments",
+        "Expanded lifecycle: Governed memory admits exact approved lifecycle outcomes and removes stale ones"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X55",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Source-Linked HA Response Drafting",
+      "layers": "L09/L10",
+      "purpose": "Generate bounded response candidate with exact CMC evidence.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: HA response without approved facts stays empty",
+        "Expanded lifecycle: Actual source-linked HAQ and approved outcome enter governed memory",
+        "Expanded lifecycle: Actual question cannot invent its jurisdiction"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X56",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Query-to-Dossier Dependency Map",
+      "layers": "L07",
+      "purpose": "Connect HA question to dossier sections, facts and source evidence.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Actual source-linked HAQ and approved outcome enter governed memory"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X57",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Query Outcome Memory",
+      "layers": "L04/L07",
+      "purpose": "Preserve approved response/outcome as institutional knowledge.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Legacy response review cannot invent an authority outcome in governed memory",
+        "Expanded lifecycle: Actual source-linked HAQ and approved outcome enter governed memory",
+        "Expanded lifecycle: Invented authority question or outcome cannot enter memory",
+        "Expanded lifecycle: Source staleness removes approved HAQ outcome from current memory",
+        "Expanded lifecycle: Governed memory excludes legacy free-text response comments",
+        "Expanded lifecycle: Governed memory admits exact approved lifecycle outcomes and removes stale ones"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X58",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Reviewer Query Risk Predictor",
+      "layers": "L09/L11",
+      "purpose": "Surface likely CMC reviewer questions as predictions, not facts.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Dossier with missing required parameter cannot be approved",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X59",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "CMC Decision Debt Register",
+      "layers": "L08/L10",
+      "purpose": "Track stale, unresolved, overdue and evidence-deficient decisions.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Decision debt exposes unresolved records"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X60",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Continuous CMC Drift Detection",
+      "layers": "L07/L11",
+      "purpose": "Detect divergence between source truth and approved dossier state.",
+      "status": "BUILT",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [],
+      "limitation": "Revision-triggered/on-demand evidence checking only; periodic unattended scheduler and operational proof remain unconfigured."
+    },
+    {
+      "id": "X61",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Controlled Correction Propagation",
+      "layers": "L08/L10",
+      "purpose": "Safely propagate approved correction to dependent content.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Controlled correction makes new dependent candidates and transfers no approval",
+        "Expanded lifecycle: Every covered source identifier exposes bounded executable projection"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X62",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Submission / RIM Handoff",
+      "layers": "L12",
+      "purpose": "Integrate with Veeva/Lorenz/RIM/publishing instead of replacing them.",
+      "status": "SPECIFIED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [],
+      "limitation": "Configured vendor/agency/paper-record workflow has not been demonstrated. Contract/HOLD behavior exists; this feature is not promoted by those negative tests."
+    },
+    {
+      "id": "X63",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "QMS Change-Control Handoff",
+      "layers": "L12",
+      "purpose": "Connect CMC regulatory impact to quality change control.",
+      "status": "SPECIFIED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [],
+      "limitation": "Configured vendor/agency/paper-record workflow has not been demonstrated. Contract/HOLD behavior exists; this feature is not promoted by those negative tests."
+    },
+    {
+      "id": "X64",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Closure Evidence Verification",
+      "layers": "L10/L11",
+      "purpose": "Compare required outcome vs actual implementation evidence.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Closure cannot self-approve",
+        "Core domain: Independent closure records actual evidence",
+        "Expanded lifecycle: Closure compares exact expected versus actual source evidence",
+        "Expanded lifecycle: Owner cannot close their own action and mismatched evidence remains open"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X65",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Persistent Closure Monitoring",
+      "layers": "L08/L11",
+      "purpose": "Reopen closed work when later evidence invalidates closure.",
+      "status": "TESTED",
+      "artifact": "lib/lifecycle.mjs; app/LifecyclePanel.tsx; app/api/forge; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: New evidence reopens dependent closed action",
+        "Expanded lifecycle: Later source change reopens closure without rewriting original verification"
+      ],
+      "limitation": "Versioned source-backed candidate and independent-review workflow. Local supplied rules and descriptive evidence only; no global coverage, physical twin validation, stability extrapolation or legal clearance."
+    },
+    {
+      "id": "X66",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "CMC Knowledge Memory",
+      "layers": "L07",
+      "purpose": "Approved templates, submissions, HAQs, corrections and precedents.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Legacy response review cannot invent an authority outcome in governed memory",
+        "Core domain: Stale fact cannot enter approved memory",
+        "Expanded lifecycle: Governed memory excludes legacy free-text response comments",
+        "Expanded lifecycle: Governed memory admits exact approved lifecycle outcomes and removes stale ones"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X67",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Portfolio CMC Command Center",
+      "layers": "L08/L11",
+      "purpose": "Cross-product readiness, stale state, risk, HAQ and action queues.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: Decision debt exposes unresolved records"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "X68",
+      "source": "moat",
+      "page": 6,
+      "maturity": "SPECIFIED",
+      "name": "Executive CMC Change Radar",
+      "layers": "L08/L11",
+      "purpose": "Management visibility with drill- down to underlying evidence.",
+      "status": "TESTED",
+      "artifact": "lib/capabilities.mjs; associated bounded domain/API workflow",
+      "proofCases": [
+        "Core domain: All expanded capability IDs resolve with honest boundaries"
+      ],
+      "limitation": "Implemented bounded record projection/workflow with listed proof; full enterprise capability and organization qualification require separate evidence."
+    },
+    {
+      "id": "L01",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "Workspace, Program & Tenant Isolation",
+      "purpose": "Separate company, product, program, market and CDMO data/workspaces.",
+      "baseline_name": "Workspace & tenant isolation",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Viewer cannot write",
+        "Controlled branches: Cross-object branch target is rejected"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "L02",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "Identity, Authority & Segregation of Duties",
+      "purpose": "Author, reviewer, approver, admin and external- partner authority.",
+      "baseline_name": "Identity, roles & approval",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Viewer cannot write",
+        "Core domain: Anonymous action is blocked",
+        "Core domain: Author cannot approve facts",
+        "Core domain: Closure cannot self-approve",
+        "Core domain: Authenticator follows known HOTP vectors",
+        "Core domain: Encrypted signature secret round-trips and wrong key fails",
+        "Core domain: Finalized signature binds current scientific evidence",
+        "Core domain: Human editor cannot approve their own revised draft",
+        "Core domain: Human correction requires a different approving reviewer",
+        "Core domain: Internal inquiry rejects self approval and stale or administrator review",
+        "Expanded lifecycle: Anonymous lifecycle write blocked",
+        "Expanded lifecycle: Viewer lifecycle write blocked",
+        "Expanded lifecycle: Technical administrator cannot grant scientific approval",
+        "Controlled branches: Viewer and scientific reviewer cannot author a branch",
+        "Controlled branches: A second author cannot edit the named proposal",
+        "Controlled branches: Author cannot self-approve submitted branch",
+        "Controlled branches: Owner contributor cannot self-approve despite owner authority",
+        "Controlled branches: Admin authoring role does not grant independent scientific review",
+        "Controlled branches: Merged contributor still cannot approve resulting scientific content"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "L03",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "CMC Source & Enterprise Connector Mesh",
+      "purpose": "Controlled LIMS/MES/ELN/QMS/ERP/RIM/stability/file intake and connector health.",
+      "baseline_name": "Authorized source & intake",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Authorized structured source preserves original hash",
+        "Core domain: Missing source rights are blocked",
+        "Core domain: Network connector blocks non-allowlisted host"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "L04",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "Immutable CMC Evidence & Version Ledger",
+      "purpose": "Original files, raw values, hashes, revisions, corrections, submission snapshots and decision history.",
+      "baseline_name": "Storage, metadata & versioning",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Authorized structured source preserves original hash",
+        "Core domain: External mapping preserves predecessor history"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "L05",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "CMC Parsing, Fact Extraction & Semantic Normalization",
+      "purpose": "Extract typed facts, coordinates, methods, units and conditions while preserving originals.",
+      "baseline_name": "Domain parsing & normalization",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: PDF is preserved and held without invented extraction"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "L06",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "Scientific, Regulatory & Market Context Governance",
+      "purpose": "Product/process context, ICH/market requirements, intended use and permitted transformations.",
+      "baseline_name": "Source / policy / context governance",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Wrong-purpose source is blocked",
+        "Core domain: External mapping preserves predecessor history",
+        "Core domain: Arbitrary mapping status is blocked"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "L07",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "CMC Digital Twin + Evidence + Dependency Graph",
+      "purpose": "Product/process/batch/site/fact/document/ submission/market/decision relationships.",
+      "baseline_name": "Evidence graph, retrieval & analytics",
+      "status": "BUILT",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "L08",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "CMC Lifecycle & ChangeOps Orchestration",
+      "purpose": "Intake -> check -> author -> review -> handoff -> HAQ -> change -> closure -> replay.",
+      "baseline_name": "Workflow state & orchestration",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Extraction is idempotent for same source",
+        "Core domain: All nine agentic parts are allocated",
+        "Core domain: Planner introduces human wait for conflict",
+        "Core domain: Replan uses current approved evidence",
+        "Core domain: Initial invocation and three retries exhaust into owned DLQ"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "L09",
+      "source": "moat",
+      "page": 7,
+      "maturity": "SPECIFIED",
+      "name": "Bounded AI / Agent Runtime",
+      "purpose": "Extraction, research, authoring, QC, comparison and prediction with typed boundaries.",
+      "baseline_name": "Bounded multi-agent / model routing",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Author cannot approve facts",
+        "Core domain: All nine agentic parts are allocated",
+        "Core domain: Every specialist returns typed candidate without approval",
+        "Core domain: Cross-revision specialist merge is held",
+        "Core domain: Unknown agent cannot execute",
+        "Core domain: Missing AI provider stays unavailable",
+        "Core domain: Typed AI protocol fixture preserves field references",
+        "Core domain: Initial invocation and three retries exhaust into owned DLQ",
+        "Expanded lifecycle: All typed specialists hydrate a copy of legacy state without mutating workspace"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "L10",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "CMC Decision Integrity & Human Authority",
+      "purpose": "Evidence sufficiency, approval gates, revision binding, stale/invalidation and e-signature integration.",
+      "baseline_name": "Safety, security & human decision",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Unsupported executable file is blocked",
+        "Core domain: Traversal filename is blocked",
+        "Core domain: Unknown workflow action is blocked",
+        "Core domain: Active HTML is rejected as source content",
+        "Core domain: Oversized parameter set is blocked",
+        "Core domain: Conflicted fact cannot be approved",
+        "Core domain: Unsupported correction value is blocked",
+        "Core domain: Unapproved draft cannot export",
+        "Core domain: Planner blocks unsupported free-form tool instructions",
+        "Core domain: Network connector blocks private destination",
+        "Core domain: Authenticator code replay is rejected",
+        "Core domain: Encrypted signature secret round-trips and wrong key fails",
+        "Core domain: Signature from another evidence revision is blocked",
+        "Core domain: AI response with forged source ID is held",
+        "Core domain: Unsafe scientific number precision, overflow and underflow cannot become facts",
+        "Core domain: Duplicate CSV headers and ragged rows cannot silently discard evidence",
+        "File formats: HTML escapes untrusted text and disallows active content",
+        "File formats: Unsupported draft statements cannot be formatted",
+        "File formats: Release=true or stale approval cannot pass technical handoff",
+        "File formats: Server-owned manifest checksum mismatch blocks rendering",
+        "File formats: Unsupported PDF glyph visibly rejects while DOCX preserves Unicode",
+        "File formats: Traversal, extension mismatch and internal controls are blocked"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "L11",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Assurance, Testing, Audit & Observability",
+      "purpose": "Validation, regression, replay, model evaluation, SLOs and audit evidence.",
+      "baseline_name": "Evaluation, audit, reporting & feedback",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Specialist jobs record trace and measured latency"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "L12",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Submission Integration, Operations & Scale",
+      "purpose": "RIM/QMS/publishing APIs, queues, notifications, backups, DR and scale.",
+      "baseline_name": "Integration, operations & scale",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Connector request uses redirect error and timeout"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "P01",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "CMC Evidence Integrity",
+      "purpose": "Prove where every accepted fact/statement came from.",
+      "boundary": "No accepted output without exact source/version support.",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Stale fact cannot enter approved memory",
+        "Core domain: Source content hash mismatch is blocked",
+        "Core domain: Readiness inspection cannot silently mutate saved scientific state",
+        "Expanded lifecycle: Invented scientific scalar rejected by strict schema",
+        "Expanded lifecycle: Citation bounds and unknown source blocked",
+        "Controlled branches: Unsupported branch properties cannot inject scientific values",
+        "Controlled branches: Unsupported numeric claims fail proposal QC before review"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "P02",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "CMC State Integrity",
+      "purpose": "Maintain current Digital Twin plus historical states.",
+      "boundary": "Corrections create revisions; historical state is not silently rewritten.",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Stale workspace revision is blocked",
+        "Core domain: Cross-revision specialist merge is held",
+        "Core domain: Readiness inspection cannot silently mutate saved scientific state",
+        "Expanded lifecycle: Lifecycle hydration preserves all existing source data",
+        "Expanded lifecycle: Revision and digest mismatch reject approval",
+        "Expanded lifecycle: Approved revision binds independent identity, sources and policy",
+        "Expanded lifecycle: Entity predecessor remains immutable; only newest version current",
+        "Controlled branches: Branch pins exact base, policy, fact and source without changing approved content",
+        "Controlled branches: Changed base blocks approved proposal merge rather than overwriting",
+        "Controlled branches: Branch inspection is pure and never silently mutates workspace"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "P03",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "CMC Change & Lifecycle Integrity",
+      "purpose": "Propagate staleness, regression and market- impact checks.",
+      "boundary": "Material change must trigger dependent re- evaluation.",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Expanded lifecycle: Selective staleness preserves immutable records and independent source data",
+        "Expanded lifecycle: Source revision change automatically invalidates expanded lifecycle graph",
+        "Expanded lifecycle: Source staleness removes approved HAQ outcome from current memory",
+        "Expanded lifecycle: Later source change reopens closure without rewriting original verification"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "P04",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Submission & Decision Integrity",
+      "purpose": "Keep dossiers, variations, HA responses and approvals revision-bound.",
+      "boundary": "No stale/concurrent approval and no autonomous regulated disposition.",
+      "status": "TESTED",
+      "artifact": "lib/core.mjs; lib/runtime*.mjs/ts; app/api/*; tests",
+      "proofCases": [
+        "Core domain: Viewer cannot write",
+        "Core domain: Controlled export preserves snapshot and release=false",
+        "Expanded lifecycle: Anonymous lifecycle write blocked",
+        "Expanded lifecycle: Viewer lifecycle write blocked",
+        "Expanded lifecycle: Entity author cannot approve their own revision",
+        "Expanded lifecycle: Owner cannot close their own action and mismatched evidence remains open",
+        "Controlled branches: Changed governing policy blocks branch review"
+      ],
+      "limitation": "Bounded engineering workflow with synthetic evidence. Live AI/provider/vendor setup and organizational qualification remain separate."
+    },
+    {
+      "id": "A1",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Source Connector Guardian",
+      "purpose": "Connect, authorize, version and health- check sources.",
+      "boundary": "Cannot alter scientific facts.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Every specialist returns typed candidate without approval",
+        "Expanded lifecycle: All typed specialists hydrate a copy of legacy state without mutating workspace"
+      ],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A2",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Multimodal Parser",
+      "purpose": "Parse tables/text/scans and preserve coordinates.",
+      "boundary": "Cannot invent missing content.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Typed specialists project actual controlled records without human authority"
+      ],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A3",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "CMC Fact Extractor",
+      "purpose": "Build typed candidate CMC facts.",
+      "boundary": "Low confidence remains candidate.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A4",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Unit & Method Normalizer",
+      "purpose": "Normalize comparable data with context.",
+      "boundary": "Raw value always preserved.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A5",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Consistency Critic",
+      "purpose": "Detect gaps and contradictions.",
+      "boundary": "Cannot silently select a winning source.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A6",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Batch / Process Genealogy Agent",
+      "purpose": "Build material/batch/process relationships.",
+      "boundary": "No autonomous batch disposition.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Typed specialists project actual controlled records without human authority"
+      ],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A7",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Regulatory Requirement Agent",
+      "purpose": "Map requirements to facts/sections.",
+      "boundary": "No final legal/regulatory conclusion.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Typed specialists project actual controlled records without human authority"
+      ],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A8",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Comparability Agent",
+      "purpose": "Build candidate comparability evidence.",
+      "boundary": "Cannot approve the change.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Typed specialists project actual controlled records without human authority"
+      ],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A9",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Blast-Radius Agent",
+      "purpose": "Compute affected dependencies/markets.",
+      "boundary": "Impact remains candidate until reviewed.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A10",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Structured Authoring Agent",
+      "purpose": "Compose evidence-bound Module 3 content.",
+      "boundary": "Unsupported statements blocked.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A11",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Independent QC Agent",
+      "purpose": "Check numbers, terminology, citations, omissions and consistency.",
+      "boundary": "Separate from authoring; cannot self- approve.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A12",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Submission Readiness Agent",
+      "purpose": "Identify evidence/content/review blockers.",
+      "boundary": "Cannot claim authority acceptance.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A13",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Variation Classification Agent",
+      "purpose": "Recommend candidate reporting category.",
+      "boundary": "Human decision required.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Typed specialists project actual controlled records without human authority"
+      ],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A14",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Reviewer Query Predictor",
+      "purpose": "Surface possible CMC questions.",
+      "boundary": "Prediction clearly labeled.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A15",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "HAQ Response Agent",
+      "purpose": "Draft source-linked response candidate.",
+      "boundary": "Human review mandatory.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Typed specialists project actual controlled records without human authority"
+      ],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A16",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Decision Integrity Agent",
+      "purpose": "Verify evidence, revision and authority dependencies.",
+      "boundary": "Cannot approve its own validation.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A17",
+      "source": "moat",
+      "page": 8,
+      "maturity": "SPECIFIED",
+      "name": "Closure Verifier",
+      "purpose": "Compare expected vs actual implementation evidence.",
+      "boundary": "Cannot self-close.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Closure cannot self-approve",
+        "Expanded lifecycle: Typed specialists project actual controlled records without human authority"
+      ],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "A18",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Audit & Replay Agent",
+      "purpose": "Reconstruct historical CMC state and decision chain.",
+      "boundary": "Cannot modify history.",
+      "status": "TESTED",
+      "artifact": "lib/agentic.mjs: executeRole; tests/run.mjs; tests/lifecycle.mjs",
+      "proofCases": [
+        "Core domain: Every specialist returns typed candidate without approval",
+        "Expanded lifecycle: All typed specialists hydrate a copy of legacy state without mutating workspace"
+      ],
+      "limitation": "Typed deterministic role executed against source-bound state; not eighteen live LLM agents or a professional scientific answer key."
+    },
+    {
+      "id": "D01",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "CMC Source Contract Tests",
+      "purpose": "Detect connector/schema drift before silent ingestion failures.",
+      "status": "TESTED",
+      "artifact": "tests; docs/proof",
+      "proofCases": [
+        "Core domain: Connector contract drift is visible"
+      ],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D02",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "CMC Extraction Unit Tests",
+      "purpose": "Verify known facts, coordinates, gaps and altered values.",
+      "status": "TESTED",
+      "artifact": "tests; docs/proof",
+      "proofCases": [
+        "Core domain: Known values and source coordinates extracted",
+        "Core domain: Quoted CSV handles comma without losing coordinates"
+      ],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D03",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Unit / Method Conversion Tests",
+      "purpose": "Prevent unsafe automatic normalization.",
+      "status": "TESTED",
+      "artifact": "tests; docs/proof",
+      "proofCases": [
+        "Core domain: Unit conversion preserves raw value and scales limits",
+        "Core domain: Different methods block batch comparability"
+      ],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D04",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Cross-Document Regression Tests",
+      "purpose": "Re-test consistency after source/content changes.",
+      "status": "TESTED",
+      "artifact": "tests; docs/proof",
+      "proofCases": [
+        "Core domain: Cross-document disagreement remains open"
+      ],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D05",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Cross-Dossier Regression Tests",
+      "purpose": "Re-test linked Module 2.3 / Module 3 / market dossiers / HA responses.",
+      "status": "TESTED",
+      "artifact": "tests; docs/proof",
+      "proofCases": [
+        "Core domain: Wrong numeric assertion is caught by QC",
+        "Core domain: Draft value mismatch cannot pass",
+        "Expanded lifecycle: Regression runs persist expected/actual rule and coverage checks"
+      ],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D06",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Module 3 Requirement Coverage Tests",
+      "purpose": "Track required content and supporting evidence.",
+      "status": "TESTED",
+      "artifact": "tests; docs/proof",
+      "proofCases": [
+        "Expanded lifecycle: Regression runs persist expected/actual rule and coverage checks"
+      ],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D07",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "CMC Change Simulation Environment",
+      "purpose": "Test proposed changes without altering approved state.",
+      "status": "TESTED",
+      "artifact": "tests; docs/proof",
+      "proofCases": [
+        "Expanded lifecycle: Change simulation creates read-only scientific branch snapshot",
+        "Expanded lifecycle: Simulated unsupported parameter replacement rejected"
+      ],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D08",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Draft / Rule Version Branching",
+      "purpose": "Isolate proposed content/rules before approval.",
+      "status": "TESTED",
+      "artifact": "lib/branches.mjs; app/BranchesPanel.tsx; app/api/forge; tests/branches.mjs",
+      "proofCases": [
+        "Expanded lifecycle: Change simulation creates read-only scientific branch snapshot",
+        "Controlled branches: Branch pins exact base, policy, fact and source without changing approved content",
+        "Controlled branches: Viewer and scientific reviewer cannot author a branch",
+        "Controlled branches: Cross-object branch target is rejected",
+        "Controlled branches: Unsupported branch properties cannot inject scientific values",
+        "Controlled branches: Editing retains immutable candidate history and exact source pins",
+        "Controlled branches: A second author cannot edit the named proposal",
+        "Controlled branches: Unsupported numeric claims fail proposal QC before review",
+        "Controlled branches: New proposal revision invalidates independent branch approval",
+        "Controlled branches: Abandon preserves history even when source is stale",
+        "Controlled branches: Rule branch cannot inject executable DSL or invented categories",
+        "Controlled branches: Rule merge preserves predecessor and creates an unapproved source-cited revision",
+        "Controlled branches: Branch inspection is pure and never silently mutates workspace"
+      ],
+      "limitation": "Isolated draft/rule proposals preserve base revisions, source pins and candidate history. Independent exact-digest review plus current reviewer membership gates merge. Merge creates an unapproved candidate; no automated release or production qualification."
+    },
+    {
+      "id": "D09",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Controlled Review / Merge Gate",
+      "purpose": "Only validated and human-approved revisions become active.",
+      "status": "TESTED",
+      "artifact": "lib/branches.mjs; app/BranchesPanel.tsx; app/api/forge; tests/branches.mjs",
+      "proofCases": [
+        "Controlled branches: Old branch digest fails even with current workspace revision",
+        "Controlled branches: No-change proposals cannot consume a review approval",
+        "Controlled branches: Unsupported numeric claims fail proposal QC before review",
+        "Controlled branches: Author cannot self-approve submitted branch",
+        "Controlled branches: Owner contributor cannot self-approve despite owner authority",
+        "Controlled branches: Admin authoring role does not grant independent scientific review",
+        "Controlled branches: Independent decision binds exact candidate digest",
+        "Controlled branches: Review request and rejection block merge",
+        "Controlled branches: New proposal revision invalidates independent branch approval",
+        "Controlled branches: Reviewed merge creates a candidate and stales prior main approval",
+        "Controlled branches: Merged contributor still cannot approve resulting scientific content",
+        "Controlled branches: Fresh independent scientific approval is required after proposal merge",
+        "Controlled branches: Changed base blocks approved proposal merge rather than overwriting",
+        "Controlled branches: Source replacement blocks merge and marks branch stale on read",
+        "Controlled branches: Changed governing policy blocks branch review",
+        "Controlled branches: Repeated merge is rejected and cannot duplicate a main revision",
+        "Controlled branches: Rule merge preserves predecessor and creates an unapproved source-cited revision"
+      ],
+      "limitation": "Isolated draft/rule proposals preserve base revisions, source pins and candidate history. Independent exact-digest review plus current reviewer membership gates merge. Merge creates an unapproved candidate; no automated release or production qualification."
+    },
+    {
+      "id": "D10",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Shadow Model Deployment",
+      "purpose": "Evaluate new models/extractors beside approved runtime.",
+      "status": "SPECIFIED",
+      "artifact": null,
+      "proofCases": [],
+      "limitation": "Source-defined target; complete implementation and independent acceptance remain required."
+    },
+    {
+      "id": "D11",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Agent / Prompt / Extractor Versioning",
+      "purpose": "Every machine output records exact runtime configuration.",
+      "status": "BUILT",
+      "artifact": "tests; docs/proof",
+      "proofCases": [],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D12",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Scientific Fixture Library",
+      "purpose": "Frozen cases for repeatable expected-vs-actual testing.",
+      "status": "BUILT",
+      "artifact": "tests; docs/proof",
+      "proofCases": [],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D13",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Source Failure / Corruption Chaos Tests",
+      "purpose": "Exercise malformed/partial/missing source behavior.",
+      "status": "TESTED",
+      "artifact": "tests; docs/proof",
+      "proofCases": [
+        "Core domain: Bad JSON produces visible SOURCE_FAILED",
+        "Core domain: Unclosed CSV is not silently parsed"
+      ],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D14",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Connector Failure Tests",
+      "purpose": "Verify bounded retries, hold states and no fabricated success.",
+      "status": "TESTED",
+      "artifact": "tests; docs/proof",
+      "proofCases": [
+        "Core domain: Network connector blocks private destination",
+        "Core domain: Network connector blocks non-allowlisted host",
+        "Core domain: Connector request uses redirect error and timeout"
+      ],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D15",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Restore + Filing Reconstruction Test",
+      "purpose": "Restore backup and recreate a historical filing/decision package.",
+      "status": "BUILT",
+      "artifact": "tests; docs/proof",
+      "proofCases": [],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D16",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Field Traceability SLO",
+      "purpose": "Track accepted content with valid exact evidence.",
+      "status": "TESTED",
+      "artifact": "tests; docs/proof",
+      "proofCases": [
+        "Core domain: Known values and source coordinates extracted"
+      ],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D17",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Evidence Freshness SLO",
+      "purpose": "Track stale/expired evidence and knowledge.",
+      "status": "SPECIFIED",
+      "artifact": "lib/readiness.mjs; app/api/readiness",
+      "proofCases": [],
+      "limitation": "Current-snapshot freshness numerator/denominator/period can be probed. A production freshness SLO, target, alerting window and operational performance are not established."
+    },
+    {
+      "id": "D18",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Extraction Accuracy Metrics",
+      "purpose": "Publish actual fixture-based precision/match rates.",
+      "status": "SPECIFIED",
+      "artifact": null,
+      "proofCases": [],
+      "limitation": "Source-defined target; complete implementation and independent acceptance remain required."
+    },
+    {
+      "id": "D19",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Conflict Detection Metrics",
+      "purpose": "Measure expected conflicts surfaced.",
+      "status": "BUILT",
+      "artifact": "tests; docs/proof",
+      "proofCases": [],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "D20",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Submission Readiness Latency",
+      "purpose": "Measure time from source readiness to controlled draft/readiness state.",
+      "status": "SPECIFIED",
+      "artifact": null,
+      "proofCases": [],
+      "limitation": "Source-defined target; complete implementation and independent acceptance remain required."
+    },
+    {
+      "id": "D21",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Change-to-Impact Detection Latency",
+      "purpose": "Measure time from changed truth to identified dependent impact.",
+      "status": "SPECIFIED",
+      "artifact": null,
+      "proofCases": [],
+      "limitation": "Source-defined target; complete implementation and independent acceptance remain required."
+    },
+    {
+      "id": "D22",
+      "source": "moat",
+      "page": 9,
+      "maturity": "SPECIFIED",
+      "name": "Full CMC Workflow Observability",
+      "purpose": "Trace one correlation ID from source -> agent -> decision -> integration -> closure.",
+      "status": "TESTED",
+      "artifact": "tests; docs/proof",
+      "proofCases": [
+        "Core domain: Specialist jobs record trace and measured latency"
+      ],
+      "limitation": "Executed engineering control scope only; formal scientific datasets, professional pilots and production SLOs remain separate."
+    },
+    {
+      "id": "01",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "CONNECT",
+      "purpose": "Approved CMC and enterprise sources.",
+      "status": "SPECIFIED",
+      "artifact": "Workflow stage → X01; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "External operational stage requires configured adapter and executed handoff evidence."
+    },
+    {
+      "id": "02",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "PRESERVE",
+      "purpose": "Raw source bytes/data, hash, metadata and version.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → F01; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "03",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "PARSE",
+      "purpose": "Structured/unstructured records with coordinates.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → F02; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "04",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "EXTRACT",
+      "purpose": "Typed atomic CMC facts.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → F02; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "05",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "NORMALIZE",
+      "purpose": "Units/method/context without destroying raw truth.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → F03; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "06",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "TRACE",
+      "purpose": "Every fact to exact evidence.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → F04; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "07",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "CHECK",
+      "purpose": "Missing, conflicting and suspicious information.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → F07; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "08",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "MODEL",
+      "purpose": "Build/update CMC Digital Twin.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X11; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "09",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "GENEALOGY",
+      "purpose": "Build batch/process/material relationships.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X12; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "10",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "MAP REQUIREMENTS",
+      "purpose": "Connect regulatory obligations to facts/evidence.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X10; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "11",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "COMPARE",
+      "purpose": "Batches, processes, methods and specifications.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → F08; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "12",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "COMPARABILITY",
+      "purpose": "Build scientific comparability evidence.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X20; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "13",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "AUTHOR",
+      "purpose": "Generate source-backed structured Module 3 content.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → F09; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "14",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "QC",
+      "purpose": "Independent content/data/citation verification.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X29; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "15",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "CONSISTENCY",
+      "purpose": "Cross-document and cross-dossier checks.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X17; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "16",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "READINESS",
+      "purpose": "Assess evidence/review/structure blockers.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X33; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "17",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "HUMAN REVIEW",
+      "purpose": "Approve/revise/request evidence/reject exact revision.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → F10; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "18",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "SNAPSHOT",
+      "purpose": "Create immutable submission state.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X51; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "19",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "HANDOFF",
+      "purpose": "RIM/publishing integration.",
+      "status": "SPECIFIED",
+      "artifact": "Workflow stage → X62; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "External operational stage requires configured adapter and executed handoff evidence."
+    },
+    {
+      "id": "20",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "HAQ INTAKE",
+      "purpose": "Capture health-authority question.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X53; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "21",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "RESEARCH",
+      "purpose": "Retrieve evidence and precedent.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X54; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "22",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "RESPOND",
+      "purpose": "Draft controlled evidence-linked answer.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X55; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "23",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "MEMORY",
+      "purpose": "Store approved question/response/outcome.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X57; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "24",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "CHANGE",
+      "purpose": "Detect proposed or actual CMC change.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → F12; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "25",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "BLAST RADIUS",
+      "purpose": "Calculate dependent products, batches, dossiers and markets.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X40; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "26",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "ASSESS",
+      "purpose": "Comparability and evidence sufficiency.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X20; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "27",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "SIMULATE",
+      "purpose": "Model market-specific regulatory consequences.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X39; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "28",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "CLASSIFY",
+      "purpose": "Candidate variation/reporting pathway.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X37; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "29",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "REGRESSION",
+      "purpose": "Re-test impacted CMC state.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X43; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "30",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "INVALIDATE",
+      "purpose": "Mark affected approvals/content stale.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X48; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "31",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "DECIDE",
+      "purpose": "Named human approves action.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X47; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "32",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "PROPAGATE",
+      "purpose": "Apply controlled approved correction/change.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X61; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "33",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "VERIFY CLOSURE",
+      "purpose": "Compare expected vs actual evidence.",
+      "status": "SPECIFIED",
+      "artifact": "Workflow stage → X63; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "External operational stage requires configured adapter and executed handoff evidence."
+    },
+    {
+      "id": "34",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "MONITOR",
+      "purpose": "Continuously detect CMC drift / closure invalidation.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X64; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    },
+    {
+      "id": "35",
+      "source": "moat",
+      "page": 10,
+      "maturity": "SPECIFIED",
+      "name": "REPLAY",
+      "purpose": "Reconstruct any historical filing/decision exactly.",
+      "status": "BUILT",
+      "artifact": "Workflow stage → X65; domain/runtime/lifecycle API and UI",
+      "proofCases": [],
+      "limitation": "Connected bounded workflow stage; independent human gates and each referenced capability limitation still apply."
+    }
+  ],
+  "unresolvedIdentifiers": [
+    {
+      "id": "S-P01",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    },
+    {
+      "id": "S-P02",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    },
+    {
+      "id": "S-P03",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    },
+    {
+      "id": "S-P04",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    },
+    {
+      "id": "S-P05",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    },
+    {
+      "id": "S-P06",
+      "name": null,
+      "source": "current",
+      "page": 2,
+      "maturity": "SPECIFIED",
+      "reason": "Shared hardening backlog referenced; exact individual title/contract is absent in audited sources."
+    }
+  ],
+  "additionalControls": [
+    {
+      "id": "L05-vision",
+      "name": "Vision-LLM & Tabular Extraction Pipeline",
+      "source": "current",
+      "page": 5,
+      "purpose": "Deterministic parser first; use Vision-LLM/document AI for complex CoAs, graphs and nested tables; output typed candidate JSON with original bytes, page rendering, coordinates and parser/model version. Unreadable/ambiguous/low confidence -> NEEDS_REVIEW/HOLD.",
+      "maturity": "SPECIFIED",
+      "sourceMaturity": "SPECIFIED",
+      "status": "BUILT",
+      "limitation": "Typed parser and vision candidate gateway; live provider inference/answer key pending."
+    },
+    {
+      "id": "L09-fallback",
+      "name": "Deterministic Fallback & Dead-Letter Queue (DLQ)",
+      "source": "current",
+      "page": 5,
+      "purpose": "Maximum 3 eligible idempotent retries with exponential backoff; noncritical draft/format/async tasks DLQ with run/revision/payload/reason/count; rule/manual verification for mandatory workflow while AI unavailable. No fabricated success or silent model substitution.",
+      "maturity": "SPECIFIED",
+      "sourceMaturity": "SPECIFIED",
+      "status": "TESTED",
+      "limitation": "Persisted bounded retries, DLQ, explicit manual deterministic fallback; no fabricated success."
+    },
+    {
+      "id": "11A-MDM",
+      "name": "Data model / schema definition - MDM readiness",
+      "source": "current",
+      "page": 10,
+      "purpose": "Product_ID, Batch_ID, Facility_ID, User_ID preserve local IDs and accept external_uuid, external_system, mapping_status (UNMAPPED/MATCHED/CONFLICT/RETIRED), mapping history/effective timestamps. Tenant/purpose/authorization before joins. Correlation key does not grant authority.",
+      "maturity": "SPECIFIED",
+      "sourceMaturity": "SPECIFIED",
+      "status": "TESTED",
+      "limitation": "Identifier history and local/external mapping controls; correlation does not grant master-data authority."
+    },
+    {
+      "id": "12A-signature",
+      "name": "Human Authority & Finalization - E-Signature Gateway",
+      "source": "current",
+      "page": 12,
+      "purpose": "Password+OTP or approved biometric second factor; reason for signature; exact dossier/export revision and manifest hash; UTC signer audit. Material change needs re-review/re-sign; stale/hash mismatch/auth failure -> HOLD/REAUTHENTICATE/RE-REVIEW. Part 11 oriented control, not compliance certification.",
+      "maturity": "SPECIFIED",
+      "sourceMaturity": "SPECIFIED",
+      "status": "TESTED",
+      "limitation": "Exact-revision platform identity plus enrolled TOTP technical signature; no Part 11 certification."
+    }
+  ]
+}

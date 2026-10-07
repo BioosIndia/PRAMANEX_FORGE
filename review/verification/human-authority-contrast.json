@@ -1,0 +1,11 @@
+{
+  "scope": "Authored colour contrast and CSS specificity review; not browser visual QA.",
+  "background": "#16273f",
+  "contrastRatios": {
+    "#f3f6ff": 13.92,
+    "#d1e0f5": 11.24,
+    "#79e2f2": 10.01
+  },
+  "focusVisible": true,
+  "passed": true
+}

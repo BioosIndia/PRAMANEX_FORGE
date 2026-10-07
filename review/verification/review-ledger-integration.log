@@ -1,0 +1,66 @@
+PASS Ten-step proof reads saved public evidence and leaves private work untouched
+PASS Missing public original is a visible checklist gap, never a success
+PASS Saved read-only public case bootstraps and retains source hashes
+PASS Public visitor cannot mutate workspace
+PASS App account creation stores separate synthetic workspace
+PASS Private workspace state readback and owner role boundaries
+PASS Cross-origin save is rejected
+PASS Missing CSRF cannot mutate data
+PASS Source permission is enforced before saving
+PASS Fresh workspace creation is explicit, private, empty and idempotent
+PASS Working proof cannot overwrite populated private evidence
+PASS Original proof requires selection and consent before loading
+PASS Selected working proof saves separately and import replay never duplicates
+PASS Default dashboard entry reuses only an empty private workspace and preserves selected proof
+PASS Default dashboard entry creates empty work when all owned workspaces contain evidence, without clearing them
+PASS Fresh dashboard entry cannot bypass account authentication or CSRF
+PASS Personalization accepts display choices only, rejects corrupt stored values and never grants authority
+PASS Authorized original saved to R2 with exact readback
+PASS Idempotent source operation does not duplicate original records
+PASS Exact requirement extraction cites source/version/span
+PASS Stale expected workspace revision cannot save
+PASS Unconfigured live AI cannot fake success or transmit data
+PASS Bounded deterministic team saves planning, specialists and human wait
+PASS Executed control pack retains expected/actual cases and scope
+PASS Owner does not imply reviewer authority
+PASS Explicit synthetic reviewer role assignment succeeds
+PASS Real TOTP enrollment requires the current authenticator code
+PASS Missing CAPA effectiveness blocks signed approval
+PASS Named exact-revision request-evidence decision uses password and fresh OTP
+PASS Signing OTP replay cannot record another decision
+PASS Controlled export blocked on unresolved evidence; unapproved packet succeeds
+PASS Source change invalidates quality and AI dependencies without rewriting decisions
+PASS Historical snapshot reconstructs a pre-change version
+PASS Unrelated user cannot read tenant workspace
+PASS Encrypted provider value round trips without plaintext storage
+PASS Provider transient failures use initial attempt plus three bounded retries
+PASS Provider authorization failure does not retry
+PASS Model candidate cannot replace exact source text or approve a decision
+PASS Owner assignment retains administration while read-only membership cannot save
+PASS Binary transcription revision retains exact original bytes
+PASS Frozen case rejects invented expected text before any inference
+PASS Expired intended use cannot be approved even with old passing tests
+PASS Signed frozen test case is bound to exact current source and reviewer
+PASS Paired evaluation executes two models twice and saves exact expectations
+PASS Extra exact-source facts cannot pass a frozen answer set or escape HOLD
+PASS Frozen answers require exact source, version, complete set and no duplicates
+PASS Malformed, duplicate, stale or gapped candidate citations fail safely
+PASS Paired provider failures remain failed critical cases and save first break
+PASS Evidence backup includes current and historical originals with checksums
+PASS Corrupt original blocks restore without overwriting workspace
+PASS Verified copy restore preserves files, scopes permissions and is idempotent
+PASS Gemini transport uses fixed endpoint, hidden header, JSON and actual usage
+PASS Gemini discovery filters unsupported models and does not leak credentials
+PASS Gemini connection consent and two live mocked model results are saved
+PASS Two model aliases resolving to one underlying model cannot claim independent connection
+PASS Unavailable discovered reviewer falls back boundedly and preserves failed attempts
+PASS Gemini saved planner, specialists and independent review preserve HOLD
+PASS Live reviewer resolving to the author model is recorded as failed independence and HOLD
+PASS Gemini provider auth failures remain failed connection records
+PASS Provider redirects cannot forward credentials and are not retried
+PASS Valid-looking truncated JSON cannot count as a successful AI result
+PASS Transient independent-reviewer outage can use only bounded configured alternatives
+PASS Authentication denial cannot be bypassed through another reviewer model
+PASS Empty live facts cannot be promoted to a completed supported outcome
+PASS Logout invalidates the app session
+Completed 65 meaningful integration checks.

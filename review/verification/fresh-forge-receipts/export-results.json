@@ -1,0 +1,164 @@
+{
+  "executed": true,
+  "at": "2026-10-07T10:24:22.255Z",
+  "passed": 16,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Frozen approved source package passes technical profile",
+      "ids": [
+        "F14",
+        "X30",
+        "X31"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "DOCX is an actual OOXML ZIP with CRC and exact frozen XML",
+      "ids": [
+        "F14",
+        "X30"
+      ],
+      "status": "PASS",
+      "latencyMs": 8
+    },
+    {
+      "name": "PDF embeds Unicode and is a genuine multipage PDF",
+      "ids": [
+        "F14",
+        "X30"
+      ],
+      "status": "PASS",
+      "latencyMs": 686
+    },
+    {
+      "name": "HTML escapes untrusted text and disallows active content",
+      "ids": [
+        "F14",
+        "X30",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "A source citation gap blocks all artifact formats",
+      "ids": [
+        "F04",
+        "F14",
+        "X30",
+        "X31"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Unsupported draft statements cannot be formatted",
+      "ids": [
+        "F14",
+        "X30",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Release=true or stale approval cannot pass technical handoff",
+      "ids": [
+        "F14",
+        "X31",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 2
+    },
+    {
+      "name": "Frozen snapshot and artifacts stay independent of live source edits",
+      "ids": [
+        "F14",
+        "X30",
+        "X51"
+      ],
+      "status": "PASS",
+      "latencyMs": 4
+    },
+    {
+      "name": "Server-owned manifest checksum mismatch blocks rendering",
+      "ids": [
+        "F14",
+        "X47",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Signature-bound record is displayed only when exact payload binds",
+      "ids": [
+        "F14",
+        "X30",
+        "X47"
+      ],
+      "status": "PASS",
+      "latencyMs": 3
+    },
+    {
+      "name": "Unsupported PDF glyph visibly rejects while DOCX preserves Unicode",
+      "ids": [
+        "F14",
+        "X30",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 4
+    },
+    {
+      "name": "Traversal, extension mismatch and internal controls are blocked",
+      "ids": [
+        "F14",
+        "L10"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Table and reference CSV retain raw/normalized values and source IDs",
+      "ids": [
+        "F14",
+        "X30"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Handoff ZIP has true formats, checksums and a safe technical XML skeleton",
+      "ids": [
+        "F14",
+        "X30",
+        "X31"
+      ],
+      "status": "PASS",
+      "latencyMs": 593
+    },
+    {
+      "name": "Unknown regional publishing profile is visibly not implemented",
+      "ids": [
+        "X32"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Independent Python PDF, OOXML, attachment and package XML readers verify generated files",
+      "ids": [
+        "F14",
+        "X30",
+        "X31"
+      ],
+      "status": "PASS",
+      "latencyMs": 2161
+    }
+  ],
+  "boundary": "Executed synthetic artifact and file-format engineering checks. Passing technical handoff checks does not establish agency acceptance, production eCTD conformance, scientific regulatory accuracy or organizational qualification."
+}

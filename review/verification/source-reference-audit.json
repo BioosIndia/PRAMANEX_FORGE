@@ -1,0 +1,1172 @@
+[
+  {
+    "project": "BEACON",
+    "path": "lib/sources.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/public-discovery.mjs",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/monitor-runtime.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/monitor-service.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/archive-store.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/intake.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/beacon.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/ai-ris.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/monitor-runtime.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/beacon.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/beacon.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/ris.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/ai-ris.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/ris.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/records.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/assessment.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/master-data.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/assessment.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/master-data.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/assessment.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/assessment.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/ris.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/workflow.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/decision-outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/delivery.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/workflow.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/outcomes.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "app/workspace",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/permissions.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/outcomes.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/ai-ris.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/ris.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/retrieval.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/ris.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/ris.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/assessment.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/decision-outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "app/workspace/decision-view.tsx",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/ris.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/decision-outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/assessment.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/archive-store.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/workflow.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/workflow.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/monitor-runtime.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/monitor-execution.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/outcomes.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/workflow.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/request-bounds.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/intake.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/monitor-execution.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/permissions.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/workflow.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/delivery.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/workflow.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "app/api",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/permissions.ts",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "tests/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "tests/security-recovery.py",
+    "exists": true
+  },
+  {
+    "project": "BEACON",
+    "path": "lib/archive-store.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime-repository.ts",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "app/Workspace.tsx",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/statement-controls.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/draft-outcome.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/statement-controls.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/draft-outcome.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/statement-controls.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/draft-outcome.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/statement-controls.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/draft-outcome.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/core.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/runtime.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/statement-controls.mjs",
+    "exists": true
+  },
+  {
+    "project": "FORGE",
+    "path": "lib/draft-outcome.mjs",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/outcome.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "app/[screen]/page.tsx",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/engine.ts",
+    "exists": true
+  },
+  {
+    "project": "LEDGER-Q",
+    "path": "lib/ledger/api.ts",
+    "exists": true
+  }
+]

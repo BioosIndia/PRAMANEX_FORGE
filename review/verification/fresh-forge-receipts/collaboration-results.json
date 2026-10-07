@@ -1,0 +1,104 @@
+{
+  "at": "2026-10-07T10:24:18.557Z",
+  "passed": 24,
+  "failed": 0,
+  "scope": "Synthetic model protocol plus runtime domain integration; not live inference or scientific validation.",
+  "cases": [
+    {
+      "name": "No key or missing distinct reviewer makes zero network calls",
+      "status": "PASS"
+    },
+    {
+      "name": "Unapproved fact cannot reach a model",
+      "status": "PASS"
+    },
+    {
+      "name": "More than one hundred facts cannot reach a model",
+      "status": "PASS"
+    },
+    {
+      "name": "Duplicate input facts cannot reach a model",
+      "status": "PASS"
+    },
+    {
+      "name": "Planner directs concurrent specialists and distinct reviewer",
+      "status": "PASS"
+    },
+    {
+      "name": "Each role has a stable separate idempotency key and no external tools",
+      "status": "PASS"
+    },
+    {
+      "name": "Planner rejects omitted fact",
+      "status": "PASS"
+    },
+    {
+      "name": "Planner rejects duplicate ID",
+      "status": "PASS"
+    },
+    {
+      "name": "Planner rejects foreign ID",
+      "status": "PASS"
+    },
+    {
+      "name": "Planner rejects unknown agent",
+      "status": "PASS"
+    },
+    {
+      "name": "Planner rejects three agents",
+      "status": "PASS"
+    },
+    {
+      "name": "Planner rejects empty agent",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid plan stops before authors",
+      "status": "PASS"
+    },
+    {
+      "name": "Reviewer rejects omitted review",
+      "status": "PASS"
+    },
+    {
+      "name": "Reviewer rejects duplicate review",
+      "status": "PASS"
+    },
+    {
+      "name": "Reviewer rejects foreign review",
+      "status": "PASS"
+    },
+    {
+      "name": "Reviewer rejects null review",
+      "status": "PASS"
+    },
+    {
+      "name": "Reviewer rejection never publishes statements as accepted",
+      "status": "PASS"
+    },
+    {
+      "name": "Failure in one author waits for all work and preserves failure traces",
+      "status": "PASS"
+    },
+    {
+      "name": "Pinned identity enforced for forge_bounded_allocation",
+      "status": "PASS"
+    },
+    {
+      "name": "Pinned identity enforced for forge_source_bound_draft",
+      "status": "PASS"
+    },
+    {
+      "name": "Pinned identity enforced for forge_independent_evidence_review",
+      "status": "PASS"
+    },
+    {
+      "name": "Incomplete reviewer is a failure rather than success",
+      "status": "PASS"
+    },
+    {
+      "name": "Persisted runtime author path creates a candidate with model-team evidence",
+      "status": "PASS"
+    }
+  ]
+}

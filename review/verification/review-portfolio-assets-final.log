@@ -1,0 +1,17 @@
+{
+  "controlled_ledger_update_present": true,
+  "existing_anchor_destinations_preserved": true,
+  "local_references_checked": 85,
+  "missing": [],
+  "images_with_dimensions": 24,
+  "representative_contrast_ratios": {
+    "Body": 7.43,
+    "Primary button": 9.43,
+    "Secondary button": 4.71,
+    "Cyan button": 8.79,
+    "Research text": 7.97,
+    "Start card button": 4.95
+  },
+  "html_css_balanced": true,
+  "scope": "Static source gates; not browser visual QA"
+}

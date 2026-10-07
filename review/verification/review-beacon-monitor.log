@@ -1,0 +1,15 @@
+PASS missing service configuration fails closed
+PASS anonymous scheduler write rejects authorization
+PASS visitor identity cannot impersonate the source service
+PASS wrong service token does not retrieve public sources
+PASS status requires a signed-in workspace
+PASS first background run discovers all six approved sources with baseline zero
+PASS repeated scheduler request is idempotent without repeated outbound work
+PASS service cannot become a user or write to private evidence
+PASS fresh reader sees persisted background status without private workspace runs
+PASS failed regulator becomes a visible evidence gap with bounded retries
+PASS first success after a failed empty baseline does not count historical items as new
+PASS readback does not cause another check
+PASS an in-progress run never relabels an older completed receipt
+PASS overdue saved check does not report current monitoring
+14 compiled background monitoring checks passed.
