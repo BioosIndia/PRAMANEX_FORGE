@@ -1,0 +1,143 @@
+{
+  "name": "FORGE",
+  "slug": "forge",
+  "url": "https://forge.r4dewangan.chatgpt.site",
+  "identity": "Original CMC evidence -> facts -> gap/conflict -> Module 3 candidate -> QC -> human review",
+  "case": "Drug X 100 mg immediate-release tablet: independent synthetic exercise. SYN-A assay is 98.6% in its COA and 99.1% in the batch record; required evidence remains missing.",
+  "accent": "#397d72",
+  "prep": [
+    "Open /working-proof. This is the saved, read-only synthetic recruiter case. It is different from /demo, which is the separate session-only sandbox.",
+    "Prepare /working-proof?view=sources, /working-proof?view=working-proof and /recruiter as tabs. Prefer the saved case for the recording so the assessment stays reconstructable.",
+    "Check that CMC sources, Extraction, Gaps & conflicts, Module 3 drafts, Human review, CMC assessment and History & audit are present.",
+    "Existing fixture decisions are illustrative. Never present them as qualified professional review. An accepted submission is blocked while the conflict and required gaps remain."
+  ],
+  "routes": [
+    [
+      "Landing",
+      "/",
+      "Work sample navigation confirmation -> Continue; or open the prepared saved-case URL"
+    ],
+    [
+      "Saved CMC case",
+      "/working-proof",
+      "CMC assessment / CMC sources / Extraction / Gaps & conflicts / Module 3 drafts / Human review / History & audit"
+    ],
+    [
+      "Specific saved screen",
+      "/working-proof?view=working-proof",
+      "Select CMC assessment"
+    ],
+    [
+      "Separate sandbox",
+      "/demo",
+      "Session-only, editable synthetic case; not the saved recruiter record"
+    ],
+    [
+      "Gap-assessment PDF",
+      "/recruiter",
+      "VIEW CMC GAP ASSESSMENT -> confirmation -> Continue"
+    ],
+    [
+      "Private work",
+      "/app",
+      "Your account, saved workspace and existing roles; login off-camera"
+    ]
+  ],
+  "shots": [
+    {
+      "time": "00:00-00:12",
+      "title": "Introduce the CMC task",
+      "route": "/ -> /working-proof",
+      "click": "Show the landing identity, then open the prepared /working-proof tab. Do not confuse TRY SANDBOX with the saved recruiter case.",
+      "proof": "FORGE product identity and read-only saved synthetic work sample.",
+      "cursor": "Pause on the product name; then park beside Saved working proof.",
+      "en": "CMC documentation starts with dependable source facts. I am Rahul Dewangan, and FORGE is my independent work sample for organizing that evidence, identifying gaps and supporting controlled drafts.",
+      "hi": "FORGE ka purpose CMC documentation support hai. Landing se saved working proof kholo. Sandbox aur saved assessment ko same mat bolna. Yeh independent synthetic exercise hai, client project nahi."
+    },
+    {
+      "time": "00:12-00:27",
+      "title": "Inspect the original source records",
+      "route": "/working-proof?view=sources",
+      "click": "Click CMC sources. Inspect SYN-COA-A.json and SYN-BATCH-A.json; show source identity, original content and retained version.",
+      "proof": "The original synthetic records, labelled permission/scope and their source identities.",
+      "cursor": "Point once to the source names and original-value area; leave the record text unobstructed.",
+      "en": "Here are the original synthetic analytical records. Source identity, version and the original content remain attached, so a finding can be checked against the record that produced it.",
+      "hi": "Pehle source dikhao. Source name, original value aur version visible hona chahiye. Synthetic data ko real manufacturing batch result ya confidential company evidence nahi bolna."
+    },
+    {
+      "time": "00:27-00:43",
+      "title": "Make the numeric discrepancy understandable",
+      "route": "/working-proof?view=extraction",
+      "click": "Click Extraction. Inspect the SYN-A assay facts and their exact source spans, raw values, unit and method context.",
+      "proof": "98.6% versus 99.1% for the same synthetic batch; a 0.5 percentage-point difference.",
+      "cursor": "Move once between the two values. Give the numbers three seconds each; do not cover the percent sign.",
+      "en": "For the same synthetic batch, the COA records an assay of ninety-eight point six percent, while the batch record shows ninety-nine point one. The difference is half a percentage point.",
+      "hi": "Same batch mein do alag assay values hain: 98.6% aur 99.1%. Difference 0.5 percentage point hai. Dono values ke exact source references dikhane hain; correct value khud choose nahi karni."
+    },
+    {
+      "time": "00:43-00:58",
+      "title": "Show the conflict and missing evidence",
+      "route": "/working-proof?view=conflicts",
+      "click": "Click Gaps & conflicts. Show the open assay conflict and missing critical supporting information.",
+      "proof": "Unresolved same-batch conflict; missing dissolution and other required supporting evidence remain explicit.",
+      "cursor": "Point beside the conflict state and one important missing item. Leave HOLD visible in the frame.",
+      "en": "FORGE keeps that conflict unresolved. Required supporting evidence, including dissolution, is also missing. The system does not choose a convenient value or invent the absent result.",
+      "hi": "Ab gaps ka part important hai. Assay conflict unresolved rahega, aur missing dissolution missing hi rahega. Strong demo ka matlab fake complete output dikhana nahi, correct HOLD dikhana hai."
+    },
+    {
+      "time": "00:58-01:13",
+      "title": "Connect the gaps to Module 3",
+      "route": "/working-proof?view=working-proof",
+      "click": "Click CMC assessment. Show Available evidence and unresolved gaps, the Module 3 area, why it matters and next action. Expand an exact-source-reference row.",
+      "proof": "Source-backed observation -> Module 3 candidate location -> gap -> action -> review status.",
+      "cursor": "Move left to right across one table row, then stop next to its source-reference expansion.",
+      "en": "The saved gap assessment connects each observation to a relevant Module 3 area, explains why the gap matters and records the next evidence action. The mapping remains subject to professional review.",
+      "hi": "CMC assessment ki ek row dhang se explain karo: kya available hai, Module 3 mein kahan relevant hai, gap kyu matter karta hai aur next action kya hai. Mapping final applicability verdict nahi hai."
+    },
+    {
+      "time": "01:13-01:30",
+      "title": "Show draft and technical check together",
+      "route": "/working-proof?view=drafts",
+      "click": "Click Module 3 drafts. Inspect the source-linked candidate and its recorded QC/missing-evidence state.",
+      "proof": "A draft candidate with evidence references and blockers; accepted Module 3 output remains blocked.",
+      "cursor": "Keep the draft state and a cited fact in the same crop. Do not crop away the missing-evidence warning.",
+      "en": "The Module 3 view shows a source-linked draft candidate with technical checks and visible blockers. Accepted output remains blocked while critical evidence is incomplete or conflicting.",
+      "hi": "Draft candidate dikhao, accepted submission nahi. Source links aur technical blockers ek saath visible hone chahiye. Evidence incomplete hai to good writing bhi approval replace nahi kar sakti."
+    },
+    {
+      "time": "01:30-01:44",
+      "title": "Explain illustrative decisions and real authority",
+      "route": "/working-proof?view=reviews",
+      "click": "Click Human review. Read the illustrative request-evidence decision and current revision; do not attempt signing in the read-only case.",
+      "proof": "The exact recorded synthetic decision, its reason and the boundary requiring qualified review.",
+      "cursor": "Rest beside the request-evidence reason. Avoid hovering over approval controls for a misleading impression.",
+      "en": "The example review requests evidence. These fixture decisions are illustrative, not qualified professional approval. A real CMC, Regulatory or Quality reviewer remains responsible for the final judgement.",
+      "hi": "Yahan jo example decision hai woh synthetic fixture ka part hai. Use actual qualified reviewer approval nahi bolna. Real professional ko evidence aur exact revision dekhkar decision lena hai."
+    },
+    {
+      "time": "01:44-01:53",
+      "title": "Show readable output and recorded history",
+      "route": "/working-proof?view=audit; /recruiter",
+      "click": "Show History & audit and Verify audit chain: the saved-case dialog verifies the frozen work-sample hash, not a customer audit service. Close it. In the prepared recruiter tab open VIEW CMC GAP ASSESSMENT -> Continue.",
+      "proof": "Frozen saved-case integrity and a recruiter-facing gap report. No accepted submission or finalized export is claimed.",
+      "cursor": "One click for the saved integrity note, close, then one click to the prepared report. Keep the report limitation visible.",
+      "en": "The saved case preserves its evidence history. The gap report makes the findings and next steps readable, while retaining HOLD and the synthetic-exercise boundary.",
+      "hi": "History saved case ka hai. Verify button ka message dhyan se dikhao: yeh frozen sample integrity hai, full customer audit validation nahi. Gap report open karo, limitations ko hide mat karo."
+    },
+    {
+      "time": "01:53-02:00",
+      "title": "End with the work skill",
+      "route": "/working-proof?view=working-proof",
+      "click": "Return to CMC assessment with the controlled HOLD result visible.",
+      "proof": "CMC evidence organization, missing-data discipline and human-controlled drafting.",
+      "cursor": "Park in a clear corner.",
+      "en": "FORGE demonstrates my approach to CMC documentation: traceable facts, explicit gaps, structured drafts and accountable human review.",
+      "hi": "Closing mein apni demonstrated skill bolo: CMC facts organize karna, gaps clear rakhna aur structured draft ko human review se connect karna. Commercial experience claim nahi karna."
+    }
+  ],
+  "optional": [
+    "Separate editable demo: /demo?view=sources -> intake/extraction -> conflicts -> drafts -> QC -> reviews. Show the actual session result, and label the session-only persistence boundary.",
+    "Private delivery: use /app with permission-granted originals, separately authorized reviewer, exact current evidence and the existing export gates. Show the available PDF/Word/HTML/Technical ZIP buttons only for a real permitted snapshot.",
+    "Do not manufacture an export to remove HOLD. If Controlled exports is empty or blocked, explain the blocked result and use the recruiter-facing gap report instead."
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "at": "2026-10-07T20:48:05.321Z",
+  "passed": 38,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Fixtures persist source-backed objects in D1 with a separate hidden source",
+      "status": "PASS"
+    },
+    {
+      "name": "Anonymous sharing API read returns 401",
+      "status": "PASS"
+    },
+    {
+      "name": "No membership and no grant returns 403 without whole workspace",
+      "status": "PASS"
+    },
+    {
+      "name": "Cross-origin sharing write returns 403",
+      "status": "PASS"
+    },
+    {
+      "name": "View-only workspace member cannot issue external grants",
+      "status": "PASS"
+    },
+    {
+      "name": "Grant rejects guessed object IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Grant requires explicit external sharing authority confirmation",
+      "status": "PASS"
+    },
+    {
+      "name": "Grant requires stable user ID rather than email",
+      "status": "PASS"
+    },
+    {
+      "name": "Grant expiry is bounded to 90 days",
+      "status": "PASS"
+    },
+    {
+      "name": "Draft grant does not confer original-source permission",
+      "status": "PASS"
+    },
+    {
+      "name": "All five object kinds can receive explicit verified evidence-backed grants",
+      "status": "PASS"
+    },
+    {
+      "name": "Partner portal works without granting whole-workspace membership",
+      "status": "PASS"
+    },
+    {
+      "name": "Draft-only sharing redacts every independently ungranted fact and source",
+      "status": "PASS"
+    },
+    {
+      "name": "Field projection redacts source span and ID unless a separate source grant exists",
+      "status": "PASS"
+    },
+    {
+      "name": "Draft statement projection exposes only separately granted facts",
+      "status": "PASS"
+    },
+    {
+      "name": "Shared note persists exact object revision without changing scientific approval",
+      "status": "PASS"
+    },
+    {
+      "name": "Review request is routed internally and confers no scientific decision",
+      "status": "PASS"
+    },
+    {
+      "name": "View-only grantee cannot comment or request review",
+      "status": "PASS"
+    },
+    {
+      "name": "Partner cannot grant authority, resolve internal review or perform unsupported actions",
+      "status": "PASS"
+    },
+    {
+      "name": "Notes reject active markup and obvious personal contact identifiers",
+      "status": "PASS"
+    },
+    {
+      "name": "Notes reject guessed ungranted objects in another tenant",
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated note is idempotent without duplicated comments",
+      "status": "PASS"
+    },
+    {
+      "name": "Reusing an idempotency key for changed note input is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "Concurrent notes on one workspace revision yield one winner",
+      "status": "PASS"
+    },
+    {
+      "name": "Explicit source-original permission is required even with a source view grant",
+      "status": "PASS"
+    },
+    {
+      "name": "Owner revocation atomically removes portal and original permissions",
+      "status": "PASS"
+    },
+    {
+      "name": "Regrant with explicit original access authorizes only its exact source",
+      "status": "PASS"
+    },
+    {
+      "name": "Expired grant no longer authorizes access",
+      "status": "PASS"
+    },
+    {
+      "name": "Object status/revision changes suspend pinned grants until explicit regrant",
+      "status": "PASS"
+    },
+    {
+      "name": "Forged source hash prevents grants rather than blessing an arbitrary object",
+      "status": "PASS"
+    },
+    {
+      "name": "Revoked-after-pause partner cannot commit a prepared note",
+      "status": "PASS"
+    },
+    {
+      "name": "Revoked sharing cannot replay an old success using idempotency",
+      "status": "PASS"
+    },
+    {
+      "name": "Revoked granter membership invalidates grants issued by that administrator",
+      "status": "PASS"
+    },
+    {
+      "name": "Sharing writes preserve the common audit hash chain and revision history",
+      "status": "PASS"
+    },
+    {
+      "name": "Original-file grant validates the actual preserved R2 bytes",
+      "status": "PASS"
+    },
+    {
+      "name": "Tampered R2 original blocks access despite an active metadata grant",
+      "status": "PASS"
+    },
+    {
+      "name": "Binary originals with empty text use their preserved byte hash for sharing",
+      "status": "PASS"
+    },
+    {
+      "name": "Binary original tampering denies exact-object file permission",
+      "status": "PASS"
+    }
+  ],
+  "ids": [
+    "X35",
+    "L01",
+    "L02",
+    "L10",
+    "L11",
+    "L12"
+  ],
+  "boundary": "Actual local D1/R2 and API-handler checks with synthetic identities. External organization onboarding and hosted platform/browser flows are separate. No scientific approval or release is conferred by a grant."
+}

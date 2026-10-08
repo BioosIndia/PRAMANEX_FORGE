@@ -1,0 +1,9 @@
+{
+  "archive": "FORGE_Updates_After_Last_Full_Zip.zip",
+  "archive_sha256": "ec962bd05533cd149e25513b058e3720d3b3b45a28ea9f2d85380f804603ab3e",
+  "source_commit": "ec5495005940a7927c4069690543aa340b26a3d5",
+  "verified_source_files": 19,
+  "mismatches": 0,
+  "subsequent_source_commits_included": 5,
+  "scope": "Previous delivered archive source matches the actual delta base; all later committed source changes are included"
+}

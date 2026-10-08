@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-08T12:08:04.640204+00:00",
+  "hidden_paths": 0,
+  "credential_format_matches": 0,
+  "all_files_below_25_MiB": true,
+  "json_parsed": true,
+  "file_count_before_manifests": 84,
+  "scope": "Archive structure/integrity and narrow reference tests; not production/domain validation"
+}

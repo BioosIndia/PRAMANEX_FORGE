@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-08T12:06:40.255012+00:00",
+  "base": "ec5495005940a7927c4069690543aa340b26a3d5",
+  "head": "3e9de7fb24ede076092f877aa94a6fcc2e74ddc7",
+  "git_apply_check": true,
+  "changed_files_byte_equal_to_head": true,
+  "deleted_files_absent": true,
+  "omitted_generated_cache": [
+    "tsconfig.tsbuildinfo"
+  ],
+  "original_repo_modified": false
+}

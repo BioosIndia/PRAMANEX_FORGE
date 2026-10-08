@@ -1,0 +1,214 @@
+{
+  "at": "2026-10-07T20:47:56.513Z",
+  "passed": 26,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Branch pins exact base, policy, fact and source without changing approved content",
+      "ids": [
+        "D08",
+        "P02"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Viewer and scientific reviewer cannot author a branch",
+      "ids": [
+        "D08",
+        "L02"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Cross-object branch target is rejected",
+      "ids": [
+        "D08",
+        "L01"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Unsupported branch properties cannot inject scientific values",
+      "ids": [
+        "D08",
+        "P01"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Editing retains immutable candidate history and exact source pins",
+      "ids": [
+        "D08",
+        "F12"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "A second author cannot edit the named proposal",
+      "ids": [
+        "D08",
+        "L02"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Old branch digest fails even with current workspace revision",
+      "ids": [
+        "D09",
+        "X47"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "No-change proposals cannot consume a review approval",
+      "ids": [
+        "D09"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Unsupported numeric claims fail proposal QC before review",
+      "ids": [
+        "D08",
+        "D09",
+        "P01"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Author cannot self-approve submitted branch",
+      "ids": [
+        "D09",
+        "L02"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Owner contributor cannot self-approve despite owner authority",
+      "ids": [
+        "D09",
+        "L02"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Admin authoring role does not grant independent scientific review",
+      "ids": [
+        "D09",
+        "L02"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Independent decision binds exact candidate digest",
+      "ids": [
+        "D09",
+        "X47"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Review request and rejection block merge",
+      "ids": [
+        "D09"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "New proposal revision invalidates independent branch approval",
+      "ids": [
+        "D08",
+        "D09"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Reviewed merge creates a candidate and stales prior main approval",
+      "ids": [
+        "D09",
+        "X48"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Merged contributor still cannot approve resulting scientific content",
+      "ids": [
+        "D09",
+        "L02"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Fresh independent scientific approval is required after proposal merge",
+      "ids": [
+        "D09",
+        "X47"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Changed base blocks approved proposal merge rather than overwriting",
+      "ids": [
+        "D09",
+        "P02"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Source replacement blocks merge and marks branch stale on read",
+      "ids": [
+        "D09",
+        "F-P01"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Changed governing policy blocks branch review",
+      "ids": [
+        "D09",
+        "P04"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Abandon preserves history even when source is stale",
+      "ids": [
+        "D08"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Repeated merge is rejected and cannot duplicate a main revision",
+      "ids": [
+        "D09"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Rule branch cannot inject executable DSL or invented categories",
+      "ids": [
+        "D08",
+        "X44"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Rule merge preserves predecessor and creates an unapproved source-cited revision",
+      "ids": [
+        "D08",
+        "D09",
+        "X44"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "Branch inspection is pure and never silently mutates workspace",
+      "ids": [
+        "D08",
+        "P02"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "boundary": "Synthetic engineering checks for isolated draft/rule proposals, independent exact-revision review, merge/staleness and fresh approval. No production acceptance or scientific validity claim."
+}

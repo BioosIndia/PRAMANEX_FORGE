@@ -1,0 +1,128 @@
+{
+  "at": "2026-10-07T20:47:55.108Z",
+  "passed": 30,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "anonymous session is explicit and Google remains unconfigured",
+      "status": "PASS"
+    },
+    {
+      "name": "anonymous saved workspace access rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "signup rejects cross-origin requests",
+      "status": "PASS"
+    },
+    {
+      "name": "signup enforces minimum password length",
+      "status": "PASS"
+    },
+    {
+      "name": "signup enforces UTF-8 byte ceiling",
+      "status": "PASS"
+    },
+    {
+      "name": "account payload is bounded",
+      "status": "PASS"
+    },
+    {
+      "name": "manual signup saves a private unverified identity and secure opaque session",
+      "status": "PASS"
+    },
+    {
+      "name": "duplicate email does not create another account",
+      "status": "PASS"
+    },
+    {
+      "name": "own account creates and reads a persistent workspace",
+      "status": "PASS"
+    },
+    {
+      "name": "FORGE login panel renders password and account controls",
+      "status": "PASS"
+    },
+    {
+      "name": "own account enters the server-rendered workspace without a platform user header",
+      "status": "PASS"
+    },
+    {
+      "name": "different account cannot read another workspace",
+      "status": "PASS"
+    },
+    {
+      "name": "unverified manual identity cannot receive shared membership",
+      "status": "PASS"
+    },
+    {
+      "name": "SQL shared membership boundary also blocks bypass",
+      "status": "PASS"
+    },
+    {
+      "name": "wrong password returns generic rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "unknown account returns the same rejection",
+      "status": "PASS"
+    },
+    {
+      "name": "login rotates session and invalidates the previous token",
+      "status": "PASS"
+    },
+    {
+      "name": "expired session is rejected",
+      "status": "PASS"
+    },
+    {
+      "name": "logout requires same origin",
+      "status": "PASS"
+    },
+    {
+      "name": "logout revokes session and suppresses implicit platform fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "missing Google configuration is a visible failure",
+      "status": "PASS"
+    },
+    {
+      "name": "existing trusted platform workspace remains accessible",
+      "status": "PASS"
+    },
+    {
+      "name": "new account plus trusted session exposes explicit link choice",
+      "status": "PASS"
+    },
+    {
+      "name": "linking requires own session, trusted session and confirmation",
+      "status": "PASS"
+    },
+    {
+      "name": "explicit dual-proof link preserves saved workspace and identity",
+      "status": "PASS"
+    },
+    {
+      "name": "linked identity cannot receive late writes under retired account",
+      "status": "PASS"
+    },
+    {
+      "name": "link is immutable",
+      "status": "PASS"
+    },
+    {
+      "name": "nonempty new workspace cannot link and disappear",
+      "status": "PASS"
+    },
+    {
+      "name": "concurrent workspace creation enforces the owner cap atomically",
+      "status": "PASS"
+    },
+    {
+      "name": "quota rejection leaves no orphan owner membership",
+      "status": "PASS"
+    }
+  ],
+  "scope": "Compiled Worker with local synthetic identities and D1. Not hosted Google, browser or production qualification."
+}

@@ -1,0 +1,72 @@
+{
+  "at": "2026-10-07T20:47:55.759Z",
+  "passed": 16,
+  "failed": 0,
+  "cases": [
+    {
+      "name": "Dashboard counts reconcile to every saved graph record, including an explicit held-record fixture",
+      "passed": true
+    },
+    {
+      "name": "Batch bars preserve all recorded fields with no inferred scientific values",
+      "passed": true
+    },
+    {
+      "name": "Empty workspace displays zero counts and no fabricated analytics",
+      "passed": true
+    },
+    {
+      "name": "Context and controlled lifecycle records remain included in the six groups",
+      "passed": true
+    },
+    {
+      "name": "Large groups paginate every record exactly once without dropping the final partial page",
+      "passed": true
+    },
+    {
+      "name": "Selecting an off-page record brings its true page into the visible graph",
+      "passed": true
+    },
+    {
+      "name": "Over-large page requests remain within the final existing page",
+      "passed": true
+    },
+    {
+      "name": "Canvas edges are only actual saved edges with two visible endpoints",
+      "passed": true
+    },
+    {
+      "name": "UI projections leave source bytes, numeric lexemes and approval state unchanged",
+      "passed": true
+    },
+    {
+      "name": "Unassigned batches remain explicit and do not disappear from the chart denominator",
+      "passed": true
+    },
+    {
+      "name": "New cockpit has six zero-count stages and a source-first step for an empty workspace",
+      "passed": true
+    },
+    {
+      "name": "Stale dependencies take priority over downstream review suggestions",
+      "passed": true
+    },
+    {
+      "name": "Open conflicts remain a visible next step",
+      "passed": true
+    },
+    {
+      "name": "A saved source is not presented as approved extracted facts",
+      "passed": true
+    },
+    {
+      "name": "Stale cached QC cannot enter the non-stale QC count",
+      "passed": true
+    },
+    {
+      "name": "Next-step guidance never mutates evidence or approval state",
+      "passed": true
+    }
+  ],
+  "boundary": "Saved-data UI projection engineering checks only. No rendered browser, pixel-fidelity, WebGL, hosted sign-in, scientific accuracy or production validation claim."
+}

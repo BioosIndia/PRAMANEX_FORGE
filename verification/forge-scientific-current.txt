@@ -1,0 +1,11 @@
+PASS Missing method evidence is saved as HOLD without invented content
+PASS Forged source wording is rejected
+PASS Stale source revision cannot become scientific evidence
+PASS Author cannot approve their own completeness assessment
+PASS Independent review binds exact digest and preserves limited scope
+PASS Changed original invalidates current completeness review
+PASS Missing scientific review blocks validation-specific draft
+PASS Draft preview requires explicit non-submission acknowledgement
+PASS Scientific action uses existing revision and audit persistence contract
+PASS Changing structure profile stales current draft approvals without deleting history
+{"passed":10,"failed":0,"scope":"Synthetic source-binding and workflow controls; not scientific validation."}

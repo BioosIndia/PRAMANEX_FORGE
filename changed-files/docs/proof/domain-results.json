@@ -1,7 +1,7 @@
 {
   "executed": true,
   "version": "forge-2.1.0",
-  "at": "2026-10-07T09:30:50.782Z",
+  "at": "2026-10-08T09:14:29.634Z",
   "passed": 88,
   "failed": 0,
   "cases": [
@@ -14,7 +14,7 @@
         "L04"
       ],
       "status": "PASS",
-      "latencyMs": 3
+      "latencyMs": 30
     },
     {
       "name": "Missing source rights are blocked",
@@ -23,7 +23,7 @@
         "L03"
       ],
       "status": "PASS",
-      "latencyMs": 0
+      "latencyMs": 1
     },
     {
       "name": "Unsupported executable file is blocked",
@@ -97,7 +97,7 @@
         "D16"
       ],
       "status": "PASS",
-      "latencyMs": 4
+      "latencyMs": 14
     },
     {
       "name": "Extraction is idempotent for same source",
@@ -106,7 +106,7 @@
         "L08"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 7
     },
     {
       "name": "Bad JSON produces visible SOURCE_FAILED",
@@ -115,7 +115,7 @@
         "D13"
       ],
       "status": "PASS",
-      "latencyMs": 0
+      "latencyMs": 1
     },
     {
       "name": "PDF is preserved and held without invented extraction",
@@ -142,7 +142,7 @@
         "D02"
       ],
       "status": "PASS",
-      "latencyMs": 0
+      "latencyMs": 1
     },
     {
       "name": "Unclosed CSV is not silently parsed",
@@ -158,7 +158,7 @@
         "L10"
       ],
       "status": "PASS",
-      "latencyMs": 3
+      "latencyMs": 12
     },
     {
       "name": "Unit conversion preserves raw value and scales limits",
@@ -168,7 +168,7 @@
         "D03"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 3
     },
     {
       "name": "Conversion without scientific basis remains uncertain",
@@ -213,7 +213,7 @@
         "L10"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 15
     },
     {
       "name": "Conflict choice outside candidate set is blocked",
@@ -221,7 +221,7 @@
         "F07"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 6
     },
     {
       "name": "Conflict resolution retains rejected source and reason",
@@ -230,7 +230,7 @@
         "F11"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 4
     },
     {
       "name": "Author cannot approve facts",
@@ -239,7 +239,7 @@
         "L09"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 6
     },
     {
       "name": "Field review checks exact candidate revision",
@@ -248,7 +248,7 @@
         "X47"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 5
     },
     {
       "name": "Unsupported correction value is blocked",
@@ -257,7 +257,7 @@
         "L10"
       ],
       "status": "PASS",
-      "latencyMs": 3
+      "latencyMs": 12
     },
     {
       "name": "Batch comparison uses context and preserves interpretation limit",
@@ -267,7 +267,7 @@
         "X20"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 10
     },
     {
       "name": "Different methods block batch comparability",
@@ -276,7 +276,7 @@
         "D03"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 2
     },
     {
       "name": "Draft cannot use unapproved facts",
@@ -285,7 +285,7 @@
         "F-P03"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 2
     },
     {
       "name": "Approved facts produce independently checked technical draft",
@@ -297,7 +297,7 @@
         "F13"
       ],
       "status": "PASS",
-      "latencyMs": 3
+      "latencyMs": 12
     },
     {
       "name": "Wrong numeric assertion is caught by QC",
@@ -306,7 +306,7 @@
         "D05"
       ],
       "status": "PASS",
-      "latencyMs": 3
+      "latencyMs": 13
     },
     {
       "name": "Missing citation is caught by independent QC",
@@ -315,7 +315,7 @@
         "X29"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 31
     },
     {
       "name": "Draft value mismatch cannot pass",
@@ -324,7 +324,7 @@
         "D05"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 6
     },
     {
       "name": "Required parameter gaps block draft approval",
@@ -334,7 +334,7 @@
         "X33"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 5
     },
     {
       "name": "Controlled export preserves snapshot and release=false",
@@ -344,7 +344,7 @@
         "P04"
       ],
       "status": "PASS",
-      "latencyMs": 3
+      "latencyMs": 26
     },
     {
       "name": "Unapproved draft cannot export",
@@ -353,7 +353,7 @@
         "L10"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 11
     },
     {
       "name": "Source revision selectively stales dependencies",
@@ -365,7 +365,7 @@
         "X48"
       ],
       "status": "PASS",
-      "latencyMs": 4
+      "latencyMs": 22
     },
     {
       "name": "Stale draft cannot export after change",
@@ -374,7 +374,7 @@
         "X48"
       ],
       "status": "PASS",
-      "latencyMs": 3
+      "latencyMs": 9
     },
     {
       "name": "Non-impact evidence identifies actual excluded nodes",
@@ -382,7 +382,7 @@
         "X41"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 16
     },
     {
       "name": "Graph edges connect actual source facts",
@@ -391,7 +391,7 @@
         "X15"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 2
     },
     {
       "name": "Filed snapshot stays unchanged after new source",
@@ -401,7 +401,7 @@
         "X52"
       ],
       "status": "PASS",
-      "latencyMs": 4
+      "latencyMs": 7
     },
     {
       "name": "HA response without approved facts stays empty",
@@ -410,7 +410,7 @@
         "X55"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 2
     },
     {
       "name": "Legacy response review cannot invent an authority outcome in governed memory",
@@ -420,7 +420,7 @@
         "X66"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 3
     },
     {
       "name": "Stale fact cannot enter approved memory",
@@ -439,7 +439,7 @@
         "L02"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 2
     },
     {
       "name": "Independent closure records actual evidence",
@@ -455,7 +455,7 @@
         "X65"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 10
     },
     {
       "name": "External mapping preserves predecessor history",
@@ -541,7 +541,7 @@
         "D22"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 8
     },
     {
       "name": "Network connector blocks private destination",
@@ -577,7 +577,7 @@
         "D14"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 8
     },
     {
       "name": "Authenticator follows known HOTP vectors",
@@ -585,7 +585,7 @@
         "L02"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 3
     },
     {
       "name": "Authenticator code replay is rejected",
@@ -602,7 +602,7 @@
         "L10"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 17
     },
     {
       "name": "Signature requires controlled reason and exact revision hash",
@@ -621,7 +621,7 @@
         "L02"
       ],
       "status": "PASS",
-      "latencyMs": 3
+      "latencyMs": 7
     },
     {
       "name": "Signature from another evidence revision is blocked",
@@ -631,7 +631,7 @@
         "L10"
       ],
       "status": "PASS",
-      "latencyMs": 3
+      "latencyMs": 10
     },
     {
       "name": "QC observation time does not alter scientific signature binding",
@@ -640,7 +640,7 @@
         "F14"
       ],
       "status": "PASS",
-      "latencyMs": 3
+      "latencyMs": 8
     },
     {
       "name": "Human editor cannot approve their own revised draft",
@@ -649,7 +649,7 @@
         "L02"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 7
     },
     {
       "name": "Human correction requires a different approving reviewer",
@@ -659,7 +659,7 @@
         "L02"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 4
     },
     {
       "name": "Decision debt exposes unresolved records",
@@ -668,7 +668,7 @@
         "X67"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 7
     },
     {
       "name": "JSON numeric lexeme and original snippet remain unchanged",
@@ -703,7 +703,7 @@
         "X68"
       ],
       "status": "PASS",
-      "latencyMs": 4
+      "latencyMs": 8
     },
     {
       "name": "Missing AI provider stays unavailable",
@@ -729,7 +729,7 @@
         "L10"
       ],
       "status": "PASS",
-      "latencyMs": 0
+      "latencyMs": 2
     },
     {
       "name": "Initial invocation and three retries exhaust into owned DLQ",
@@ -749,7 +749,7 @@
         "L10"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 8
     },
     {
       "name": "Raw scientific limit lexemes survive JSON parsing",
@@ -795,7 +795,7 @@
         "X47"
       ],
       "status": "PASS",
-      "latencyMs": 2
+      "latencyMs": 4
     },
     {
       "name": "Readiness inspection cannot silently mutate saved scientific state",
@@ -805,7 +805,7 @@
         "X47"
       ],
       "status": "PASS",
-      "latencyMs": 1
+      "latencyMs": 5
     }
   ],
   "boundary": "Executed synthetic engineering fixtures. These results do not measure independent regulatory accuracy, production load or organizational qualification."

@@ -1,0 +1,88 @@
+{
+  "baseline_commit": "b5ecd5de4d6394cf30529f6eb5d459e4ef07fb8a",
+  "suites": [
+    {
+      "suite": "run",
+      "exit_code": 0,
+      "checks": 88
+    },
+    {
+      "suite": "integration",
+      "exit_code": 0,
+      "checks": 47
+    },
+    {
+      "suite": "working-proof",
+      "exit_code": 0,
+      "checks": 7
+    },
+    {
+      "suite": "working-proof-runtime",
+      "exit_code": 0,
+      "checks": 8
+    },
+    {
+      "suite": "draft-outcome",
+      "exit_code": 0,
+      "checks": 12
+    },
+    {
+      "suite": "public-documents",
+      "exit_code": 0,
+      "checks": 25
+    },
+    {
+      "suite": "accounts",
+      "exit_code": 0,
+      "checks": 30
+    },
+    {
+      "suite": "public-surface",
+      "exit_code": 0,
+      "checks": 5
+    },
+    {
+      "suite": "visual-projections",
+      "exit_code": 0,
+      "checks": 16
+    },
+    {
+      "suite": "document-parser",
+      "exit_code": 0,
+      "checks": 35
+    },
+    {
+      "suite": "branches",
+      "exit_code": 0,
+      "checks": 26
+    },
+    {
+      "suite": "lifecycle",
+      "exit_code": 0,
+      "checks": 58
+    },
+    {
+      "suite": "sharing",
+      "exit_code": 0,
+      "checks": 38
+    },
+    {
+      "suite": "format-export",
+      "exit_code": 0,
+      "checks": 16
+    },
+    {
+      "suite": "model-evaluation",
+      "exit_code": 0,
+      "checks": 19
+    },
+    {
+      "suite": "runtime",
+      "exit_code": 0,
+      "checks": 21
+    }
+  ],
+  "passed": 451,
+  "failed": 0,
+  "scope": "Local engineering fixtures and compiled runtime checks. Not production validation or live provider evidence."
+}

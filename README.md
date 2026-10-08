@@ -1,44 +1,33 @@
-# PRAMANEX FORGE
+# FORGE incremental GitHub update - Last_Delivered_to_v21
 
-CMC Digital Thread, Authoring & Lifecycle Integrity OS — an evidence-first, reviewer-controlled engineering release by Rahul Dewangan / PRAMANEX.
+Sirf aapko last delivered ZIP ke source se aage ka update hai. Purana full repository dobara nahi diya gaya. Last delivered archive: FORGE_Updates_After_Last_Full_Zip.zip. Exact base: ec5495005940a7927c4069690543aa340b26a3d5. Head exported: 3e9de7fb24ede076092f877aa94a6fcc2e74ddc7. Us archive ke baad ke 5 source commits ka combined change included hai. Latest bilingual PDF and editable script are in walkthrough/.
 
-## Working flow
+## Safe local merge (recommended)
 
-Controlled source → typed facts → completeness/conflict checks → contextual batch comparison → source-bound Module 3 draft → independent technical QC → named review → controlled evidence snapshot. A source revision invalidates affected work; historical snapshots remain unchanged.
+1. Extract this ZIP to a separate folder; keep your existing repository untouched.
+2. Confirm your repository is on the exact base SHA and has no unsaved changes. Do not reset or overwrite a newer version.
+3. Run: python tools/apply_update.py --repo /path/to/your/existing/repository
+4. Review git diff, run the documented app checks and inspect saved outcomes. Commit/push yourself only after reviewing the result; this package does not commit or push.
 
-## Product surfaces
+If your old source is an extracted ZIP, or GitHub uses a different commit ID for the same code, use: python tools/apply_update.py --repo /path/to/source --verify-content
+This verifies every exported base source hash before applying; it was tested without Git metadata and without the hidden .openai folder. It refuses mismatched/missing source or an already-existing new path. Git is required to apply the patch, but GitHub authentication is not. Unchanged hidden settings remain optional platform configuration copies.
 
-Landing with a slow projected 3D evidence network, reduced-motion/pause support and responsive layouts. Authenticated professional workspace with Sources, Extraction, Gaps/Conflicts, Batch Comparison, persisted Evidence Graph, Drafts, Review, Change Impact, Markets/HAQ, Agentic Workflow, Exports, Audit, Assurance and Settings. `/demo` runs a clearly labelled session-local synthetic case. `/app` uses authenticated D1/R2 persistence.
+## GitHub browser upload
 
-## Source and truth
+Extract the ZIP first. Upload the CONTENTS of changed-files/ into the EXISTING repository root; do not upload the ZIP as application source, do not place the outer delivery folder inside app/, and do not create changed-files/app under your repo. The resulting root app/ holds application routes. An existing app/app route is legitimate in this source and is not renamed.
 
-Original checklist retained in docs/acceptance-source.md. Original PDFs retained in docs/. `lib/source-registry.json` preserves 178 exact source items and six unresolved shared-hardening IDs. `docs/FEATURE_MATRIX.md` and `lib/coverage.json` show bounded implementation versus specification. Do not describe the whole expanded architecture as production complete.
+The changed source batch has 36 files. GitHub's documented browser limit is 100 files per upload and 25 MiB per file. Branch rules and secret scanning can independently reject an upload. These packages have no hidden-dot paths and no live credentials. An unknown GitHub "Something went wrong" error cannot be conclusively diagnosed without its actual message; use the local patch/GitHub Desktop path if web upload still fails.
 
-Nine agentic parts are allocated in docs/ENGINEERING_RULEBOOK.md. Logical A1–A18 specialists produce deterministic typed candidates. Optional model/document gateways are server-side, pinned and permission-controlled; they require configuration and independent provider proof.
+## Visible configuration fix
 
-## Run and check
+Platform metadata .openai/hosting.json is stored visibly as upload-support/openai-hosting.json. Other tracked hidden settings are mirrored visibly too; config-name-map.json records original names and hashes. They are unchanged support copies, not part of the source delta. Existing correct settings need no upload.
 
-Use the Sites skill setup/install/build workflow for hosting. For local non-Sites development, the included Vinext starter scripts are available. Apply generated Drizzle migrations to the local D1 database as documented in the deployment runbook.
+If you really need to restore an absent setting locally, first preview: python tools/restore_optional_configs.py --repo /path/to/repo
+Then after checking: python tools/restore_optional_configs.py --repo /path/to/repo --write
+The script refuses to overwrite a differing existing configuration. Uploading a visible config file alone does not make it active under its original hidden path.
 
-```sh
-node tests/run.mjs
-node tests/integration.mjs
-node scripts/update-coverage.mjs
-node node_modules/typescript/bin/tsc --noEmit
-```
+## What is retained in your previous full package
 
-Executed results are in docs/proof. Tests use synthetic fixtures; protocol mocks are labelled. They do not measure independent regulatory accuracy, global load or organization qualification.
+Unchanged original code, lockfile, Docker/container/build files, media and history remain in your base package/repository. This delta deliberately does not repeat them. Generated type-check cache omissions: tsconfig.tsbuildinfo. No design, diagram, test count or configured API key establishes enterprise qualification.
 
-## Security and limits
-
-Tenant membership and role checks are server-side; current-revision CAS prevents stale/concurrent writes; idempotency prevents duplicates; original reads are permission-controlled. Authenticator secrets are encrypted; signatures bind a scientific-revision payload. Source changes invalidate approvals; closure requires an independent reviewer. Audit uses an application hash chain with privileged administrators explicitly in the threat model.
-
-Current bounded quotas: 4 MB workspace aggregate; 20 workspaces/owner; 500 parameters/source; 5 MB original; 60 writes/user/minute. See docs/SCOPE_AND_EXCLUSIONS.md before real professional deployment.
-
-## References
-
-Visual references: Bio Lab, Selectra, QGen recordings and the supplied ORVIX dashboard image. They inform composition and motion, not CMC logic or metrics.
-
-Provider protocol: [OpenAI Responses API](https://platform.openai.com/docs/api-reference/responses) and [structured outputs](https://platform.openai.com/docs/guides/structured-outputs). Keys must use approved secure setup; never commit them.
-
-No autonomous dossier submission, batch release, clinical proof, regulatory accuracy guarantee or GxP/Part 11/eCTD compliance certification is claimed.
+GitHub reference checked 8 October 2026: https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository

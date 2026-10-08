@@ -1,0 +1,25 @@
+/* Progressive, bounded presentation. Content and workflow controls remain stationary. */
+.presentation-progress{position:fixed;inset:0 0 auto;height:2px;z-index:170;pointer-events:none;contain:strict}
+.presentation-progress>div{height:100%;background:var(--presentation-accent);transform:scaleX(0);transform-origin:left;opacity:0;will-change:transform}
+[data-motion-enhanced=true]{transition:opacity .52s ease,transform .62s cubic-bezier(.22,.61,.36,1)}
+[data-motion-enhanced=true][data-motion-enter=waiting]{opacity:.9;transform:translateY(10px)}
+[data-motion-enhanced=true][data-motion-enter=waiting][data-motion-direction=up]{transform:translateY(-8px)}
+[data-motion-enhanced=true][data-motion-enter=visible],[data-motion-enhanced=true]:focus-within{opacity:1;transform:none}
+[data-motion-stage=true]{transform:perspective(1100px) translate3d(var(--stage-x,0px),var(--stage-y,0px),0) rotateX(var(--stage-rx,0deg)) rotateY(var(--stage-ry,0deg));transform-style:preserve-3d;transform-origin:50% 50%}
+@media(max-width:700px){[data-motion-enhanced=true][data-motion-enter=waiting]{transform:translateY(6px);opacity:.95}}
+@media(prefers-reduced-motion:reduce){.presentation-progress{display:none}[data-motion-enhanced=true],[data-motion-stage=true]{animation:none!important;transition:none!important;transform:none!important;opacity:1!important}}
+
+/* The existing ray-marched sculpture remains the focus, with native scrolling. */
+.bio-hero-sculpture{isolation:isolate}.bio-hero-sculpture canvas{backface-visibility:hidden}.forge-public .reveal{opacity:1}.forge-public [data-motion-enhanced=true]{animation:none}
+.forge-public .bio-service-art{box-shadow:0 24px 55px #03191e16}.forge-public .public-graph-stage{box-shadow:inset 0 1px 0 #b4e7dc20,0 18px 50px #051b2017}
+@media(hover:hover) and (pointer:fine){.bio-road-card:hover{box-shadow:0 22px 46px #11292c18}.delivery-spine-grid>button:hover{box-shadow:0 9px 24px #182d3c0d}.app-shell .panel:hover{border-color:#a6beb8;box-shadow:0 7px 24px #19332d08}}
+@media(prefers-reduced-motion:reduce){.bio-hero-sculpture{transform:none!important}.forge-public .reveal{opacity:1!important;transform:none!important}}
+
+/* Clearly visible, reversible landing reveals; existing product design retained. */
+.forge-public.bio-reference .reveal[data-motion-enhanced=true]{animation:none!important;transition:opacity .65s ease,transform .8s cubic-bezier(.16,1,.3,1)!important;transform-origin:center;will-change:auto}
+.forge-public.bio-reference .reveal[data-motion-enhanced=true][data-motion-enter=waiting]{opacity:.42!important;transform:translateY(42px) scale(.985)!important}
+.forge-public.bio-reference .reveal[data-motion-enhanced=true][data-motion-enter=waiting][data-motion-direction=up]{transform:translateY(-38px) scale(.985)!important}
+.forge-public.bio-reference .reveal[data-motion-enhanced=true][data-motion-enter=visible],.forge-public.bio-reference .reveal[data-motion-enhanced=true]:focus-within{opacity:1!important;transform:none!important}
+@media(max-width:700px){.forge-public.bio-reference .reveal[data-motion-enhanced=true][data-motion-enter=waiting]{transform:translateY(27px) scale(.99)!important}.forge-public.bio-reference .reveal[data-motion-enhanced=true][data-motion-enter=waiting][data-motion-direction=up]{transform:translateY(-25px) scale(.99)!important}}
+@media(prefers-reduced-motion:reduce){.forge-public.bio-reference .reveal[data-motion-enhanced=true]{opacity:1!important;transform:none!important;transition:none!important}}
+:root[data-lq-motion="reduced"] .forge-public.bio-reference .reveal[data-motion-enhanced=true]{opacity:1!important;transform:none!important;transition:none!important}

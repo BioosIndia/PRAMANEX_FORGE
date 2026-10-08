@@ -1,0 +1,90 @@
+{
+  "at": "2026-10-08T09:25:12.793269+00:00",
+  "enterpriseQualified": false,
+  "requirements": [
+    {
+      "id": "F01 Complex-document extraction",
+      "implemented": "Existing preservation/parser failure handling tested with official public documents.",
+      "remaining": "Lossless merged-table parsing, scientific extraction accuracy and reviewed OCR are not established."
+    },
+    {
+      "id": "F02 CTD profiles",
+      "implemented": "M4Q(R1) default; M4Q(R2) explicitly draft preview, profile change stales approvals; preview finalization blocked.",
+      "remaining": "Regional profiles and future draft adoption need qualified scope review."
+    },
+    {
+      "id": "F03 Scientific facts",
+      "implemented": "Existing original values, precision, units and batch/method context retained and regression-tested.",
+      "remaining": "Representative customer scientific validation remains external."
+    },
+    {
+      "id": "F04 QOS",
+      "implemented": "Module 2.3 draft section support and completeness record required for scoped drafts; technical export accepts supported 2.3 sections.",
+      "remaining": "Full QOS/Module 3 narrative-consistency qualification remains partial."
+    },
+    {
+      "id": "F05 Analytical procedures",
+      "implemented": "Saved method/revision, purpose, development, protocol/results, acceptance and transfer completeness checklist with exact citations and independent review.",
+      "remaining": "Coverage does not prove analytical validation, verification or transfer success."
+    },
+    {
+      "id": "F06 Stability",
+      "implemented": "Saved batch/strength/container/condition/time/method/result/commitment checklist; scoped draft QC requires current reviewed coverage.",
+      "remaining": "No shelf-life assignment, extrapolation or independently qualified scientific conclusions."
+    },
+    {
+      "id": "F07 Post-approval",
+      "implemented": "Saved product/market/registration/change/reporting/commitment evidence checklist with gaps.",
+      "remaining": "Jurisdiction-specific legal classification and customer commitments require review."
+    },
+    {
+      "id": "F08 HA response",
+      "implemented": "Actual request, scope/due date, evidence, gaps, reviewed response and receipt completeness record.",
+      "remaining": "No invented authority expectation, submission or acceptance."
+    },
+    {
+      "id": "F09 eCTD preflight",
+      "implemented": "Existing technical export validation retained; draft-profile finalization blocked.",
+      "remaining": "Agency eCTD qualification, Module 1 and publishing validation remain outside this handoff."
+    },
+    {
+      "id": "F10 External handoff",
+      "implemented": "Saved receiving-permission, manifest, identifiers, receipt and reconciliation evidence checklist.",
+      "remaining": "Live LIMS/MES/QMS/RIM adapters require authorized vendor access and test data."
+    }
+  ],
+  "shared": [
+    {
+      "item": "Authoritative current status",
+      "status": "This report is authoritative for changes in this delivery. Earlier status/proof files describe their dated scope; they are not upgraded by a build."
+    },
+    {
+      "item": "Independent evaluation",
+      "status": "Synthetic controls and public-document intake are separate from held-out reviewer-labelled scientific/regulatory evaluation."
+    },
+    {
+      "item": "Live model outcomes",
+      "status": "Configured credentials and local protocol mocks do not establish fresh successful hosted inference or model quality."
+    },
+    {
+      "item": "Professional outcomes",
+      "status": "No real-user pilot results, time savings or accuracy percentages were invented."
+    },
+    {
+      "item": "Identity/security",
+      "status": "Existing roles, signed decisions, tenant scope and auth retained. Production identity recovery, external OAuth and complete security qualification remain separate."
+    },
+    {
+      "item": "Operations",
+      "status": "Build/local persistence/export checks pass only within their stated scope; target load, alert delivery, restore/rollback/incident drills remain unqualified."
+    },
+    {
+      "item": "Cross-product handoff",
+      "status": "No automatic permission bypass or transferred approval. Existing exact-revision/manual intake controls retained; receiving-system reconciliation remains scoped."
+    },
+    {
+      "item": "Human-readable outcomes",
+      "status": "Visible gaps, HOLD, source references and next review owner retained. No automatic regulatory release."
+    }
+  ]
+}

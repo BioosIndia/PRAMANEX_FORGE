@@ -1,0 +1,570 @@
+{
+  "suite": "FORGE expanded lifecycle domain",
+  "version": "forge-lifecycle/2",
+  "scope": "Local synthetic exact-source adversarial domain fixtures. No browser/hosted/provider/scientific/regulatory validation claim.",
+  "at": "2026-10-07T20:47:57.364Z",
+  "passed": 58,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Lifecycle hydration preserves all existing source data",
+      "ids": [
+        "X11",
+        "P02"
+      ],
+      "status": "PASS",
+      "latencyMs": 47
+    },
+    {
+      "name": "Source-backed entity stores exact fact and source revisions",
+      "ids": [
+        "X08",
+        "X11"
+      ],
+      "status": "PASS",
+      "latencyMs": 34
+    },
+    {
+      "name": "Anonymous lifecycle write blocked",
+      "ids": [
+        "L02",
+        "P04"
+      ],
+      "status": "PASS",
+      "latencyMs": 1
+    },
+    {
+      "name": "Viewer lifecycle write blocked",
+      "ids": [
+        "L02",
+        "P04"
+      ],
+      "status": "PASS",
+      "latencyMs": 0
+    },
+    {
+      "name": "Invented scientific scalar rejected by strict schema",
+      "ids": [
+        "X08",
+        "P01"
+      ],
+      "status": "PASS",
+      "latencyMs": 15
+    },
+    {
+      "name": "Invented object identity rejected",
+      "ids": [
+        "X08"
+      ],
+      "status": "PASS",
+      "latencyMs": 16
+    },
+    {
+      "name": "Missing actual stored fact rejected",
+      "ids": [
+        "X08",
+        "X10"
+      ],
+      "status": "PASS",
+      "latencyMs": 9
+    },
+    {
+      "name": "Duplicate fact cannot inflate evidence count",
+      "ids": [
+        "X10",
+        "X45"
+      ],
+      "status": "PASS",
+      "latencyMs": 21
+    },
+    {
+      "name": "Citation bounds and unknown source blocked",
+      "ids": [
+        "X09",
+        "P01"
+      ],
+      "status": "PASS",
+      "latencyMs": 11
+    },
+    {
+      "name": "Entity author cannot approve their own revision",
+      "ids": [
+        "X46",
+        "P04"
+      ],
+      "status": "PASS",
+      "latencyMs": 15
+    },
+    {
+      "name": "Technical administrator cannot grant scientific approval",
+      "ids": [
+        "L02",
+        "X46"
+      ],
+      "status": "PASS",
+      "latencyMs": 22
+    },
+    {
+      "name": "Revision and digest mismatch reject approval",
+      "ids": [
+        "X46",
+        "P02"
+      ],
+      "status": "PASS",
+      "latencyMs": 14
+    },
+    {
+      "name": "Approved revision binds independent identity, sources and policy",
+      "ids": [
+        "X46",
+        "P02"
+      ],
+      "status": "PASS",
+      "latencyMs": 4
+    },
+    {
+      "name": "Entity predecessor remains immutable; only newest version current",
+      "ids": [
+        "X11",
+        "P02"
+      ],
+      "status": "PASS",
+      "latencyMs": 9
+    },
+    {
+      "name": "Genealogy creates source-linked material to intermediate to batch",
+      "ids": [
+        "X12"
+      ],
+      "status": "PASS",
+      "latencyMs": 9
+    },
+    {
+      "name": "Genealogy cycles blocked before scientific interpretation",
+      "ids": [
+        "X12",
+        "X13"
+      ],
+      "status": "PASS",
+      "latencyMs": 8
+    },
+    {
+      "name": "Process graph validates equipment/site relation types",
+      "ids": [
+        "X13"
+      ],
+      "status": "PASS",
+      "latencyMs": 7
+    },
+    {
+      "name": "Requirement identity and market require real cited evidence",
+      "ids": [
+        "X09",
+        "X10"
+      ],
+      "status": "PASS",
+      "latencyMs": 5
+    },
+    {
+      "name": "Arbitrary policy code and uncited category blocked",
+      "ids": [
+        "X37",
+        "X44"
+      ],
+      "status": "PASS",
+      "latencyMs": 6
+    },
+    {
+      "name": "Versioned requirement DSL executes actual approved count check",
+      "ids": [
+        "X09",
+        "X44",
+        "X45"
+      ],
+      "status": "PASS",
+      "latencyMs": 6
+    },
+    {
+      "name": "Content block and controlled reuse preserve scientific text",
+      "ids": [
+        "X23",
+        "X26",
+        "X27"
+      ],
+      "status": "PASS",
+      "latencyMs": 13
+    },
+    {
+      "name": "Content cannot reuse an unapproved block or wrong revision",
+      "ids": [
+        "X23",
+        "X26"
+      ],
+      "status": "PASS",
+      "latencyMs": 9
+    },
+    {
+      "name": "Approved dossier maps actual obligation evidence and sections",
+      "ids": [
+        "X10",
+        "X31",
+        "X36"
+      ],
+      "status": "PASS",
+      "latencyMs": 9
+    },
+    {
+      "name": "Dossier with missing required parameter cannot be approved",
+      "ids": [
+        "X31",
+        "X58"
+      ],
+      "status": "PASS",
+      "latencyMs": 8
+    },
+    {
+      "name": "Cross-dossier conflicts are measured with exact cited records",
+      "ids": [
+        "X17",
+        "X18"
+      ],
+      "status": "PASS",
+      "latencyMs": 8
+    },
+    {
+      "name": "Observed stability trend has no extrapolation or shelf-life claim",
+      "ids": [
+        "X19",
+        "X21"
+      ],
+      "status": "PASS",
+      "latencyMs": 9
+    },
+    {
+      "name": "Stability batch mismatch cannot fabricate an observation",
+      "ids": [
+        "X19"
+      ],
+      "status": "PASS",
+      "latencyMs": 7
+    },
+    {
+      "name": "Comparability and transfer are recorded evidence assessments",
+      "ids": [
+        "X20",
+        "X22"
+      ],
+      "status": "PASS",
+      "latencyMs": 9
+    },
+    {
+      "name": "Market classification is rule-backed candidate, never legal clearance",
+      "ids": [
+        "X36",
+        "X37",
+        "X38"
+      ],
+      "status": "PASS",
+      "latencyMs": 11
+    },
+    {
+      "name": "Unknown/conflicting reporting categories remain HOLD/CONFLICT",
+      "ids": [
+        "X37"
+      ],
+      "status": "PASS",
+      "latencyMs": 8
+    },
+    {
+      "name": "Change simulation creates read-only scientific branch snapshot",
+      "ids": [
+        "X39",
+        "D07",
+        "D08"
+      ],
+      "status": "PASS",
+      "latencyMs": 8
+    },
+    {
+      "name": "Simulated unsupported parameter replacement rejected",
+      "ids": [
+        "X39",
+        "D07"
+      ],
+      "status": "PASS",
+      "latencyMs": 7
+    },
+    {
+      "name": "Graph blast radius includes causal rule/content decisions and excludes unrelated facts",
+      "ids": [
+        "X40",
+        "X41",
+        "X46"
+      ],
+      "status": "PASS",
+      "latencyMs": 8
+    },
+    {
+      "name": "Selective staleness preserves immutable records and independent source data",
+      "ids": [
+        "X42",
+        "P03"
+      ],
+      "status": "PASS",
+      "latencyMs": 6
+    },
+    {
+      "name": "Source revision change automatically invalidates expanded lifecycle graph",
+      "ids": [
+        "X42",
+        "P03"
+      ],
+      "status": "PASS",
+      "latencyMs": 9
+    },
+    {
+      "name": "Regression runs persist expected/actual rule and coverage checks",
+      "ids": [
+        "X43",
+        "D05",
+        "D06"
+      ],
+      "status": "PASS",
+      "latencyMs": 7
+    },
+    {
+      "name": "Empty regression cannot fabricate success",
+      "ids": [
+        "X43"
+      ],
+      "status": "PASS",
+      "latencyMs": 5
+    },
+    {
+      "name": "Actual source-linked HAQ and approved outcome enter governed memory",
+      "ids": [
+        "X53",
+        "X54",
+        "X55",
+        "X56",
+        "X57"
+      ],
+      "status": "PASS",
+      "latencyMs": 7
+    },
+    {
+      "name": "Invented authority question or outcome cannot enter memory",
+      "ids": [
+        "X53",
+        "X57"
+      ],
+      "status": "PASS",
+      "latencyMs": 6
+    },
+    {
+      "name": "Source staleness removes approved HAQ outcome from current memory",
+      "ids": [
+        "X54",
+        "X57",
+        "P03"
+      ],
+      "status": "PASS",
+      "latencyMs": 7
+    },
+    {
+      "name": "Closure compares exact expected versus actual source evidence",
+      "ids": [
+        "X64"
+      ],
+      "status": "PASS",
+      "latencyMs": 7
+    },
+    {
+      "name": "Owner cannot close their own action and mismatched evidence remains open",
+      "ids": [
+        "X64",
+        "P04"
+      ],
+      "status": "PASS",
+      "latencyMs": 7
+    },
+    {
+      "name": "Later source change reopens closure without rewriting original verification",
+      "ids": [
+        "X65",
+        "P03"
+      ],
+      "status": "PASS",
+      "latencyMs": 6
+    },
+    {
+      "name": "Controlled correction makes new dependent candidates and transfers no approval",
+      "ids": [
+        "X61",
+        "X26"
+      ],
+      "status": "PASS",
+      "latencyMs": 10
+    },
+    {
+      "name": "Every covered source identifier exposes bounded executable projection",
+      "ids": [
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "X13",
+        "X17",
+        "X18",
+        "X19",
+        "X20",
+        "X21",
+        "X22",
+        "X23",
+        "X26",
+        "X27",
+        "X31",
+        "X36",
+        "X37",
+        "X38",
+        "X39",
+        "X40",
+        "X41",
+        "X42",
+        "X43",
+        "X44",
+        "X45",
+        "X46",
+        "X58",
+        "X61"
+      ],
+      "status": "PASS",
+      "latencyMs": 8
+    },
+    {
+      "name": "Capability dispatch returns real controlled lifecycle projections",
+      "ids": [
+        "X08",
+        "X11",
+        "X44"
+      ],
+      "status": "PASS",
+      "latencyMs": 7
+    },
+    {
+      "name": "Content-linked graph renders exact approved draft edge without mutation",
+      "ids": [
+        "X23",
+        "X46"
+      ],
+      "status": "PASS",
+      "latencyMs": 8
+    },
+    {
+      "name": "Rejected dependency revokes downstream current approval",
+      "ids": [
+        "X42",
+        "X46"
+      ],
+      "status": "PASS",
+      "latencyMs": 7
+    },
+    {
+      "name": "Wrong-market requirement cannot authorize dossier approval",
+      "ids": [
+        "X10",
+        "X36"
+      ],
+      "status": "PASS",
+      "latencyMs": 7
+    },
+    {
+      "name": "No requirement profile cannot pass dossier approval",
+      "ids": [
+        "X31",
+        "X45"
+      ],
+      "status": "PASS",
+      "latencyMs": 6
+    },
+    {
+      "name": "Change candidate rejects evidence from a different source",
+      "ids": [
+        "X38"
+      ],
+      "status": "PASS",
+      "latencyMs": 6
+    },
+    {
+      "name": "Simulation cannot borrow baseline facts from another source",
+      "ids": [
+        "X39"
+      ],
+      "status": "PASS",
+      "latencyMs": 5
+    },
+    {
+      "name": "Governed memory excludes legacy free-text response comments",
+      "ids": [
+        "X54",
+        "X57",
+        "X66"
+      ],
+      "status": "PASS",
+      "latencyMs": 6
+    },
+    {
+      "name": "Governed memory admits exact approved lifecycle outcomes and removes stale ones",
+      "ids": [
+        "X54",
+        "X57",
+        "X66"
+      ],
+      "status": "PASS",
+      "latencyMs": 8
+    },
+    {
+      "name": "Typed specialists project actual controlled records without human authority",
+      "ids": [
+        "A2",
+        "A6",
+        "A7",
+        "A8",
+        "A13",
+        "A15",
+        "A17"
+      ],
+      "status": "PASS",
+      "latencyMs": 10
+    },
+    {
+      "name": "A regression cannot pass an unconfigured dossier obligation profile",
+      "ids": [
+        "X31",
+        "X43"
+      ],
+      "status": "PASS",
+      "latencyMs": 6
+    },
+    {
+      "name": "Actual question cannot invent its jurisdiction",
+      "ids": [
+        "X53",
+        "X55"
+      ],
+      "status": "PASS",
+      "latencyMs": 6
+    },
+    {
+      "name": "All typed specialists hydrate a copy of legacy state without mutating workspace",
+      "ids": [
+        "A1",
+        "A18",
+        "L09"
+      ],
+      "status": "PASS",
+      "latencyMs": 14
+    }
+  ]
+}
