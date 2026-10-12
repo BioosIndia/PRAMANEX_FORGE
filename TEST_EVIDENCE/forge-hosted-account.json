@@ -1,0 +1,68 @@
+{
+  "site": "forge",
+  "scope": "Real hosted HTTP journey, own synthetic identity; not browser/OAuth UI or professional qualification",
+  "checks": [
+    {
+      "check": "Own email signup",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "check": "Saved own session",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Fresh workspace list is empty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Create separate persistent workspace",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Fresh evidence starts at zero",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Explicit synthetic input saves",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Synthetic saved readback has sources",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Unowned workspace blocked",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Own logout completes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Logged-out own session removed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Own password login works",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "Login persisted session works",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "passed": 12,
+  "failed": 0
+}

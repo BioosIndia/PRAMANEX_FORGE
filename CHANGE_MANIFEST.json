@@ -1,0 +1,173 @@
+{
+  "project": "FORGE",
+  "date": "2026-10-12",
+  "baseline_deployed_version": 21,
+  "updated_deployed_version": 23,
+  "baseline_commit": "3e9de7fb24ede076092f877aa94a6fcc2e74ddc7",
+  "updated_commit": "93e943fedf8744fb774b0dd0ec961f5d4bb4cf99",
+  "scope": "Only source changes from the preceding deployed source to the 12 October quality update. No unchanged original repository is repeated.",
+  "files": [
+    {
+      "status": "M",
+      "path": "app/Landing.tsx",
+      "before_sha256": "117f6fb7ef73d5fe495248d6fe02098d02a53a65d6768b48b25744e77d0128cb",
+      "after_sha256": "cd05717ca3dabfd47922aea5019f9ba5dccd711c684371910fa53ff36662fe1b",
+      "bytes": 19350
+    },
+    {
+      "status": "M",
+      "path": "app/QualityPanel.tsx",
+      "before_sha256": "2491f765cd7ea89efba165f459f619049341e54401456609d08b040533dcf20e",
+      "after_sha256": "c319fbb34e2fef547f046c6fc5b1760ee8ad08880e937cfa05bef2e37fdc51d4",
+      "bytes": 6626
+    },
+    {
+      "status": "A",
+      "path": "app/api/quality/background/route.ts",
+      "before_sha256": null,
+      "after_sha256": "7978d7a1f3600bd6c8fcf89ce8ea600eafb7cb936cb3fd8bfd7ce35b10d98267",
+      "bytes": 573
+    },
+    {
+      "status": "A",
+      "path": "app/api/quality/protocol/route.ts",
+      "before_sha256": null,
+      "after_sha256": "2190813e1bd0be7f23cb37b1551a24fe0f4ab744d6bac32e9b11d3aa34e689e5",
+      "bytes": 4043
+    },
+    {
+      "status": "A",
+      "path": "app/api/quality/status/route.ts",
+      "before_sha256": null,
+      "after_sha256": "b2ee78a2aba55abe9f9c7f3854c1b786fad23344c8d2678ab63db470c0e9ffb4",
+      "bytes": 310
+    },
+    {
+      "status": "A",
+      "path": "app/quality-monitor-panel.tsx",
+      "before_sha256": null,
+      "after_sha256": "17eaa57489bb9dfde77d09bc77a445c8fcddd0620d3130c7287e95dd5b569e4c",
+      "bytes": 4937
+    },
+    {
+      "status": "A",
+      "path": "app/quality/page.tsx",
+      "before_sha256": null,
+      "after_sha256": "f458c65ac6a1b03a3fbbcb486b06403374139afabf423be69da4a57e1bce3651",
+      "bytes": 497
+    },
+    {
+      "status": "A",
+      "path": "docs/QUALITY_AUTOMATION.md",
+      "before_sha256": null,
+      "after_sha256": "66d47839346a7c183c10da0f066540ea4a5a1caabf11fa17307035f82db7c82e",
+      "bytes": 1606
+    },
+    {
+      "status": "M",
+      "path": "docs/proof/account-results.json",
+      "before_sha256": "d3655f63704d2b36e6c66278ec97c5fa81fa20863638d21638252bc15e63fbc6",
+      "after_sha256": "63f8660ea17e765d05f5078d260524cd0a9f10bda0f11bb6a0f038c67c3402ca",
+      "bytes": 3318
+    },
+    {
+      "status": "M",
+      "path": "docs/proof/branch-results.json",
+      "before_sha256": "697d7f408d540f4966b0cb26cc8a6cc82231749a21dbf28511179342d5ee2c41",
+      "after_sha256": "902bb46bbecff7880d21f254f75267208a1b3537a33da08c1ed1a237900dadd8",
+      "bytes": 4575
+    },
+    {
+      "status": "M",
+      "path": "docs/proof/collaboration-results.json",
+      "before_sha256": "1bac5fe6ec49c57adaf00ff305bc8494e0c9d31acec90cf2d5b2a83566db9a3d",
+      "after_sha256": "38151fb266ff52f92a3beeedbf8e45531adda708b45d7881b4fa067976b921b4",
+      "bytes": 2556
+    },
+    {
+      "status": "M",
+      "path": "docs/proof/domain-results.json",
+      "before_sha256": "d91f7fb77597602bdf2538f963e4a694af11fbe5029942852a1e4000cb8dac99",
+      "after_sha256": "a08492230cb928feac5c4f6b2c62c2b9a6b2d223738b9379da7f20c88ce40196",
+      "bytes": 15826
+    },
+    {
+      "status": "M",
+      "path": "docs/proof/integration-results.json",
+      "before_sha256": "47592fa243b6a3fdbd001912e987309442877b12705d1e59fd91d882a806a586",
+      "after_sha256": "85f33581a342c6ca945c77b4a3766ad7515860dfded09ff0fbb89e159a1de5ae",
+      "bytes": 5759
+    },
+    {
+      "status": "M",
+      "path": "docs/proof/working-proof-runtime-results.json",
+      "before_sha256": "a41e68fee411a370b0faef2bcbeaaeb5f44d590f7222f7ff2725cd37f5b1cfd9",
+      "after_sha256": "82ec251a9b9615981482736111c2434107e70f909d2c9276118baa0283b03aea",
+      "bytes": 1114
+    },
+    {
+      "status": "M",
+      "path": "lib/proof.json",
+      "before_sha256": "d91f7fb77597602bdf2538f963e4a694af11fbe5029942852a1e4000cb8dac99",
+      "after_sha256": "a08492230cb928feac5c4f6b2c62c2b9a6b2d223738b9379da7f20c88ce40196",
+      "bytes": 15826
+    },
+    {
+      "status": "A",
+      "path": "lib/quality-adapter.ts",
+      "before_sha256": null,
+      "after_sha256": "3b072e80fdd1bb9dc4bd1f334038bf5f54e3d724e47232f3e650d9105ed1b97a",
+      "bytes": 3494
+    },
+    {
+      "status": "A",
+      "path": "lib/quality-monitor.ts",
+      "before_sha256": null,
+      "after_sha256": "b9288c9741e02043f2efe7a6d6e9019d6616b16914eb43a4736fb39bb9dd7c84",
+      "bytes": 16361
+    },
+    {
+      "status": "M",
+      "path": "package.json",
+      "before_sha256": "1cb6422646dfa455c396fd71cc51306c0e994bf098bd2e3462e1fdea4922fa0d",
+      "after_sha256": "79c89800aac92b956c65a454e5c3b7e0a604c87ac2b427f3c3dce722b8b1a295",
+      "bytes": 2254
+    },
+    {
+      "status": "A",
+      "path": "scripts/hosted-quality.py",
+      "before_sha256": null,
+      "after_sha256": "4522a871801ad6e66797e331909fef5e2d51b6d8733e22a7afb954839ab41c35",
+      "bytes": 1462
+    },
+    {
+      "status": "A",
+      "path": "scripts/quality-check.mjs",
+      "before_sha256": null,
+      "after_sha256": "030097a6f17e3b35d0a7679fd3b8d685207e82fa958e57955fbd26d749772a41",
+      "bytes": 580
+    },
+    {
+      "status": "A",
+      "path": "tests/quality-hosted-runtime.mjs",
+      "before_sha256": null,
+      "after_sha256": "17c49e559e5c396812513b6f7133a9e3c459f4f059a91519eb0973f84ac3f57e",
+      "bytes": 7500
+    },
+    {
+      "status": "A",
+      "path": "tests/quality-monitor.test.ts",
+      "before_sha256": null,
+      "after_sha256": "3c2eaf9fdac24330ef64ad16817e65028c382f67c3723e46fe212a72fc4a1513",
+      "bytes": 7086
+    },
+    {
+      "status": "M",
+      "path": "tsconfig.json",
+      "before_sha256": "7199c6e4e400921e8049729840165a39f1476fa97901bed00239e7697bfe8da4",
+      "after_sha256": "edfaad4fe7997d45624f3ddafd881f54fd7c7fa2e45df58be48adb56243ac0b9",
+      "bytes": 840
+    }
+  ],
+  "omitted": "Hidden files, credentials, sessions, node_modules, build archives and generated TypeScript cache."
+}

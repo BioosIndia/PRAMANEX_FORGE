@@ -1,0 +1,355 @@
+{
+  "httpStatus": 200,
+  "result": {
+    "product": "FORGE",
+    "buildTag": "forge-quality/2026-10-12.1",
+    "engineering": {
+      "id": "FORGE:forge-quality/2026-10-12.1:engineering:2026-10-12T06",
+      "product": "FORGE",
+      "mode": "engineering",
+      "buildTag": "forge-quality/2026-10-12.1",
+      "policyVersion": "synthetic-quality-monitor/1",
+      "startedAt": "2026-10-12T06:13:16.736Z",
+      "finishedAt": "2026-10-12T06:13:20.905Z",
+      "state": "CONTROL_CHECKS_PASSED",
+      "checks": [
+        {
+          "id": "ORIGINAL_READBACK",
+          "pass": true,
+          "expected": "55d619aad7e966a6a21beb34a70e3c1e191f05a850e4b3fc74cf92aa8a05ebfb",
+          "actual": "55d619aad7e966a6a21beb34a70e3c1e191f05a850e4b3fc74cf92aa8a05ebfb",
+          "note": "Isolated synthetic original; no customer evidence accessed."
+        },
+        {
+          "id": "FRESH_WORKSPACE_EMPTY",
+          "pass": true,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "ASSAY_CONFLICT_RETAINED",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "MISSING_DISSOLUTION_VISIBLE",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "CONTROLLED_EXPORT_BLOCKED",
+          "pass": true,
+          "expected": false,
+          "actual": false
+        },
+        {
+          "id": "RELEASE_LOCKED",
+          "pass": true,
+          "expected": false,
+          "actual": false
+        },
+        {
+          "id": "ORIGINAL_PRECISION_PRESERVED",
+          "pass": true,
+          "expected": "98.600",
+          "actual": "98.600"
+        },
+        {
+          "id": "EXPLICIT_UNIT_CONVERSION",
+          "pass": true,
+          "expected": {
+            "value": 98.6,
+            "unit": "%"
+          },
+          "actual": {
+            "value": 98.6,
+            "unit": "%"
+          }
+        },
+        {
+          "id": "STALE_WRITE_REJECTED",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "VIEWER_WRITE_REJECTED",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "UNSUPPORTED_UNIT_REJECTED",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "CONFLICTING_AGENT_REVISIONS_HELD",
+          "pass": true,
+          "expected": "HOLD",
+          "actual": "HOLD"
+        }
+      ],
+      "model": null,
+      "inputHash": "55d619aad7e966a6a21beb34a70e3c1e191f05a850e4b3fc74cf92aa8a05ebfb",
+      "previousHash": "GENESIS",
+      "nextAction": "Inspect the saved bounded evidence. Professional acceptance remains required.",
+      "qualification": {
+        "engineering": "Bounded synthetic control checks",
+        "professionalAccuracy": "NOT_ESTABLISHED",
+        "realUserBenefits": "NOT_ESTABLISHED",
+        "regulatedProductionQualification": "NOT_ESTABLISHED",
+        "humanAcceptance": "REQUIRED",
+        "automaticApproval": false,
+        "release": false
+      },
+      "synthetic": true,
+      "privateEvidenceAccessed": false,
+      "release": false,
+      "latencyMs": 4169,
+      "receiptHash": "d263fcd393183b02861c058a372c76f6d5b8d0ecb318260f8040698c3ad57682",
+      "integrityVerified": true,
+      "freshness": "CURRENT",
+      "ageMinutes": 25
+    },
+    "liveAI": {
+      "id": "FORGE:forge-quality/2026-10-12.1:live-ai:2026-10-12",
+      "product": "FORGE",
+      "mode": "live-ai",
+      "buildTag": "forge-quality/2026-10-12.1",
+      "policyVersion": "synthetic-quality-monitor/1",
+      "startedAt": "2026-10-12T06:14:59.824Z",
+      "finishedAt": "2026-10-12T06:15:03.320Z",
+      "state": "CONTROL_CHECKS_PASSED",
+      "checks": [
+        {
+          "id": "ORIGINAL_READBACK",
+          "pass": true,
+          "expected": "55d619aad7e966a6a21beb34a70e3c1e191f05a850e4b3fc74cf92aa8a05ebfb",
+          "actual": "55d619aad7e966a6a21beb34a70e3c1e191f05a850e4b3fc74cf92aa8a05ebfb",
+          "note": "Isolated synthetic original; no customer evidence accessed."
+        },
+        {
+          "id": "FRESH_WORKSPACE_EMPTY",
+          "pass": true,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "ASSAY_CONFLICT_RETAINED",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "MISSING_DISSOLUTION_VISIBLE",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "CONTROLLED_EXPORT_BLOCKED",
+          "pass": true,
+          "expected": false,
+          "actual": false
+        },
+        {
+          "id": "RELEASE_LOCKED",
+          "pass": true,
+          "expected": false,
+          "actual": false
+        },
+        {
+          "id": "ORIGINAL_PRECISION_PRESERVED",
+          "pass": true,
+          "expected": "98.600",
+          "actual": "98.600"
+        },
+        {
+          "id": "EXPLICIT_UNIT_CONVERSION",
+          "pass": true,
+          "expected": {
+            "value": 98.6,
+            "unit": "%"
+          },
+          "actual": {
+            "value": 98.6,
+            "unit": "%"
+          }
+        },
+        {
+          "id": "STALE_WRITE_REJECTED",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "VIEWER_WRITE_REJECTED",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "UNSUPPORTED_UNIT_REJECTED",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "CONFLICTING_AGENT_REVISIONS_HELD",
+          "pass": true,
+          "expected": "HOLD",
+          "actual": "HOLD"
+        },
+        {
+          "id": "LIVE_MODEL_CANARY",
+          "pass": true,
+          "expected": "Two distinct models, exact reference answers and no approval",
+          "actual": "CANARY_PASSED"
+        }
+      ],
+      "model": {
+        "provider": "groq",
+        "status": "CANARY_PASSED",
+        "models": [
+          "openai/gpt-oss-20b",
+          "openai/gpt-oss-120b"
+        ],
+        "attempts": [
+          {
+            "role": "AUTHOR",
+            "model": "openai/gpt-oss-20b",
+            "actualModel": "openai/gpt-oss-20b",
+            "status": "RECEIVED",
+            "latencyMs": 399,
+            "usage": {
+              "queue_time": 0.090269766,
+              "prompt_tokens": 279,
+              "prompt_time": 0.032879163,
+              "completion_tokens": 173,
+              "completion_time": 0.199113759,
+              "total_tokens": 452,
+              "total_time": 0.231992922,
+              "completion_tokens_details": {
+                "reasoning_tokens": 95
+              }
+            },
+            "at": "2026-10-12T06:15:02.815Z"
+          },
+          {
+            "role": "INDEPENDENT_REVIEWER",
+            "model": "openai/gpt-oss-120b",
+            "actualModel": "openai/gpt-oss-120b",
+            "status": "RECEIVED",
+            "latencyMs": 505,
+            "usage": {
+              "queue_time": 0.149579328,
+              "prompt_tokens": 301,
+              "prompt_time": 0.014282406,
+              "completion_tokens": 131,
+              "completion_time": 0.272556758,
+              "total_tokens": 432,
+              "total_time": 0.286839164,
+              "completion_tokens_details": {
+                "reasoning_tokens": 110
+              }
+            },
+            "at": "2026-10-12T06:15:03.320Z"
+          }
+        ],
+        "qualityScope": "A synthetic exact-answer canary, not representative professional validation.",
+        "maxGenerationCalls": 2,
+        "processingConsent": "Owner requested public/synthetic quality checks only.",
+        "humanApproval": false,
+        "authorCheck": {
+          "pass": true,
+          "expected": {
+            "sourceId": "SYNTHETIC-CMC-CANARY",
+            "sourceVersion": 1,
+            "originalAssay": "98.6%",
+            "transcribedAssay": "99.1%",
+            "batch": "SYN-A",
+            "method": "HPLC-SYN-01",
+            "dissolution": null,
+            "status": "HOLD",
+            "release": false
+          },
+          "actual": {
+            "sourceId": "SYNTHETIC-CMC-CANARY",
+            "sourceVersion": 1,
+            "originalAssay": "98.6%",
+            "transcribedAssay": "99.1%",
+            "batch": "SYN-A",
+            "method": "HPLC-SYN-01",
+            "dissolution": null,
+            "status": "HOLD",
+            "release": false
+          }
+        },
+        "reviewerCheck": {
+          "pass": true,
+          "actual": {
+            "supported": true,
+            "issues": [],
+            "release": false
+          }
+        },
+        "sourceHash": "55d619aad7e966a6a21beb34a70e3c1e191f05a850e4b3fc74cf92aa8a05ebfb",
+        "actualInference": true
+      },
+      "inputHash": "55d619aad7e966a6a21beb34a70e3c1e191f05a850e4b3fc74cf92aa8a05ebfb",
+      "previousHash": "d263fcd393183b02861c058a372c76f6d5b8d0ecb318260f8040698c3ad57682",
+      "nextAction": "Inspect the saved bounded evidence. Professional acceptance remains required.",
+      "qualification": {
+        "engineering": "Bounded synthetic control checks",
+        "professionalAccuracy": "NOT_ESTABLISHED",
+        "realUserBenefits": "NOT_ESTABLISHED",
+        "regulatedProductionQualification": "NOT_ESTABLISHED",
+        "humanAcceptance": "REQUIRED",
+        "automaticApproval": false,
+        "release": false
+      },
+      "synthetic": true,
+      "privateEvidenceAccessed": false,
+      "release": false,
+      "latencyMs": 3496,
+      "receiptHash": "080b841ece79139485f3a682d7819cc805a17a882787519e21eb44ed512c3672",
+      "integrityVerified": true,
+      "freshness": "CURRENT",
+      "ageMinutes": 23
+    },
+    "history": [
+      {
+        "id": "FORGE:forge-quality/2026-10-12.1:live-ai:2026-10-12",
+        "mode": "live-ai",
+        "buildTag": "forge-quality/2026-10-12.1",
+        "finishedAt": "2026-10-12T06:15:03.320Z",
+        "state": "CONTROL_CHECKS_PASSED",
+        "receiptHash": "080b841ece79139485f3a682d7819cc805a17a882787519e21eb44ed512c3672",
+        "integrityVerified": true
+      },
+      {
+        "id": "FORGE:forge-quality/2026-10-12.1:engineering:2026-10-12T06",
+        "mode": "engineering",
+        "buildTag": "forge-quality/2026-10-12.1",
+        "finishedAt": "2026-10-12T06:13:20.905Z",
+        "state": "CONTROL_CHECKS_PASSED",
+        "receiptHash": "d263fcd393183b02861c058a372c76f6d5b8d0ecb318260f8040698c3ad57682",
+        "integrityVerified": true
+      }
+    ],
+    "qualification": {
+      "engineering": "Bounded synthetic control checks",
+      "professionalAccuracy": "NOT_ESTABLISHED",
+      "realUserBenefits": "NOT_ESTABLISHED",
+      "regulatedProductionQualification": "NOT_ESTABLISHED",
+      "humanAcceptance": "REQUIRED",
+      "automaticApproval": false,
+      "release": false
+    },
+    "scope": "Public/synthetic engineering receipts only; no private workspace, qualified approval or regulatory release."
+  }
+}
